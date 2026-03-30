@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>鍼灸サロンAcus｜広島県福山市の美容鍼・首こり・頭痛</title>
+  <meta name="description" content="広島県福山市の鍼灸サロンAcus。美容鍼・首こり・頭痛・睡眠ケアを完全個室・担当者制で提供。2013年開院。体の深層から整えるオーダーメイドの鍼灸治療。">
+  <link rel="canonical" href="https://acus-web.com/">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="鍼灸サロンAcus">
+  <meta property="og:url" content="https://acus-web.com/">
+  <meta property="og:title" content="鍼灸サロンAcus｜広島県福山市の美容鍼・首こり・頭痛">
+  <meta property="og:description" content="広島県福山市の鍼灸サロンAcus。美容鍼・首こり・頭痛・睡眠ケアを完全個室・担当者制で提供。2013年開院。体の深層から整えるオーダーメイドの鍼灸治療。">
+  <meta property="og:image" content="https://acus-web.com/img/hero.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="広島県福山市の鍼灸サロンAcus 完全個室の施術空間">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="鍼灸サロンAcus｜広島県福山市の美容鍼・首こり・頭痛">
+  <meta name="twitter:description" content="広島県福山市の鍼灸サロンAcus。美容鍼・首こり・頭痛・睡眠ケアを完全個室・担当者制で提供。2013年開院。">
+  <meta name="twitter:image" content="https://acus-web.com/img/hero.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Noto+Serif+JP:wght@200;300;400&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preload" as="image" href="img/hero.jpg" fetchpriority="high">
+  <noscript><style>.r{opacity:1!important;transform:none!important;}</style></noscript>
+  <style>
+  /* ━━━ HERO ━━━ */
+  #hero {
+    margin-top: var(--hdr-h);
+    display: grid;
+    grid-template-columns: 58% 42%;
+    min-height: calc(100vh - var(--hdr-h));
+  }
+  .hero-img {
+    position: relative; overflow: hidden; background: var(--cream);
+  }
+  .hero-img img {
+    width: 100%; height: 100%;
+    object-fit: cover; object-position: center top; display: block;
+  }
+  .hero-img::after {
+    content: '';
+    position: absolute; inset: 0;
+    background: linear-gradient(to right, rgba(26,26,24,.18) 0%, transparent 60%);
+  }
+  .hero-body {
+    display: flex; flex-direction: column; justify-content: center;
+    padding: 72px 64px 72px 72px; background: var(--bg);
+  }
+  .hero-kicker {
+    font-size: 10px; letter-spacing: .38em;
+    color: var(--sub); text-transform: uppercase; margin-bottom: 28px;
+  }
+  .hero-catch {
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 300;
+    font-size: clamp(26px, 2.8vw, 38px);
+    line-height: 1.6; letter-spacing: .08em;
+    color: var(--dark); margin-bottom: 10px;
+  }
+  .hero-catch em {
+    font-style: normal; color: var(--accent);
+    font-size: 1.12em;
+  }
+  .hero-sub {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 13px; line-height: 2; letter-spacing: .1em;
+    color: var(--sub); margin-bottom: 44px;
+  }
+  .hero-badges {
+    display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 48px;
+  }
+  .hero-badge {
+    font-size: 11px; letter-spacing: .12em;
+    color: var(--mid); background: var(--cream);
+    border: 1px solid var(--line); padding: 6px 14px;
+  }
+  .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+
+  /* ━━━ QUALIFY ━━━ */
+  .qual-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px;
+  }
+  .qual-card {
+    background: var(--cream); padding: 44px 36px;
+    border-right: 2px solid var(--bg);
+  }
+  .qual-card:last-child { border-right: none; }
+  .qual-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 52px; font-weight: 300; letter-spacing: -.02em;
+    color: var(--gold); line-height: 1; margin-bottom: 20px;
+    display: block;
+  }
+  .qual-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 16px; font-weight: 300; letter-spacing: .1em;
+    color: var(--dark); margin-bottom: 14px; line-height: 1.6;
+  }
+  .qual-body {
+    font-size: 13px; line-height: 2.1; color: var(--mid);
+  }
+
+  /* ━━━ UNDERSTAND — photos + copy ━━━ */
+  .und-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
+  }
+  .und-imgs {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+  }
+  .und-imgs img {
+    width: 100%; object-fit: cover; display: block;
+    filter: saturate(.8) brightness(.96);
+  }
+  .und-imgs img:first-child { grid-column: 1/-1; aspect-ratio: 16/9; }
+  .und-imgs img:not(:first-child) { aspect-ratio: 4/5; }
+  .und-copy p {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 14px; line-height: 2.4; color: var(--mid);
+  }
+  .und-copy p + p { margin-top: 22px; }
+
+  /* ━━━ EDUCATE — dark strip ━━━ */
+  .edu-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start;
+  }
+  .edu-copy p {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 14px; line-height: 2.5; color: rgba(240,235,224,.72);
+  }
+  .edu-copy p + p { margin-top: 24px; }
+  .edu-points { list-style: none; }
+  .edu-points li {
+    padding: 20px 0; border-bottom: 1px solid rgba(255,255,255,0.1);
+    display: flex; gap: 20px; align-items: flex-start;
+  }
+  .edu-points li:first-child { border-top: 1px solid rgba(255,255,255,0.1); }
+  .edu-icon {
+    width: 36px; height: 36px; flex-shrink: 0;
+    border: 1px solid var(--gold); border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14px; color: var(--gold); margin-top: 2px;
+  }
+  .edu-item-t {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 15px; font-weight: 300; letter-spacing: .08em;
+    color: var(--cream); margin-bottom: 6px;
+  }
+  .edu-item-b {
+    font-size: 13px; line-height: 1.9; color: rgba(240,235,224,.62);
+  }
+
+  /* ━━━ STIMULATE — quote banner ━━━ */
+  .stim-wrap {
+    text-align: center; padding: 80px 48px;
+  }
+  .stim-quote {
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 300;
+    font-size: clamp(22px, 3vw, 40px);
+    letter-spacing: .12em; line-height: 1.8;
+    color: var(--dark); margin-bottom: 20px;
+  }
+  .stim-quote em {
+    font-style: normal; color: var(--accent);
+    font-size: 1.18em; font-weight: 400;
+  }
+  .stim-sub {
+    font-size: 13px; letter-spacing: .14em;
+    color: var(--sub); line-height: 2;
+  }
+
+  /* ━━━ NARROW ━━━ */
+  .narrow-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 3px;
+    margin-bottom: 56px;
+  }
+  .ncard {
+    background: var(--dark); color: var(--cream);
+    padding: 40px 36px;
+  }
+  .ncard-label {
+    font-size: 9px; letter-spacing: .4em;
+    text-transform: uppercase; color: var(--gold);
+    display: block; margin-bottom: 16px;
+  }
+  .ncard-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 18px; font-weight: 300; letter-spacing: .1em;
+    color: var(--cream); margin-bottom: 14px; line-height: 1.6;
+  }
+  .ncard-body {
+    font-size: 13px; line-height: 2.1;
+    color: rgba(240,235,224,.68);
+  }
+
+  /* ━━━ CTA BLOCK ━━━ */
+  .cta-block {
+    background: var(--cream); padding: 72px 48px;
+    text-align: center;
+  }
+  .cta-block h2 {
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 300;
+    font-size: clamp(20px, 2.4vw, 30px);
+    letter-spacing: .12em; color: var(--dark);
+    margin-bottom: 16px; line-height: 1.7;
+  }
+  .cta-block p {
+    font-size: 13px; line-height: 2; color: var(--mid);
+    margin-bottom: 40px;
+  }
+  .cta-btns {
+    display: flex; justify-content: center;
+    gap: 14px; flex-wrap: wrap;
+  }
+
+  /* ━━━ MINI FAQ ━━━ */
+  .mfaq { max-width: 720px; margin: 0 auto; }
+  .mfaq-item { border-bottom: 1px solid var(--line); }
+  .mfaq-btn {
+    width: 100%; background: none; border: none; cursor: pointer;
+    display: flex; justify-content: space-between; align-items: center;
+    gap: 20px; padding: 24px 0; text-align: left;
+  }
+  .mfaq-q {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 14px; font-weight: 300; letter-spacing: .06em;
+    color: var(--dark); line-height: 1.7;
+  }
+  .mfaq-cross {
+    flex-shrink: 0; width: 18px; height: 18px; position: relative;
+  }
+  .mfaq-cross::before, .mfaq-cross::after {
+    content: ''; position: absolute; background: var(--sub); transition: .3s;
+  }
+  .mfaq-cross::before { width:18px; height:1px; top:50%; left:0; transform:translateY(-50%); }
+  .mfaq-cross::after  { width:1px; height:18px; left:50%; top:0; transform:translateX(-50%); }
+  .mfaq-item.open .mfaq-cross::after { transform:translateX(-50%) rotate(90deg); opacity:0; }
+  .mfaq-a {
+    max-height: 0; overflow: hidden; padding-bottom: 0;
+    transition: max-height .35s ease, padding-bottom .35s ease;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 13px; line-height: 2.2; color: var(--mid);
+  }
+  .mfaq-item.open .mfaq-a { max-height: 500px; padding-bottom: 24px; }
+
+  @media (max-width: 900px) {
+    #hero { grid-template-columns: 1fr; }
+    .hero-img { height: 55vw; min-height: 280px; }
+    .hero-body { padding: 48px 28px; }
+    .qual-grid { grid-template-columns: 1fr; }
+    .qual-card { border-right: none; border-bottom: 2px solid var(--bg); }
+    .und-grid, .edu-grid, .narrow-grid { grid-template-columns: 1fr; gap: 44px; }
+    .cta-block { padding: 56px 28px; }
+  }
+
+  /* ━━━ VOICES ━━━ */
+  .voices-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+  }
+  .voice-card {
+    background: #fff; border: 1px solid var(--line);
+    padding: 32px 28px 28px; position: relative;
+    overflow: hidden;
+  }
+  .voice-card::before {
+    content: '\201C';
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 80px; font-weight: 300; line-height: 1;
+    color: var(--gold); opacity: .22;
+    position: absolute; top: 8px; right: 20px;
+  }
+  .voice-stars {
+    color: var(--gold); font-size: 14px; letter-spacing: 2px;
+    margin-bottom: 16px; display: block;
+  }
+  .voice-body {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 13px; line-height: 2.2; color: var(--mid);
+    margin-bottom: 20px;
+  }
+  .voice-name {
+    font-size: 11px; letter-spacing: .2em; color: var(--sub);
+  }
+  @media (max-width: 900px) {
+    .voices-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ━━━ FLOW ━━━ */
+  .flow-steps {
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    gap: 0; position: relative;
+  }
+  .flow-steps::before {
+    content: ''; position: absolute;
+    top: 28px; left: calc(12.5%); right: calc(12.5%);
+    height: 1px; background: var(--gold); z-index: 0;
+  }
+  .flow-step {
+    text-align: center; padding: 0 20px 0;
+    position: relative; z-index: 1;
+  }
+  .flow-num {
+    width: 56px; height: 56px; border-radius: 50%;
+    background: var(--dark); color: var(--gold);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px; font-weight: 300;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 20px;
+  }
+  .flow-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 15px; font-weight: 300; letter-spacing: .08em;
+    color: var(--dark); margin-bottom: 10px;
+  }
+  .flow-body {
+    font-size: 12px; line-height: 2; color: var(--sub);
+  }
+  @media (max-width: 900px) {
+    .flow-steps { grid-template-columns: 1fr 1fr; gap: 32px; }
+    .flow-steps::before { display: none; }
+  }
+
+  /* ━━━ STICKY CTA (mobile) ━━━ */
+  .sticky-cta {
+    display: none;
+    position: fixed; bottom: 0; left: 0; right: 0; z-index: 300;
+    padding: 12px 16px;
+    background: rgba(26,26,24,.96); backdrop-filter: blur(8px);
+    gap: 10px;
+  }
+  @media (max-width: 900px) {
+    .sticky-cta { display: flex; }
+  }
+  .sticky-cta a {
+    flex: 1; display: flex; align-items: center; justify-content: center;
+    gap: 6px; padding: 14px 8px;
+    font-size: 13px; font-weight: 400; letter-spacing: .1em;
+    text-decoration: none; border-radius: 2px;
+  }
+  .sticky-rsv { color: var(--dark); background: var(--gold); }
+  .sticky-line { color: #fff; background: #06C755; }
+
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://acus-web.com/#business",
+      "name": "鍼灸サロンAcus",
+      "alternateName": "Acus",
+      "description": "広島県福山市の鍼灸サロン。美容鍼・首こり・頭痛・睡眠ケアを完全個室・担当者制で提供。2013年開院。",
+      "url": "https://acus-web.com/",
+      "image": "https://acus-web.com/img/hero.jpg",
+      "telephone": "",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "春日池6-23",
+        "addressLocality": "福山市",
+        "addressRegion": "広島県",
+        "postalCode": "720-0823",
+        "addressCountry": "JP"
+      },
+      "openingHoursSpecification": [
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Wednesday","Thursday","Friday"], "opens": "10:00", "closes": "19:30" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday","Sunday"], "opens": "10:00", "closes": "17:00" }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/acus_fukuyama/",
+        "https://www.instagram.com/mari_acus/",
+        "https://www.instagram.com/kanae.harikyu/"
+      ],
+      "priceRange": "¥4,000〜¥28,900",
+      "currenciesAccepted": "JPY",
+      "paymentAccepted": "Cash",
+      "foundingDate": "2013"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://acus-web.com/#website",
+      "url": "https://acus-web.com/",
+      "name": "鍼灸サロンAcus",
+      "inLanguage": "ja"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header id="hdr">
+  <div class="hdr-in">
+    <a href="index.html" class="hdr-logo">Acus</a>
+    <nav class="hdr-nav">
+      <a href="index.html"  class='active'>トップ</a>
+      <a href="menu.html"   >メニュー・料金</a>
+      <a href="staff.html"  >スタッフ</a>
+      <a href="access.html" >アクセス</a>
+      <a href="faq.html"    >よくある質問</a>
+    </nav>
+    <div class="hdr-cta">
+      <a href="https://lin.ee/wasvy2y" class="btn-line-h" target="_blank" rel="noopener">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.12 2 11.2c0 4.02 2.67 7.46 6.45 8.93.47.17.4.46.3.96l-.19 1.07c-.06.33-.3 1.28 1.12.7 1.43-.59 7.68-4.52 10.47-7.75A9.01 9.01 0 0 0 22 11.2C22 6.12 17.52 2 12 2z"/></svg>
+        LINE
+      </a>
+      <a href="https://edisone.jp/salonacus/" class="btn-rsv-h" target="_blank" rel="noopener">予約する</a>
+    </div>
+    <button class="hdr-toggle" id="hdr-toggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="drawer">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div id="drawer">
+  <nav class="drw-nav">
+    <a href="index.html"  onclick="closeDrawer()">トップ</a>
+    <a href="menu.html"   onclick="closeDrawer()">メニュー・料金</a>
+    <a href="staff.html"  onclick="closeDrawer()">スタッフ</a>
+    <a href="access.html" onclick="closeDrawer()">アクセス</a>
+    <a href="faq.html"    onclick="closeDrawer()">よくある質問</a>
+  </nav>
+  <div class="drw-cta">
+    <a href="https://edisone.jp/salonacus/" class="drw-rsv" target="_blank" rel="noopener">オンライン予約</a>
+    <a href="https://lin.ee/wasvy2y"        class="drw-line" target="_blank" rel="noopener">LINE 予約・お問い合わせ</a>
+  </div>
+</div>
+
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-img">
+    <img src="img/hero.jpg" alt="鍼灸サロンAcus 施術イメージ" fetchpriority="high">
+  </div>
+  <div class="hero-body">
+    <p class="hero-kicker r">Fukuyama, Hiroshima — Since 2013</p>
+    <h1 class="hero-catch r d1">
+      「あ、なんか私、<em>可愛くなった。</em>」<br>
+      体の奥から整える<br>鍼灸サロン、Acus
+    </h1>
+    <p class="hero-sub r d2">
+      美容鍼　◆　首こり・頭痛　◆　睡眠・慢性疲労<br>
+      完全個室　◆　予約制　◆　担当者制
+    </p>
+    <div class="hero-badges r d2">
+      <span class="hero-badge">完全個室</span>
+      <span class="hero-badge">予約制</span>
+      <span class="hero-badge">担当者制</span>
+      <span class="hero-badge">初回歓迎</span>
+    </div>
+    <div class="hero-btns r d2">
+      <a href="https://edisone.jp/salonacus/" class="btn-fill"   target="_blank" rel="noopener">オンライン予約</a>
+      <a href="https://lin.ee/wasvy2y"        class="btn-line-g" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.12 2 11.2c0 4.02 2.67 7.46 6.45 8.93.47.17.4.46.3.96l-.19 1.07c-.06.33-.3 1.28 1.12.7 1.43-.59 7.68-4.52 10.47-7.75A9.01 9.01 0 0 0 22 11.2C22 6.12 17.52 2 12 2z"/></svg>
+        LINEで相談
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- QUALIFY：選ばれる3つの理由 -->
+<section class="sec" style="padding:0; background:var(--bg);">
+  <div class="qual-grid">
+    <div class="qual-card r">
+      <span class="qual-num">01</span>
+      <p class="qual-title">体だけでなく、<br>生活も心も整える</p>
+      <p class="qual-body">一時的な対処ではなく、筋肉・神経・血流の根本に鍼でアプローチ。サボっている機能を「リブート」させることで、施術後の毎日が変わります。</p>
+    </div>
+    <div class="qual-card r d1">
+      <span class="qual-num">02</span>
+      <p class="qual-title">あなただけの<br>「身体の取扱説明書」</p>
+      <p class="qual-body">完全個室・担当者制。その日の体調や季節の変化に合わせ、毎回オーダーメイドで施術を行います。「これさえすれば完璧」ではなく、あなたに合った方法を一緒に探します。</p>
+    </div>
+    <div class="qual-card r d2">
+      <span class="qual-num">03</span>
+      <p class="qual-title">安全を最優先にした<br>誠実な施術</p>
+      <p class="qual-body">鍼の領域を超えると判断した場合は、西洋医学（病院）への受診を積極的にご紹介します。お客様にとって本当に最善な選択肢を一緒に考えます。</p>
+    </div>
+  </div>
+</section>
+
+<!-- UNDERSTAND：共感 -->
+<section class="sec cream" id="about">
+  <div class="wrap">
+    <div class="und-grid">
+      <div class="und-imgs r">
+        <img src="img/about1.jpg" alt="サロンイメージ" loading="lazy">
+        <img src="img/about2.jpg" alt="施術イメージ" loading="lazy">
+        <img src="img/about3.jpg" alt="施術イメージ2" loading="lazy">
+      </div>
+      <div class="und-copy r d1">
+        <p class="sec-label">About Acus</p>
+        <h2 class="sec-h2">頑張っているのに、<br>もう一段階上に<br>行けない気がする。</h2>
+        <p>食事も気をつけている。睡眠も取ろうとしている。スキンケアも続けている。</p>
+        <p>それでも、鏡を見ると「なんとなく疲れた顔」。原因がわからないまま、なんとなく不調が続く。</p>
+        <p>その「なんとなく」の正体は、筋肉・神経・血流のバランスの乱れです。表面のケアでは届かない深層に、鍼は直接アプローチできます。</p>
+        <p>Acusは、そのリブートを提供する場所です。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATE：根拠 -->
+<section class="sec dark">
+  <div class="wrap">
+    <div class="edu-grid">
+      <div class="r">
+        <p class="sec-label" style="color:rgba(240,235,224,.38)">Why Acus Works</p>
+        <h2 class="sec-h2 lt">鍼でしか届かない<br>深層へのアプローチ</h2>
+        <div class="edu-copy">
+          <p>広島県福山市の鍼灸サロン「Acus」が提供するのは、体の表面からは届かない深層の筋肉・神経への直接アプローチ。</p>
+          <p>虚弱体質の方には体質改善のための鍼を行い、自己治癒力・免疫力を高めて「病気にならない体づくり」をサポートします。単に凝りをほぐすだけでなく、生活の質そのものを引き上げます。</p>
+        </div>
+      </div>
+      <ul class="edu-points r d1">
+        <li>
+          <div class="edu-icon">01</div>
+          <div>
+            <p class="edu-item-t">筋肉・神経・血流を根本から整える</p>
+            <p class="edu-item-b">表面ケアでは届かない深層に、鍼は直接アプローチ。緊張をほぐし、血流を促進します。</p>
+          </div>
+        </li>
+        <li>
+          <div class="edu-icon">02</div>
+          <div>
+            <p class="edu-item-t">免疫力・自己治癒力を高める</p>
+            <p class="edu-item-b">お灸の温熱刺激が自律神経を整え、免疫機能の向上・増血作用・抗炎症作用をもたらします。</p>
+          </div>
+        </li>
+        <li>
+          <div class="edu-icon">03</div>
+          <div>
+            <p class="edu-item-t">美容と治療は「根っこ」が同じ</p>
+            <p class="edu-item-b">首こり・頭痛も、くすみ・たるみも、原因は同じバランスの乱れ。内側から整えると、表情が変わります。</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- STIMULATE：感情を動かす -->
+<section class="sec" style="padding:0; background:var(--bg);">
+  <div class="stim-wrap r">
+    <p class="stim-quote">
+      施術後、鏡を見て自然と思った。<br>
+      <em>「あ、なんか私、可愛くなった。」</em>
+    </p>
+    <p class="stim-sub">
+      ただ凝りがほぐれるだけでなく、心も体も、毎日の生活までが整っていく。<br>
+      それが鍼灸サロンAcusの目指すものです。
+    </p>
+  </div>
+</section>
+
+<!-- NARROW：絞り込み -->
+<section class="sec cream">
+  <div class="wrap">
+    <p class="sec-label r">For You</p>
+    <h2 class="sec-h2 r">本気で自分の体と<br>向き合いたい方へ</h2>
+    <div class="narrow-grid r">
+      <div class="ncard">
+        <span class="ncard-label">Private &amp; Exclusive</span>
+        <p class="ncard-title">完全個室・完全予約制<br>担当者制のプライベート空間</p>
+        <p class="ncard-body">同時間帯に他のお客様が入ることはありません。あなただけのための時間と空間で、深く向き合います。</p>
+      </div>
+      <div class="ncard">
+        <span class="ncard-label">Bespoke Treatment</span>
+        <p class="ncard-title">毎回変わる<br>オーダーメイドの施術</p>
+        <p class="ncard-body">その日の体調・季節・生活の変化に合わせて施術内容を調整。「自分の身体の取扱説明書」を一緒につくっていきます。</p>
+      </div>
+    </div>
+    <p class="r" style="font-family:'Noto Serif JP',serif; font-size:14px; line-height:2.3; color:var(--mid); max-width:640px;">
+      年齢を重ねることを後ろ向きに捉えるのではなく、趣味も仕事も家族との時間も全力で楽しめる「新しいスタートライン」に立ちませんか。
+    </p>
+  </div>
+</section>
+
+<!-- VOICES：お客様の声 -->
+<section class="sec dark">
+  <div class="wrap">
+    <p class="sec-label r" style="color:rgba(240,235,224,.38)">Customer Voices</p>
+    <h2 class="sec-h2 lt r">施術を受けた方の声</h2>
+    <div class="voices-grid r">
+      <div class="voice-card">
+        <span class="voice-stars">★★★★★</span>
+        <p class="voice-body">美容鍼を始めて3ヶ月。「顔色が全然違う」「なんか若返った？」って友人に言われました。肌のトーンが明らかに上がって、化粧のりも良くなりました。</p>
+        <span class="voice-name">30代 女性 / 美容鍼</span>
+      </div>
+      <div class="voice-card">
+        <span class="voice-stars">★★★★★</span>
+        <p class="voice-body">10年以上悩んでいた慢性頭痛が、4〜5回の施術でほとんどなくなりました。薬に頼らなくてよくなったことが一番うれしいです。</p>
+        <span class="voice-name">40代 女性 / 首こり・頭痛</span>
+      </div>
+      <div class="voice-card">
+        <span class="voice-stars">★★★★★</span>
+        <p class="voice-body">眠れない・疲れが抜けないで来院。施術後の帰り道、久しぶりに「体が軽い」と感じました。継続して通い、今は夜ぐっすり眠れています。</p>
+        <span class="voice-name">50代 女性 / 睡眠・慢性疲労</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FLOW：初めての流れ -->
+<section class="sec cream">
+  <div class="wrap">
+    <p class="sec-label r">First Visit Flow</p>
+    <h2 class="sec-h2 r">初めての方の流れ</h2>
+    <div class="flow-steps r">
+      <div class="flow-step">
+        <div class="flow-num">01</div>
+        <p class="flow-title">ご予約</p>
+        <p class="flow-body">オンライン予約またはLINEより24時間受付。「初めてです」とひと言添えるだけで大丈夫です。</p>
+      </div>
+      <div class="flow-step">
+        <div class="flow-num">02</div>
+        <p class="flow-title">ご来院・カウンセリング</p>
+        <p class="flow-body">現在のお体の状態、気になる症状や目標をゆっくりヒアリング。施術プランを一緒に考えます。</p>
+      </div>
+      <div class="flow-step">
+        <div class="flow-num">03</div>
+        <p class="flow-title">施術</p>
+        <p class="flow-body">完全個室でリラックスして受けていただけます。体調に合わせて鍼の本数・ツボを毎回調整します。</p>
+      </div>
+      <div class="flow-step">
+        <div class="flow-num">04</div>
+        <p class="flow-title">アフタートーク</p>
+        <p class="flow-body">施術後の体の変化や、ご自宅でできるセルフケアをお伝えします。次回のプランも一緒に考えます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACTION CTA -->
+<section class="sec" style="padding:0;">
+  <div class="cta-block r">
+    <h2>まずは、気軽にLINEで相談してください</h2>
+    <p>
+      24時間受付中。「こんな症状なんですが…」という<br>
+      ご相談だけでも大丈夫です。
+    </p>
+    <div class="cta-btns">
+      <a href="https://lin.ee/wasvy2y" class="btn-line-g" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.12 2 11.2c0 4.02 2.67 7.46 6.45 8.93.47.17.4.46.3.96l-.19 1.07c-.06.33-.3 1.28 1.12.7 1.43-.59 7.68-4.52 10.47-7.75A9.01 9.01 0 0 0 22 11.2C22 6.12 17.52 2 12 2z"/></svg>
+        LINEで無料相談
+      </a>
+      <a href="https://edisone.jp/salonacus/" class="btn-fill" target="_blank" rel="noopener">オンライン予約</a>
+    </div>
+  </div>
+</section>
+
+<!-- MINI FAQ（離脱防止） -->
+<section class="sec cream">
+  <div class="wrap">
+    <p class="sec-label r">FAQ</p>
+    <h2 class="sec-h2 r">鍼が初めての方へ</h2>
+    <div class="mfaq r">
+
+      <div class="mfaq-item">
+        <button class="mfaq-btn">
+          <span class="mfaq-q">鍼は痛くないですか？怖いのですが…</span>
+          <span class="mfaq-cross"></span>
+        </button>
+        <div class="mfaq-a">使用する鍼は0.12〜0.18mmと非常に細く、そのまま眠ってしまわれる方がほとんどです。体調に合わせて本数・太さを調整しますので、初めての方も安心してお越しください。</div>
+      </div>
+
+      <div class="mfaq-item">
+        <button class="mfaq-btn">
+          <span class="mfaq-q">何回通えば効果を感じられますか？</span>
+          <span class="mfaq-cross"></span>
+        </button>
+        <div class="mfaq-a">初回の施術後から「なんか体が軽い」とおっしゃる方が多くいらっしゃいます。体質・症状によって異なりますが、まずは1回体験してみてください。担当者が現在の状態をお伝えします。</div>
+      </div>
+
+      <div class="mfaq-item">
+        <button class="mfaq-btn">
+          <span class="mfaq-q">美容鍼と治療の鍼、どちらを選べばいいですか？</span>
+          <span class="mfaq-cross"></span>
+        </button>
+        <div class="mfaq-a">首こり・頭痛・疲労感など体の不調も、くすみ・たるみなど美容のお悩みも、原因は同じバランスの乱れです。カウンセリングで今のお体の状態を聞いた上で、最適なプランをご提案します。まずはLINEでご相談ください。</div>
+      </div>
+
+      <div class="mfaq-item">
+        <button class="mfaq-btn">
+          <span class="mfaq-q">予約はどうすればいいですか？</span>
+          <span class="mfaq-cross"></span>
+        </button>
+        <div class="mfaq-a">24時間受付のオンライン予約（Edison）またはLINEからご予約いただけます。LINEでは相談しながら予約することも可能です。電話対応はしておりませんのでご了承ください。</div>
+      </div>
+
+    </div>
+    <p class="r" style="margin-top:32px;">
+      <a href="faq.html" class="btn-stroke">すべてのよくある質問を見る</a>
+    </p>
+  </div>
+</section>
+
+
+<footer>
+  <div class="wrap">
+    <div class="ftr-in">
+      <div>
+        <a href="index.html" class="ftr-logo">Acus</a>
+        <p class="ftr-addr">
+          美容と眠りの鍼灸サロン<br>
+          〒720-0823<br>広島県福山市春日池6-23
+        </p>
+      </div>
+      <div class="ftr-cols">
+        <div class="ftr-col">
+          <h4>Site</h4>
+          <ul>
+            <li><a href="index.html">トップ</a></li>
+            <li><a href="menu.html">メニュー・料金</a></li>
+            <li><a href="staff.html">スタッフ</a></li>
+            <li><a href="access.html">アクセス</a></li>
+            <li><a href="faq.html">よくある質問</a></li>
+          </ul>
+        </div>
+        <div class="ftr-col">
+          <h4>Reserve</h4>
+          <ul>
+            <li><a href="https://edisone.jp/salonacus/" target="_blank" rel="noopener">オンライン予約</a></li>
+            <li><a href="https://lin.ee/wasvy2y"        target="_blank" rel="noopener">LINE 公式</a></li>
+          </ul>
+        </div>
+        <div class="ftr-col">
+          <h4>SNS</h4>
+          <ul>
+            <li><a href="https://www.instagram.com/mari_acus/"     target="_blank" rel="noopener">Instagram（鈴木）</a></li>
+            <li><a href="https://www.instagram.com/kanae.harikyu/" target="_blank" rel="noopener">Instagram（佐藤）</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="ftr-btm">
+      <span>&copy; 2013 鍼灸サロンAcus. All rights reserved.</span>
+      <span>Fukuyama, Hiroshima</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reveal
+  const io = new IntersectionObserver(es => {
+    es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('vis'); io.unobserve(e.target); } });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.r').forEach(el => io.observe(el));
+
+  // Drawer
+  const toggle = document.getElementById('hdr-toggle');
+  const drawer = document.getElementById('drawer');
+  toggle.addEventListener('click', () => {
+    const isOpen = drawer.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', String(isOpen));
+    toggle.setAttribute('aria-label', isOpen ? 'メニューを閉じる' : 'メニューを開く');
+    const s = toggle.querySelectorAll('span');
+    if (isOpen) {
+      s[0].style.transform = 'rotate(45deg) translate(5px,5px)';
+      s[1].style.opacity = '0';
+      s[2].style.transform = 'rotate(-45deg) translate(5px,-5px)';
+    } else { s[0].style.transform = s[1].style.opacity = s[2].style.transform = ''; }
+  });
+  function closeDrawer() {
+    drawer.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.setAttribute('aria-label', 'メニューを開く');
+    const s = toggle.querySelectorAll('span');
+    s[0].style.transform = s[1].style.opacity = s[2].style.transform = '';
+  }
+  // Mini FAQ
+  document.querySelectorAll('.mfaq-btn').forEach(b => {
+    b.addEventListener('click', () => b.closest('.mfaq-item').classList.toggle('open'));
+  });
+  // Header scroll shadow + Back to top
+  const hdr = document.getElementById('hdr');
+  const bt = document.querySelector('.back-top');
+  window.addEventListener('scroll', () => {
+    hdr.classList.toggle('scrolled', window.scrollY > 10);
+    bt.classList.toggle('vis', window.scrollY > 400);
+  }, { passive: true });
+  bt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+</script>
+
+<button class="back-top" aria-label="ページトップへ戻る">
+  <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<!-- mobile sticky CTA -->
+<div class="sticky-cta" id="stickyCta">
+  <a href="https://edisone.jp/salonacus/" class="sticky-rsv" target="_blank" rel="noopener">オンライン予約</a>
+  <a href="https://lin.ee/wasvy2y" class="sticky-line" target="_blank" rel="noopener">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.12 2 11.2c0 4.02 2.67 7.46 6.45 8.93.47.17.4.46.3.96l-.19 1.07c-.06.33-.3 1.28 1.12.7 1.43-.59 7.68-4.52 10.47-7.75A9.01 9.01 0 0 0 22 11.2C22 6.12 17.52 2 12 2z"/></svg>
+    LINE相談
+  </a>
+</div>
+</body></html>
