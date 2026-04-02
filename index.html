@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>鍼灸サロンAcus｜広島県福山市の美容鍼・首こり・頭痛</title>
   <meta name="description" content="広島県福山市の鍼灸サロンAcus。美容鍼・首こり・頭痛・睡眠ケアを完全個室・担当者制で提供。2013年開院。体の深層から整えるオーダーメイドの鍼灸治療。">
+  <meta name="google-site-verification" content="dm0UX3Rk90EE_xkQB9pZtgbB06HR-o8TZzA9hxKGEm0">
   <link rel="canonical" href="https://acus-web.com/">
   <link rel="icon" type="image/png" href="img/favicon.png">
   <link rel="apple-touch-icon" href="img/favicon.png">
@@ -117,7 +118,7 @@
     width: 100%; object-fit: cover; display: block;
     filter: saturate(.8) brightness(.96);
   }
-  .und-imgs img:first-child { grid-column: 1/-1; aspect-ratio: 16/9; }
+  .und-imgs img:first-child { grid-column: 1/-1; aspect-ratio: 16/9; object-position: center 10%; }
   .und-imgs img:not(:first-child) { aspect-ratio: 4/5; }
   .und-copy p {
     font-family: 'Noto Serif JP', serif;
@@ -406,7 +407,7 @@
 
 <header id="hdr">
   <div class="hdr-in">
-    <a href="index.html" class="hdr-logo">Acus</a>
+    <a href="index.html" class="hdr-logo"><img src="img/logo.png" alt="鍼灸サロンAcus" width="160" height="46"></a>
     <nav class="hdr-nav">
       <a href="index.html"  class='active'>トップ</a>
       <a href="menu.html"   >メニュー・料金</a>
@@ -715,7 +716,7 @@
   <div class="wrap">
     <div class="ftr-in">
       <div>
-        <a href="index.html" class="ftr-logo">Acus</a>
+        <a href="index.html" class="ftr-logo"><img src="img/logo.png" alt="鍼灸サロンAcus" width="160" height="52"></a>
         <p class="ftr-addr">
           美容と眠りの鍼灸サロン<br>
           〒721-0917<br>広島県福山市春日池6-23
@@ -789,12 +790,11 @@
   });
   // Header scroll shadow + Back to top
   const hdr = document.getElementById('hdr');
-  const bt = document.querySelector('.back-top');
   window.addEventListener('scroll', () => {
     hdr.classList.toggle('scrolled', window.scrollY > 10);
-    bt.classList.toggle('vis', window.scrollY > 400);
+    document.querySelector('.back-top')?.classList.toggle('vis', window.scrollY > 400);
   }, { passive: true });
-  bt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  document.querySelector('.back-top')?.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 </script>
 
 <button class="back-top" aria-label="ページトップへ戻る">
