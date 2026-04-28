@@ -1,10 +1,9 @@
-﻿<!DOCTYPE html>
-<html lang="ja">
-<head>
+<!DOCTYPE html>
+<html lang="ja"><head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJNHNDB2DZ"></script>
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BJNHNDB2DZ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -29,8 +28,8 @@
   <meta name="twitter:description" content="鍼灸サロンAcusのメニューと料金。初回¥9,200〜。広島県福山市。">
   <meta name="twitter:image" content="https://acus-web.com/img/hero.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Noto+Serif+JP:wght@200;300;400&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&amp;family=Noto+Serif+JP:wght@200;300;400&amp;family=Noto+Sans+JP:wght@300;400;500&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <noscript><style>.r{opacity:1!important;transform:none!important;}</style></noscript>
   <style>
@@ -52,8 +51,35 @@
   .sg-card { padding:28px 24px; background:var(--cream); border-top:3px solid var(--gold); }
   .sg-title { font-family:'Noto Serif JP',serif; font-size:15px; font-weight:300; letter-spacing:.08em; color:var(--dark); margin-bottom:10px; }
   .sg-body { font-size:12px; line-height:2; color:var(--mid); }
-  @media(max-width:600px){ .td-cat{display:none;} .symptom-guide{grid-template-columns:1fr;} }
+  @media(max-width:600px){
+    .td-cat{display:none;}
+    .symptom-guide{grid-template-columns:1fr;}
 
+    /* ボタンをスマホで押しやすく */
+    .cta-row {
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 36px;
+    }
+    .cta-row a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 56px;
+      font-size: 15px;
+      letter-spacing: .1em;
+      box-sizing: border-box;
+    }
+    /* ドロワー内ボタンも大きく */
+    .drw-rsv, .drw-line {
+      min-height: 52px;
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
   </style>
 <script type="application/ld+json">
 {
@@ -123,22 +149,43 @@
   ]
 }
 </script>
-</head>
+<style id="claude-agent-animation-styles">
+      @keyframes claude-pulse {
+        0% {
+          box-shadow: 
+            inset 0 0 10px rgba(217, 119, 87, 0.5),
+            inset 0 0 20px rgba(217, 119, 87, 0.3),
+            inset 0 0 30px rgba(217, 119, 87, 0.1);
+        }
+        50% {
+          box-shadow: 
+            inset 0 0 15px rgba(217, 119, 87, 0.7),
+            inset 0 0 25px rgba(217, 119, 87, 0.5),
+            inset 0 0 35px rgba(217, 119, 87, 0.2);
+        }
+        100% {
+          box-shadow: 
+            inset 0 0 10px rgba(217, 119, 87, 0.5),
+            inset 0 0 20px rgba(217, 119, 87, 0.3),
+            inset 0 0 30px rgba(217, 119, 87, 0.1);
+        }
+      }
+    </style></head>
 <body>
 
-<header id="hdr">
+<header id="hdr" class="">
   <div class="hdr-in">
     <a href="index.html" class="hdr-logo"><img src="img/logo.png" alt="鍼灸サロンAcus" width="160" height="46"></a>
     <nav class="hdr-nav">
       <a href="index.html">トップ</a>
-      <a href="menu.html"   class="active">メニュー・料金</a>
-      <a href="staff.html"  >スタッフ</a>
-      <a href="access.html" >アクセス</a>
-      <a href="faq.html"    >よくある質問</a>
+      <a href="menu.html" class="active">メニュー・料金</a>
+      <a href="staff.html">スタッフ</a>
+      <a href="access.html">アクセス</a>
+      <a href="faq.html">よくある質問</a>
     </nav>
     <div class="hdr-cta">
       <a href="https://lin.ee/wasvy2y" class="btn-line-h" target="_blank" rel="noopener">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.12 2 11.2c0 4.02 2.67 7.46 6.45 8.93.47.17.4.46.3.96l-.19 1.07c-.06.33-.3 1.28 1.12.7 1.43-.59 7.68-4.52 10.47-7.75A9.01 9.01 0 0 0 22 11.2C22 6.12 17.52 2 12 2z"/></svg>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.12 2 11.2c0 4.02 2.67 7.46 6.45 8.93.47.17.4.46.3.96l-.19 1.07c-.06.33-.3 1.28 1.12.7 1.43-.59 7.68-4.52 10.47-7.75A9.01 9.01 0 0 0 22 11.2C22 6.12 17.52 2 12 2z"></path></svg>
         LINE
       </a>
       <a href="https://edisone.jp/salonacus/" class="btn-rsv-h" target="_blank" rel="noopener">予約する</a>
@@ -148,15 +195,15 @@
 </header>
 <div id="drawer">
   <nav class="drw-nav">
-    <a href="index.html"  onclick="closeDrawer()">トップ</a>
-    <a href="menu.html"   onclick="closeDrawer()">メニュー・料金</a>
-    <a href="staff.html"  onclick="closeDrawer()">スタッフ</a>
+    <a href="index.html" onclick="closeDrawer()">トップ</a>
+    <a href="menu.html" onclick="closeDrawer()">メニュー・料金</a>
+    <a href="staff.html" onclick="closeDrawer()">スタッフ</a>
     <a href="access.html" onclick="closeDrawer()">アクセス</a>
-    <a href="faq.html"    onclick="closeDrawer()">よくある質問</a>
+    <a href="faq.html" onclick="closeDrawer()">よくある質問</a>
   </nav>
   <div class="drw-cta">
     <a href="https://edisone.jp/salonacus/" class="drw-rsv" target="_blank" rel="noopener">オンライン予約</a>
-    <a href="https://lin.ee/wasvy2y"        class="drw-line" target="_blank" rel="noopener">LINE 予約・お問い合わせ</a>
+    <a href="https://lin.ee/wasvy2y" class="drw-line" target="_blank" rel="noopener">LINE 予約・お問い合わせ</a>
   </div>
 </div>
 
@@ -171,60 +218,59 @@
 
 <section class="sec">
   <div class="wrap">
-    <p class="sec-label r">初めての方へ</p>
-    <h2 class="sec-h2 r">お悩み別の選び方</h2>
-    <div class="symptom-guide r">
+    <p class="sec-label r vis">初めての方へ</p>
+    <h2 class="sec-h2 r vis">お悩み別の選び方</h2>
+    <div class="symptom-guide r vis">
       <div class="sg-card">
         <p class="sg-title">肩こり・頭痛・目の疲れ</p>
-        <p class="sg-body">首の深部筋肉へのアプローチで神経・血流を整えます。慢性的な頭痛は薬なしで改善できるケースが多いです。→ <strong>からだの鍼</strong></p>
+        <p class="sg-body">スマホやPC、家事で負担のかかった深い筋肉へのアプローチ。心地よい奥への響きがくせになります。腰痛・坐骨神経痛にもおすすめ。→ <strong>からだの鍼</strong></p>
       </div>
       <div class="sg-card">
-        <p class="sg-title">くすみ・たるみ・美容</p>
-        <p class="sg-body">顔の筋肉・血流・コラーゲン産生に直接アプローチ。肌のトーンアップや引き締めを内側から。→ <strong>お顔の鍼</strong></p>
+        <p class="sg-title">疲れ顔・笑いにくい・食いしばり</p>
+        <p class="sg-body">お顔の筋肉に不必要な摩擦を加えず、必要な箇所にだけピンポイントでアプローチします。ボトックス効きすぎや、日ごろから無表情時間が長い方→ <strong>お顔の鍼</strong></p>
       </div>
       <div class="sg-card">
         <p class="sg-title">疲れが抜けない・眠れない</p>
-        <p class="sg-body">自律神経を整えて睡眠の質・免疫力を向上。「施術後に爆睡した」とおっしゃる方も多数。→ <strong>からだの鍼 + お灸</strong></p>
+        <p class="sg-body">頭部への鍼で『副交感神経優位』な状態を作り、お腹へのEMSで全身の血流を一時的に促します。旅行でいっぱい歩いた後のような満足感→ <strong>お顔の鍼 + EMS</strong></p>
       </div>
     </div>
 
-    <p class="sec-label r">初回</p>
-    <h2 class="sec-h2 r">新規コース</h2>
-    <table class="menu-tbl r">
+    <p class="sec-label r vis">初回</p>
+    <h2 class="sec-h2 r vis">新規コース</h2>
+    <table class="menu-tbl r vis">
       <tbody>
-        <tr><td class="td-cat"><span class="badge badge-new">初回</span></td><td class="td-name">首肩こり・頭痛・眼精疲労がつらい<small class="td-time">約60〜80分｜カウンセリング・施術・アフタートーク込み</small></td><td class="td-price">9,200円</td></tr>
-        <tr><td class="td-cat"><span class="badge badge-new">初回</span></td><td class="td-name">疲れが抜けない／慢性腰痛・坐骨神経痛<small class="td-time">約60〜80分｜カウンセリング・施術・アフタートーク込み</small></td><td class="td-price">9,200円</td></tr>
-        <tr><td class="td-cat"><span class="badge badge-new">初回</span></td><td class="td-name">美容・肌コンディションを整える<small class="td-time">約60〜80分｜カウンセリング・施術・アフタートーク込み</small></td><td class="td-price">9,200円</td></tr>
+        <tr><td class="td-cat"><span class="badge badge-new">初回</span></td><td class="td-name">頭痛・眼精疲労・美容鍼／お顔の鍼<small class="td-time">60分｜カウンセリング・施術</small></td><td class="td-price">9,200円</td></tr>
+        <tr><td class="td-cat"><span class="badge badge-new">初回</span></td><td class="td-name">疲労・肩こり・腰痛／からだの鍼<small class="td-time">60分｜カウンセリング・施術</small></td><td class="td-price">9,200円</td></tr>
+        <tr><td class="td-cat"><span class="badge badge-new">初回</span></td><td class="td-name">肌コンディションを整える／美容鍼体験＋ハーブピーリング<small class="td-time">100分｜カウンセリング・施術</small></td><td class="td-price">9,200円</td></tr>
       </tbody>
     </table>
 
-    <p class="sec-label r" style="margin-top:64px;">通常コース</p>
-    <h2 class="sec-h2 r">単品メニュー</h2>
-    <table class="menu-tbl r">
+    <p class="sec-label r vis" style="margin-top:64px;"></p>
+    <h2 class="sec-h2 r vis">通常メニュー</h2>
+    <table class="menu-tbl r vis">
       <tbody>
-        <tr><td class="td-cat">美容</td><td class="td-name">お顔の鍼<small class="td-time">約40分</small></td><td class="td-price">7,000円</td></tr>
-        <tr><td class="td-cat">治療</td><td class="td-name">からだの鍼<small class="td-time">約40分</small></td><td class="td-price">7,000円</td></tr>
-        <tr><td class="td-cat">美容</td><td class="td-name">ハーブピーリング<small class="td-time">約30分</small></td><td class="td-price">5,500円</td></tr>
-        <tr><td class="td-cat">ボディ</td><td class="td-name">楽トレ<small class="td-time">約30分</small></td><td class="td-price">4,500円</td></tr>
-        <tr><td class="td-cat">治療</td><td class="td-name">部分コース（鍼灸）<small class="td-time">約20分</small></td><td class="td-price">4,000円</td></tr>
+        <tr><td class="td-cat">美容</td><td class="td-name">お顔の鍼<small class="td-time">45分</small></td><td class="td-price">7,000円</td></tr>
+        <tr><td class="td-cat">治療</td><td class="td-name">からだの鍼<small class="td-time">45分</small></td><td class="td-price">7,000円</td></tr>
+        <tr><td class="td-cat">美容</td><td class="td-name">ハーブピーリング<small class="td-time">45分</small></td><td class="td-price">5,500円</td></tr>
+        <tr><td class="td-cat">ボディ</td><td class="td-name">楽トレ<small class="td-time">45分</small></td><td class="td-price">4,500円</td></tr>
       </tbody>
     </table>
 
-    <p class="sec-label r" style="margin-top:64px;">組み合わせコース</p>
-    <h2 class="sec-h2 r">セットメニュー</h2>
+    <p class="sec-label r" style="margin-top:64px;"></p>
+    <h2 class="sec-h2 r">コースメニュー</h2>
     <table class="menu-tbl r">
       <tbody>
-        <tr><td class="td-cat">全身</td><td class="td-name">全身の鍼【からだとお顔】<small class="td-time">約80分</small></td><td class="td-price">11,500円</td></tr>
-        <tr><td class="td-cat">美容</td><td class="td-name">お顔の鍼 ＋ ハーブピーリング<small class="td-time">約70分</small></td><td class="td-price">9,500円</td></tr>
-        <tr><td class="td-cat">美容</td><td class="td-name">お顔の鍼 ＋ 楽トレ<small class="td-time">約70分</small></td><td class="td-price">8,800円</td></tr>
-        <tr><td class="td-cat"><span class="badge badge-pm">Premium</span></td><td class="td-name">【美容】ベビーフェイスリセット<small class="td-time">約120分｜お顔の鍼・ハーブピーリング・楽トレ・アロマ全身鍼込み</small></td><td class="td-price">28,900円</td></tr>
+        <tr><td class="td-cat">全身</td><td class="td-name">全身の鍼【からだとお顔】<small class="td-time">80分</small></td><td class="td-price">11,500円</td></tr>
+        <tr><td class="td-cat">美容</td><td class="td-name">お顔の鍼 ＋ ハーブピーリング<small class="td-time">90分</small></td><td class="td-price">9,500円</td></tr>
+        <tr><td class="td-cat">美容</td><td class="td-name">お顔の鍼 ＋ 楽トレ<small class="td-time">90分</small></td><td class="td-price">8,800円</td></tr>
+        <tr><td class="td-cat"><span class="badge badge-pm">Premium</span></td><td class="td-name">【美容】プレミアムエイジングケア<small class="td-time">120分｜お顔の鍼・カーボキシーセラピー・小顔矯正・楽トレ</small></td><td class="td-price">28,900円</td></tr>
       </tbody>
     </table>
 
     <div class="cta-row r">
-      <a href="https://edisone.jp/salonacus/" class="btn-fill"   target="_blank" rel="noopener">オンライン予約</a>
-      <a href="https://lin.ee/wasvy2y"        class="btn-line-g" target="_blank" rel="noopener">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.12 2 11.2c0 4.02 2.67 7.46 6.45 8.93.47.17.4.46.3.96l-.19 1.07c-.06.33-.3 1.28 1.12.7 1.43-.59 7.68-4.52 10.47-7.75A9.01 9.01 0 0 0 22 11.2C22 6.12 17.52 2 12 2z"/></svg>
+      <a href="https://edisone.jp/salonacus/" class="btn-fill" target="_blank" rel="noopener">オンライン予約</a>
+      <a href="https://lin.ee/wasvy2y" class="btn-line-g" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.12 2 11.2c0 4.02 2.67 7.46 6.45 8.93.47.17.4.46.3.96l-.19 1.07c-.06.33-.3 1.28 1.12.7 1.43-.59 7.68-4.52 10.47-7.75A9.01 9.01 0 0 0 22 11.2C22 6.12 17.52 2 12 2z"></path></svg>
         LINEで相談
       </a>
     </div>
@@ -260,20 +306,20 @@
           <h4>Reserve</h4>
           <ul>
             <li><a href="https://edisone.jp/salonacus/" target="_blank" rel="noopener">オンライン予約</a></li>
-            <li><a href="https://lin.ee/wasvy2y"        target="_blank" rel="noopener">LINE 公式</a></li>
+            <li><a href="https://lin.ee/wasvy2y" target="_blank" rel="noopener">LINE 公式</a></li>
           </ul>
         </div>
         <div class="ftr-col">
           <h4>SNS</h4>
           <ul>
-            <li><a href="https://www.instagram.com/mari_acus/"     target="_blank" rel="noopener">Instagram（鈴木）</a></li>
+            <li><a href="https://www.instagram.com/mari_acus/" target="_blank" rel="noopener">Instagram（鈴木）</a></li>
             <li><a href="https://www.instagram.com/kanae.harikyu/" target="_blank" rel="noopener">Instagram（佐藤）</a></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="ftr-btm">
-      <span>&copy; 2013 鍼灸サロンAcus. All rights reserved.</span>
+      <span>© 2013 鍼灸サロンAcus. All rights reserved.</span>
       <span>Fukuyama, Hiroshima</span>
     </div>
   </div>
@@ -311,6 +357,12 @@
   bt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 </script>
 <button class="back-top" aria-label="ページトップへ戻る">
-  <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+  <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg>
 </button>
-</body></html>
+
+<div id="claude-agent-glow-border" style="position: fixed; inset: 0px; pointer-events: none; z-index: 2147483646; opacity: 1; transition: opacity 0.3s ease-in-out; animation: 2s ease-in-out 0s infinite normal none running claude-pulse; box-shadow: rgba(217, 119, 87, 0.5) 0px 0px 10px inset, rgba(217, 119, 87, 0.3) 0px 0px 20px inset, rgba(217, 119, 87, 0.1) 0px 0px 30px inset;"></div><div id="claude-agent-stop-container" style="position: fixed; bottom: 16px; left: 50%; transform: translateX(-50%); justify-content: center; align-items: center; pointer-events: none; z-index: 2147483647;"><button id="claude-agent-stop-button" style="position: relative; transform: translateY(0px); padding: 12px 16px; background: rgb(250, 249, 245); color: rgb(20, 20, 19); border: 0.5px solid rgba(31, 30, 29, 0.4); border-radius: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-size: 14px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; box-shadow: rgba(217, 119, 87, 0.24) 0px 40px 80px, rgba(217, 119, 87, 0.24) 0px 4px 14px; transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1); opacity: 1; user-select: none; pointer-events: auto; white-space: nowrap; margin: 0px auto;">
+      <svg width="16" height="16" viewBox="0 0 256 256" fill="currentColor" style="margin-right: 12px; vertical-align: middle;">
+        <path d="M128,20A108,108,0,1,0,236,128,108.12,108.12,0,0,0,128,20Zm0,192a84,84,0,1,1,84-84A84.09,84.09,0,0,1,128,212Zm40-112v56a12,12,0,0,1-12,12H100a12,12,0,0,1-12-12V100a12,12,0,0,1,12-12h56A12,12,0,0,1,168,100Z"></path>
+      </svg>
+      <span style="vertical-align: middle;">Stop Claude</span>
+    </button></div></body></html>
