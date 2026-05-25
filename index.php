@@ -583,41 +583,7 @@
 <body>
 
 <!-- HEADER -->
-<header id="hdr">
-  <div class="hdr-in">
-    <a href="index.html" class="hdr-logo"><img src="img/logo.png" alt="鍼灸サロンAcus" width="160" height="46"></a>
-    <nav class="hdr-nav">
-      <a href="index.html" class="active">トップ</a>
-      <a href="menu.html">メニュー・料金</a>
-      <a href="staff.html">スタッフ</a>
-      <a href="/column/index.html">コラム</a>
-      <a href="access.html">アクセス</a>
-      <a href="faq.html">よくある質問</a>
-    </nav>
-    <div class="hdr-cta">
-      <a href="https://lin.ee/wasvy2y" class="btn-line-h" target="_blank" rel="noopener">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.12 2 11.2c0 4.02 2.67 7.46 6.45 8.93.47.17.4.46.3.96l-.19 1.07c-.06.33-.3 1.28 1.12.7 1.43-.59 7.68-4.52 10.47-7.75A9.01 9.01 0 0 0 22 11.2C22 6.12 17.52 2 12 2z"/></svg>
-        LINE
-      </a>
-      <a href="https://edisone.jp/salonacus/" class="btn-rsv-h" target="_blank" rel="noopener">予約する</a>
-    </div>
-    <button class="hdr-toggle" id="hdr-toggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
-  </div>
-</header>
-<div id="drawer">
-  <nav class="drw-nav">
-    <a href="index.html" onclick="closeDrawer()">トップ</a>
-    <a href="menu.html" onclick="closeDrawer()">メニュー・料金</a>
-    <a href="staff.html" onclick="closeDrawer()">スタッフ</a>
-    <a href="/column/index.html" onclick="closeDrawer()">コラム</a>
-    <a href="access.html" onclick="closeDrawer()">アクセス</a>
-    <a href="faq.html" onclick="closeDrawer()">よくある質問</a>
-  </nav>
-  <div class="drw-cta">
-    <a href="https://edisone.jp/salonacus/" class="drw-rsv" target="_blank" rel="noopener">オンライン予約</a>
-    <a href="https://lin.ee/wasvy2y" class="drw-line" target="_blank" rel="noopener">LINE 予約・お問い合わせ</a>
-  </div>
-</div>
+<?php $page_active = 'top'; include 'includes/header.php'; ?>
 
 <!-- 1. HERO -->
 <section class="hero">
@@ -885,57 +851,7 @@
 </section>
 
 <!-- FOOTER -->
-<footer>
-  <div class="wrap">
-    <div class="ftr-in">
-      <div>
-        <a href="index.html" class="ftr-logo"><img src="img/logo.png" alt="鍼灸サロンAcus" width="160" height="52"></a>
-        <p class="ftr-addr">美容と眠りの鍼灸サロン<br>〒721-0917<br>広島県福山市春日池6-23</p>
-      </div>
-      <div class="ftr-cols">
-        <div class="ftr-col">
-          <h4>Site</h4>
-          <ul>
-            <li><a href="index.html">トップ</a></li>
-            <li><a href="menu.html">メニュー・料金</a></li>
-            <li><a href="staff.html">スタッフ</a></li>
-            <li><a href="/column/index.html">コラム</a></li>
-            <li><a href="access.html">アクセス</a></li>
-            <li><a href="faq.html">よくある質問</a></li>
-          </ul>
-        </div>
-        <div class="ftr-col">
-          <h4>Reserve</h4>
-          <ul>
-            <li><a href="https://edisone.jp/salonacus/" target="_blank" rel="noopener">オンライン予約</a></li>
-            <li><a href="https://lin.ee/wasvy2y" target="_blank" rel="noopener">LINE 公式</a></li>
-          </ul>
-        </div>
-        <div class="ftr-col">
-          <h4>SNS</h4>
-          <ul>
-            <li><a href="https://www.instagram.com/mari_acus/" target="_blank" rel="noopener">Instagram（鈴木）</a></li>
-            <li><a href="https://www.instagram.com/kanae.harikyu/" target="_blank" rel="noopener">Instagram（佐藤）</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="ftr-btm">
-      <span>&copy; 2013 鍼灸サロンAcus. All rights reserved.</span>
-      <span>Fukuyama, Hiroshima</span>
-    </div>
-  </div>
-</footer>
-
-<!-- Mobile sticky CTA -->
-<div class="sticky-cta">
-  <a class="sticky-rsv" href="https://edisone.jp/salonacus/">24時間オンライン予約</a>
-  <a class="sticky-line" href="https://lin.ee/wasvy2y">LINE相談</a>
-</div>
-
-<button class="back-top" id="back-top" aria-label="トップへ戻る">
-  <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
-</button>
+<?php include 'includes/footer.php'; ?>
 
 <script>
   const toggle = document.getElementById('hdr-toggle');

@@ -1,1 +1,7 @@
 # test
+RewriteEngine On
+RewriteRule ^index\.html$ /index.php [R=301,L]
+RewriteRule ^menu\.html$ /menu.php [R=301,L]
+RewriteRule ^staff\.html$ /staff.php [R=301,L]
+RewriteRule ^access\.html$ /access.php [R=301,L]
+RewriteRule ^faq\.html$ /faq.php [R=301,L]
