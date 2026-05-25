@@ -886,7 +886,28 @@
     .info-table td { font-size: 13px; }
   }
 </style>
-</head>
+<style id="claude-agent-animation-styles">
+      @keyframes claude-pulse {
+        0% {
+          box-shadow: 
+            inset 0 0 10px rgba(217, 119, 87, 0.5),
+            inset 0 0 20px rgba(217, 119, 87, 0.3),
+            inset 0 0 30px rgba(217, 119, 87, 0.1);
+        }
+        50% {
+          box-shadow: 
+            inset 0 0 15px rgba(217, 119, 87, 0.7),
+            inset 0 0 25px rgba(217, 119, 87, 0.5),
+            inset 0 0 35px rgba(217, 119, 87, 0.2);
+        }
+        100% {
+          box-shadow: 
+            inset 0 0 10px rgba(217, 119, 87, 0.5),
+            inset 0 0 20px rgba(217, 119, 87, 0.3),
+            inset 0 0 30px rgba(217, 119, 87, 0.1);
+        }
+      }
+    </style></head>
 <body>
 
 <div class="site">
@@ -1199,12 +1220,24 @@
 
 </div><!-- /site -->
   <!-- FLOATING RESERVE (スマホ用) -->
-  <div><a class="floating-reserve-btn" href="https://reserva.be/salonacus/reserve?mode=service_staff&amp;search_evt_no=aeeJwzNTUxNzcHAARnAUQ" target="_blank">
+  <div><div><a class="floating-reserve-btn" href="https://reserva.be/salonacus/reserve?mode=service_staff&amp;search_evt_no=aeeJwzNTUxNzcHAARnAUQ" target="_blank">
       【同業者専用】美容鍼予約
       <span class="sub-note">外部サイト（RESERVA）へ遷移します</span>
-  </a></div>
+  </a><a href="#" class="floating-reserve-btn training-btn" style="background-color: rgb(44, 96, 150); cursor: default;">
+      【美容鍼の技術研修】
+      <span class="sub-note">ただいま準備中</span>
+    </a></div><a href="#" class="floating-reserve-btn training-btn" style="background-color: rgb(44, 96, 150); cursor: default;">
+      【美容鍼の技術研修】
+      <span class="sub-note">ただいま準備中</span>
+    </a></div>
 
 
 
 
-</body></html>
+
+<input type="file" accept="image/*" id="hidden-image-upload" style="display: none;"><div id="claude-agent-glow-border" style="position: fixed; inset: 0px; pointer-events: none; z-index: 2147483646; opacity: 1; transition: opacity 0.3s ease-in-out; animation: 2s ease-in-out 0s infinite normal none running claude-pulse; box-shadow: rgba(217, 119, 87, 0.5) 0px 0px 10px inset, rgba(217, 119, 87, 0.3) 0px 0px 20px inset, rgba(217, 119, 87, 0.1) 0px 0px 30px inset;"></div><div id="claude-agent-stop-container" style="position: fixed; bottom: 16px; left: 50%; transform: translateX(-50%); justify-content: center; align-items: center; pointer-events: none; z-index: 2147483647;"><button id="claude-agent-stop-button" style="position: relative; transform: translateY(0px); padding: 12px 16px; background: rgb(250, 249, 245); color: rgb(20, 20, 19); border: 0.5px solid rgba(31, 30, 29, 0.4); border-radius: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-size: 14px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; box-shadow: rgba(217, 119, 87, 0.24) 0px 40px 80px, rgba(217, 119, 87, 0.24) 0px 4px 14px; transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1); opacity: 1; user-select: none; pointer-events: auto; white-space: nowrap; margin: 0px auto;">
+      <svg width="16" height="16" viewBox="0 0 256 256" fill="currentColor" style="margin-right: 12px; vertical-align: middle;">
+        <path d="M128,20A108,108,0,1,0,236,128,108.12,108.12,0,0,0,128,20Zm0,192a84,84,0,1,1,84-84A84.09,84.09,0,0,1,128,212Zm40-112v56a12,12,0,0,1-12,12H100a12,12,0,0,1-12-12V100a12,12,0,0,1,12-12h56A12,12,0,0,1,168,100Z"></path>
+      </svg>
+      <span style="vertical-align: middle;">Stop Claude</span>
+    </button></div></body></html>
