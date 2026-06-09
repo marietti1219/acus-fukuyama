@@ -10,7 +10,7 @@ a { color: inherit; text-decoration: none; }
 
 /* ━━━ DESIGN TOKENS ━━━ */
 :root {
-  --bg:     #FDFCFA;
+  --bg:     #EEE6DF;
   --cream:  #F0EBE0;
   --dark:   #1A1A18;
   --mid:    #3D3A36;
@@ -19,17 +19,32 @@ a { color: inherit; text-decoration: none; }
   --gold:   #D4B896;
   --line:   rgba(28,28,26,0.14);
   --hdr-h:  68px;
+  --text:   #222222;
+  --muted:  #444444;
+  --sans:   'Noto Sans JP', sans-serif;
+  --serif:  'Noto Serif JP', serif;
 }
 
 body {
   background: var(--bg);
-  color: var(--dark);
-  font-family: 'Noto Sans JP', sans-serif;
+  color: var(--text);
+  font-family: 'Zen Maru Gothic', var(--sans);
   font-weight: 300;
-  font-size: 15px;
-  line-height: 1.9;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
   -webkit-font-smoothing: antialiased;
 }
+
+p {
+  font-family: 'Zen Kaku Gothic Antique', var(--sans);
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  color: var(--text);
+}
+
+p, li, dd, dt, span, a { color: var(--text); }
 
 /* ━━━ HEADER ━━━ */
 #hdr {
@@ -177,7 +192,7 @@ body {
 .sec-label {
   display: flex; align-items: center; gap: 14px;
   font-size: 10px; font-weight: 400; letter-spacing: .4em;
-  color: var(--sub); text-transform: uppercase;
+  color: var(--text); text-transform: uppercase;
   margin-bottom: 40px;
 }
 .sec-label::after {
