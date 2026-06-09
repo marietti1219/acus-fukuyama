@@ -1,14 +1,14 @@
 <?php if (!isset($page_active)) $page_active = ''; ?>
 <header id="hdr">
   <div class="hdr-in">
-    <a href="index.html" class="hdr-logo"><img src="img/logo.png" alt="鍼灸サロンAcus" width="160" height="46"></a>
+    <a href="index.php" class="hdr-logo"><img src="img/logo.png" alt="鍼灸サロンAcus" width="160" height="46"></a>
     <nav class="hdr-nav">
-      <a href="index.html"<?= $page_active==='top'    ? ' class="active"' : '' ?>>トップ</a>
-      <a href="menu.html"<?= $page_active==='menu'   ? ' class="active"' : '' ?>>メニュー・料金</a>
-      <a href="staff.html"<?= $page_active==='staff'  ? ' class="active"' : '' ?>>スタッフ</a>
+      <a href="index.php"<?= $page_active==='top'    ? ' class="active"' : '' ?>>トップ</a>
+      <a href="menu.php"<?= $page_active==='menu'   ? ' class="active"' : '' ?>>メニュー・料金</a>
+      <a href="staff.php"<?= $page_active==='staff'  ? ' class="active"' : '' ?>>スタッフ</a>
       <a href="/column/index.html"<?= $page_active==='column' ? ' class="active"' : '' ?>>コラム</a>
-      <a href="access.html"<?= $page_active==='access' ? ' class="active"' : '' ?>>アクセス</a>
-      <a href="faq.html"<?= $page_active==='faq'    ? ' class="active"' : '' ?>>よくある質問</a>
+      <a href="access.php"<?= $page_active==='access' ? ' class="active"' : '' ?>>アクセス</a>
+      <a href="faq.php"<?= $page_active==='faq'    ? ' class="active"' : '' ?>>よくある質問</a>
     </nav>
     <div class="hdr-cta">
       <a href="https://lin.ee/wasvy2y" class="btn-line-h" target="_blank" rel="noopener">
@@ -22,12 +22,12 @@
 </header>
 <div id="drawer">
   <nav class="drw-nav">
-    <a href="index.html" onclick="closeDrawer()">トップ</a>
-    <a href="menu.html" onclick="closeDrawer()">メニュー・料金</a>
-    <a href="staff.html" onclick="closeDrawer()">スタッフ</a>
+    <a href="index.php" onclick="closeDrawer()">トップ</a>
+    <a href="menu.php" onclick="closeDrawer()">メニュー・料金</a>
+    <a href="staff.php" onclick="closeDrawer()">スタッフ</a>
     <a href="/column/index.html" onclick="closeDrawer()">コラム</a>
-    <a href="access.html" onclick="closeDrawer()">アクセス</a>
-    <a href="faq.html" onclick="closeDrawer()">よくある質問</a>
+    <a href="access.php" onclick="closeDrawer()">アクセス</a>
+    <a href="faq.php" onclick="closeDrawer()">よくある質問</a>
   </nav>
   <div class="drw-cta">
     <a href="https://edisone.jp/salonacus/" class="drw-rsv" target="_blank" rel="noopener">オンライン予約</a>

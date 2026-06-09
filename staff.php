@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
@@ -112,41 +112,7 @@
 </head>
 <body>
 
-<header id="hdr">
-  <div class="hdr-in">
-    <a href="index.html" class="hdr-logo"><img src="img/logo.png" alt="鍼灸サロンAcus" width="160" height="46"></a>
-    <nav class="hdr-nav">
-      <a href="index.html">トップ</a>
-      <a href="menu.html"   >メニュー・料金</a>
-      <a href="staff.html"  class="active">スタッフ</a>
-      <a href="/column/index.html">コラム</a>
-      <a href="access.html" >アクセス</a>
-      <a href="faq.html"    >よくある質問</a>
-    </nav>
-    <div class="hdr-cta">
-      <a href="https://lin.ee/wasvy2y" class="btn-line-h" target="_blank" rel="noopener">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.12 2 11.2c0 4.02 2.67 7.46 6.45 8.93.47.17.4.46.3.96l-.19 1.07c-.06.33-.3 1.28 1.12.7 1.43-.59 7.68-4.52 10.47-7.75A9.01 9.01 0 0 0 22 11.2C22 6.12 17.52 2 12 2z"/></svg>
-        LINE
-      </a>
-      <a href="https://edisone.jp/salonacus/" class="btn-rsv-h" target="_blank" rel="noopener">予約する</a>
-    </div>
-    <button class="hdr-toggle" id="hdr-toggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
-  </div>
-</header>
-<div id="drawer">
-  <nav class="drw-nav">
-    <a href="index.html"  onclick="closeDrawer()">トップ</a>
-    <a href="menu.html"   onclick="closeDrawer()">メニュー・料金</a>
-    <a href="staff.html"  onclick="closeDrawer()">スタッフ</a>
-    <a href="/column/index.html" onclick="closeDrawer()">コラム</a>
-    <a href="access.html" onclick="closeDrawer()">アクセス</a>
-    <a href="faq.html"    onclick="closeDrawer()">よくある質問</a>
-  </nav>
-  <div class="drw-cta">
-    <a href="https://edisone.jp/salonacus/" class="drw-rsv" target="_blank" rel="noopener">オンライン予約</a>
-    <a href="https://lin.ee/wasvy2y"        class="drw-line" target="_blank" rel="noopener">LINE 予約・お問い合わせ</a>
-  </div>
-</div>
+<?php $page_active = 'staff'; include 'includes/header.php'; ?>
 
 
 <div class="page-hero">
@@ -240,80 +206,5 @@
   </div>
 </div>
 
-<footer>
-  <div class="wrap">
-    <div class="ftr-in">
-      <div>
-        <a href="index.html" class="ftr-logo"><img src="img/logo.png" alt="鍼灸サロンAcus" width="160" height="52"></a>
-        <p class="ftr-addr">美容と眠りの鍼灸サロン<br>〒721-0917<br>広島県福山市春日池6-23</p>
-      </div>
-      <div class="ftr-cols">
-        <div class="ftr-col">
-          <h4>Site</h4>
-          <ul>
-            <li><a href="index.html">トップ</a></li>
-            <li><a href="menu.html">メニュー・料金</a></li>
-            <li><a href="staff.html">スタッフ</a></li>
-            <li><a href="/column/index.html">コラム</a></li>
-            <li><a href="access.html">アクセス</a></li>
-            <li><a href="faq.html">よくある質問</a></li>
-          </ul>
-        </div>
-        <div class="ftr-col">
-          <h4>Reserve</h4>
-          <ul>
-            <li><a href="https://edisone.jp/salonacus/" target="_blank" rel="noopener">オンライン予約</a></li>
-            <li><a href="https://lin.ee/wasvy2y"        target="_blank" rel="noopener">LINE 公式</a></li>
-          </ul>
-        </div>
-        <div class="ftr-col">
-          <h4>SNS</h4>
-          <ul>
-            <li><a href="https://www.instagram.com/mari_acus/"     target="_blank" rel="noopener">Instagram（鈴木）</a></li>
-            <li><a href="https://www.instagram.com/kanae.harikyu/" target="_blank" rel="noopener">Instagram（佐藤）</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="ftr-btm">
-      <span>&copy; 2013 鍼灸サロンAcus. All rights reserved.</span>
-      <span>Fukuyama, Hiroshima</span>
-    </div>
-  </div>
-</footer>
-
-<script>
-  const io = new IntersectionObserver(es => {
-    es.forEach(e => { if(e.isIntersecting){ e.target.classList.add('vis'); io.unobserve(e.target); } });
-  }, {threshold:0.08});
-  document.querySelectorAll('.r').forEach(el => io.observe(el));
-  const toggle = document.getElementById('hdr-toggle');
-  const drawer = document.getElementById('drawer');
-  toggle.addEventListener('click', () => {
-    const isOpen = drawer.classList.toggle('open');
-    toggle.setAttribute('aria-expanded', String(isOpen));
-    toggle.setAttribute('aria-label', isOpen ? 'メニューを閉じる' : 'メニューを開く');
-    const s = toggle.querySelectorAll('span');
-    if(isOpen){
-      s[0].style.transform='rotate(45deg) translate(5px,5px)'; s[1].style.opacity='0'; s[2].style.transform='rotate(-45deg) translate(5px,-5px)';
-    } else { s[0].style.transform=s[1].style.opacity=s[2].style.transform=''; }
-  });
-  function closeDrawer(){
-    drawer.classList.remove('open');
-    toggle.setAttribute('aria-expanded', 'false');
-    toggle.setAttribute('aria-label', 'メニューを開く');
-    const s=toggle.querySelectorAll('span');
-    s[0].style.transform=s[1].style.opacity=s[2].style.transform='';
-  }
-  const hdr = document.getElementById('hdr');
-  const bt = document.querySelector('.back-top');
-  window.addEventListener('scroll', () => {
-    hdr.classList.toggle('scrolled', window.scrollY > 10);
-    bt.classList.toggle('vis', window.scrollY > 400);
-  }, { passive: true });
-  bt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-</script>
-<button class="back-top" aria-label="ページトップへ戻る">
-  <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
-</button>
+<?php include 'includes/footer.php'; ?>
 </body></html>

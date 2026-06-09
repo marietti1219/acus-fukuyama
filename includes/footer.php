@@ -2,19 +2,19 @@
   <div class="wrap">
     <div class="ftr-in">
       <div>
-        <a href="index.html" class="ftr-logo"><img src="img/logo.png" alt="鍼灸サロンAcus" width="160" height="52"></a>
+        <a href="index.php" class="ftr-logo"><img src="img/logo.png" alt="鍼灸サロンAcus" width="160" height="52"></a>
         <p class="ftr-addr">美容と眠りの鍼灸サロン<br>〒721-0917<br>広島県福山市春日池6-23</p>
       </div>
       <div class="ftr-cols">
         <div class="ftr-col">
           <h4>Site</h4>
           <ul>
-            <li><a href="index.html">トップ</a></li>
-            <li><a href="menu.html">メニュー・料金</a></li>
-            <li><a href="staff.html">スタッフ</a></li>
+            <li><a href="index.php">トップ</a></li>
+            <li><a href="menu.php">メニュー・料金</a></li>
+            <li><a href="staff.php">スタッフ</a></li>
             <li><a href="/column/index.html">コラム</a></li>
-            <li><a href="access.html">アクセス</a></li>
-            <li><a href="faq.html">よくある質問</a></li>
+            <li><a href="access.php">アクセス</a></li>
+            <li><a href="faq.php">よくある質問</a></li>
           </ul>
         </div>
         <div class="ftr-col">
