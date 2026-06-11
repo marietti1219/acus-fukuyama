@@ -10,8 +10,8 @@
     gtag('js', new Date());
     gtag('config', 'G-BJNHNDB2DZ');
   </script>
-  <title>メニュー・料金 | 鍼灸サロンAcus 広島県福山市</title>
-  <meta name="description" content="鍼灸サロンAcusのメニューと料金一覧。美容鍼・からだの鍼・ハーブピーリング・楽トレ・プレミアムコース。広島県福山市。初回¥9,200〜。">
+  <title>メニュー・料金｜鍼灸サロンAcus｜福山市の鍼灸・首こり・頭痛</title>
+  <meta name="description" content="鍼灸サロンAcusのメニューと料金一覧。首こり・頭痛・慢性疲労などの不調ケアから美容鍼まで。広島県福山市。初回¥9,200〜。">
   <meta name="google-site-verification" content="dm0UX3Rk90EE_xkQB9pZtgbB06HR-o8TZzA9hxKGEm0">
   <link rel="canonical" href="https://acus-web.com/menu.html">
   <link rel="icon" type="image/png" href="img/favicon.png">

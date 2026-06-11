@@ -11,7 +11,7 @@
     gtag('js', new Date());
     gtag('config', 'G-BJNHNDB2DZ');
   </script>
-  <title>アクセス | 鍼灸サロンAcus 広島県福山市春日池</title>
+  <title>アクセス｜鍼灸サロンAcus｜福山市春日池・駐車場あり</title>
   <meta name="description" content="鍼灸サロンAcusのアクセス情報。〒721-0917 広島県福山市春日池6-23。水〜金10:00-19:30 / 土日10:00-17:00 / 月火定休。福山東ICより約10分。駐車場あり。">
   <meta name="google-site-verification" content="dm0UX3Rk90EE_xkQB9pZtgbB06HR-o8TZzA9hxKGEm0">
   <link rel="canonical" href="https://acus-web.com/access.html">
