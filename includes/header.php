@@ -31,6 +31,6 @@
   </nav>
   <div class="drw-cta">
     <a href="https://edisone.jp/salonacus/" class="drw-rsv" target="_blank" rel="noopener">オンライン予約</a>
-    <a href="https://lin.ee/wasvy2y" class="drw-line" target="_blank" rel="noopener">LINE 予約・お問い合わせ</a>
+    <a href="https://lin.ee/wasvy2y" class="drw-line" target="_blank" rel="noopener">LINE お問い合わせ</a>
   </div>
 </div>

@@ -2,13 +2,13 @@
 <html lang="ja"><head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>鍼灸サロンAcus｜広島県福山市・美容鍼・パーソナル鍼灸</title>
-  <meta name="description" content="広島県福山市で18年、36,000症例。解剖生理学に基づき、停滞した身体機能を「再起動」する大人のためのパーソナル鍼灸サロン。完全個室・担当者制・予約制。">
+  <title>鍼灸サロンAcus｜福山市の鍼灸・首こり・頭痛・慢性疲労</title>
+  <meta name="description" content="広島県福山市の鍼灸サロンAcus。首こり・頭痛・慢性疲労などの不調から美容鍼まで。完全個室・予約制・担当者制。">
   <link rel="icon" type="image/png" href="img/favicon.png">
   <link rel="apple-touch-icon" href="img/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500&amp;family=Noto+Sans+JP:wght@300;400;500&amp;display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400;500&family=Zen+Maru+Gothic:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500&family=Zen+Kaku+Gothic+Antique:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/common.css">
   <style>
     /* ===== Reset ===== */
