@@ -171,7 +171,48 @@
             inset 0 0 30px rgba(217, 119, 87, 0.1);
         }
       }
-    </style></head>
+    </style><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthAndBeautyBusiness",
+  "name": "鍼灸サロンAcus",
+  "alternateName": "アキューズ",
+  "url": "https://acus-web.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "春日池6-23",
+    "addressLocality": "福山市",
+    "addressRegion": "広島県",
+    "postalCode": "721-0917",
+    "addressCountry": "JP"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 34.4851,
+    "longitude": 133.3625
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Wednesday","Thursday","Friday"],
+      "opens": "10:00",
+      "closes": "19:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Saturday","Sunday","PublicHolidays"],
+      "opens": "10:00",
+      "closes": "17:00"
+    }
+  ],
+  "priceRange": "¥¥",
+  "image": "https://acus-web.com/img/hero.jpg",
+  "sameAs": [
+    "https://lin.ee/wasvy2y"
+  ]
+}
+</script>
+</head>
 <body>
 
 <?php $page_active = 'menu'; include 'includes/header.php'; ?>

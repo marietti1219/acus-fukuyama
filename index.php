@@ -601,6 +601,47 @@
 <meta name="twitter:title" content="鍼灸サロンAcus｜広島県福山市・美容鍼・パーソナル鍼灸">
 <meta name="twitter:description" content="広島県福山市で18年、36,000症例。解剖生理学に基づき、停滞した身体機能を「再起動」する大人のためのパーソナル鍼灸サロン。完全個室・担当者制・予約制。">
 <meta name="twitter:image" content="https://acus-web.com/img/hero.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthAndBeautyBusiness",
+  "name": "鍼灸サロンAcus",
+  "alternateName": "アキューズ",
+  "url": "https://acus-web.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "春日池6-23",
+    "addressLocality": "福山市",
+    "addressRegion": "広島県",
+    "postalCode": "721-0917",
+    "addressCountry": "JP"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 34.4851,
+    "longitude": 133.3625
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Wednesday","Thursday","Friday"],
+      "opens": "10:00",
+      "closes": "19:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Saturday","Sunday","PublicHolidays"],
+      "opens": "10:00",
+      "closes": "17:00"
+    }
+  ],
+  "priceRange": "¥¥",
+  "image": "https://acus-web.com/img/hero.jpg",
+  "sameAs": [
+    "https://lin.ee/wasvy2y"
+  ]
+}
+</script>
 </head>
 <body>
 
