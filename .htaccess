@@ -1,5 +1,12 @@
 # test
 RewriteEngine On
+
+# wwwなし・httpsに統一
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://acus-web.com/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^www\.acus-web\.com [NC]
+RewriteRule ^(.*)$ https://acus-web.com/$1 [R=301,L]
+
 RewriteRule ^index\.html$ /index.php [R=301,L]
 RewriteRule ^menu\.html$ /menu.php [R=301,L]
 RewriteRule ^staff\.html$ /staff.php [R=301,L]
