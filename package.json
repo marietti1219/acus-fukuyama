@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "build:columns": "node scripts/build-columns.mjs"
+  }
+}
