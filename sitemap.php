@@ -39,7 +39,7 @@ foreach ($articles as $article) {
   $id = htmlspecialchars($article['id']);
   $lastmod = substr($article['publishedAt'], 0, 10);
   echo "  <url>\n";
-  echo "    <loc>https://acus-web.com/column/article.html?id={$id}</loc>\n";
+  echo "    <loc>https://acus-web.com/column/{$id}/</loc>\n";
   echo "    <lastmod>{$lastmod}</lastmod>\n";
   echo "    <changefreq>yearly</changefreq>\n";
   echo "    <priority>0.7</priority>\n";
