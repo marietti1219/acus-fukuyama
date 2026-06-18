@@ -142,6 +142,7 @@
     gtag('config', 'G-BJNHNDB2DZ');
   </script>
   <link rel="canonical" href="https://acus-web.com/column/">
+  <meta name="microcms-api-key" content="wT9d8hwXj4s7ZTPdVI6bwcE7QDEkZ0ygpAw8">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="鍼灸サロンAcus">
   <meta property="og:locale" content="ja_JP">
@@ -245,31 +246,9 @@
   <div class="wrap">
     <div class="col-filter" id="js-filter" role="group" aria-label="カテゴリ絞り込み">
       <button class="col-filter-btn active" data-cat="">すべて</button>
-      <button class="col-filter-btn" data-cat="頭痛">頭痛</button>
-      <button class="col-filter-btn" data-cat="首こり">首こり</button>
-      <button class="col-filter-btn" data-cat="眼精疲労">眼精疲労</button>
     </div>
     <div class="col-grid" id="js-grid">
-      <a class="col-card" href="8wtx62ds7/" data-cat="頭痛,首こり,眼精疲労">
-  <div class="col-card-thumb-ph"><span>Column</span></div>
-  <div class="col-card-meta"><span class="col-tag">頭痛</span><span class="col-tag">首こり</span><span class="col-tag">眼精疲労</span><span class="col-date">2026.06.15</span></div>
-  <p class="col-title">頭痛薬をやめたい方へ｜市販薬と鍼灸の考え方</p>
-</a>
-<a class="col-card" href="a-fsm3nj6/" data-cat="頭痛">
-  <div class="col-card-thumb-ph"><span>Column</span></div>
-  <div class="col-card-meta"><span class="col-tag">頭痛</span><span class="col-date">2026.06.05</span></div>
-  <p class="col-title">湿布を貼り続けても頭痛が消えない理由</p>
-</a>
-<a class="col-card" href="txm8fq2_ok/" data-cat="首こり,頭痛">
-  <div class="col-card-thumb-ph"><span>Column</span></div>
-  <div class="col-card-meta"><span class="col-tag">首こり</span><span class="col-tag">頭痛</span><span class="col-date">2026.06.04</span></div>
-  <p class="col-title">ストレッチしても首こりが戻る人に足りていないもの</p>
-</a>
-<a class="col-card" href="1znjg4pdvwp/" data-cat="首こり,頭痛">
-  <div class="col-card-thumb-ph"><span>Column</span></div>
-  <div class="col-card-meta"><span class="col-tag">首こり</span><span class="col-tag">頭痛</span><span class="col-date">2026.05.25</span></div>
-  <p class="col-title">首こりがマッサージで治らない本当の理由</p>
-</a>
+      <div class="col-state"><span class="col-spinner"></span>読み込み中...</div>
     </div>
   </div>
 </section>
@@ -321,17 +300,69 @@
 </button>
 
 <script>
-  document.getElementById('js-filter').addEventListener('click', e => {
-    const btn = e.target.closest('.col-filter-btn');
-    if (!btn) return;
-    document.querySelectorAll('.col-filter-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    const cat = btn.dataset.cat;
-    document.querySelectorAll('#js-grid .col-card').forEach(card => {
-      const cardCats = card.dataset.cat ? card.dataset.cat.split(',') : [];
-      card.style.display = (cat === '' || cardCats.includes(cat)) ? '' : 'none';
+  const API_KEY  = document.querySelector('meta[name="microcms-api-key"]').content;
+  const ENDPOINT = 'https://acusfukuyama.microcms.io/api/v1/colum?orders=-publishedAt&limit=100';
+
+  function normCats(cat) {
+    if (!cat) return [];
+    return (Array.isArray(cat) ? cat : [cat]).map(c => c.trim()).filter(Boolean);
+  }
+  function esc(s) {
+    return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+  function fmtDate(iso) {
+    const d = new Date(iso);
+    return `${d.getFullYear()}.${String(d.getMonth()+1).padStart(2,'0')}.${String(d.getDate()).padStart(2,'0')}`;
+  }
+  function setupFilter() {
+    document.getElementById('js-filter').addEventListener('click', e => {
+      const btn = e.target.closest('.col-filter-btn');
+      if (!btn) return;
+      document.querySelectorAll('.col-filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const cat = btn.dataset.cat;
+      document.querySelectorAll('#js-grid .col-card').forEach(card => {
+        const cs = card.dataset.cat ? card.dataset.cat.split(',') : [];
+        card.style.display = (cat === '' || cs.includes(cat)) ? '' : 'none';
+      });
     });
-  });
+  }
+  (async () => {
+    const grid   = document.getElementById('js-grid');
+    const filter = document.getElementById('js-filter');
+    try {
+      const res = await fetch(ENDPOINT, { headers: { 'X-MICROCMS-API-KEY': API_KEY } });
+      if (!res.ok) throw new Error(res.status);
+      const { contents = [] } = await res.json();
+
+      const cats = [...new Set(contents.flatMap(a => normCats(a.category)))];
+      filter.innerHTML = [
+        '<button class="col-filter-btn active" data-cat="">すべて</button>',
+        ...cats.map(c => `<button class="col-filter-btn" data-cat="${esc(c)}">${esc(c)}</button>`)
+      ].join('');
+
+      if (!contents.length) {
+        grid.innerHTML = '<div class="col-state">記事がありません</div>';
+        return;
+      }
+      grid.innerHTML = contents.map(a => {
+        const cs  = normCats(a.category);
+        const img = a.thumbnail
+          ? `<img class="col-card-thumb" src="${esc(a.thumbnail.url)}?w=600" alt="${esc(a.title)}" loading="lazy">`
+          : `<div class="col-card-thumb-ph"><span>Column</span></div>`;
+        const tags = cs.map(c => `<span class="col-tag">${esc(c)}</span>`).join('');
+        const date = a.publishedAt ? `<span class="col-date">${fmtDate(a.publishedAt)}</span>` : '';
+        return `<a class="col-card" href="${esc(a.id)}/" data-cat="${esc(cs.join(','))}">
+  ${img}
+  <div class="col-card-meta">${tags}${date}</div>
+  <p class="col-title">${esc(a.title)}</p>
+</a>`;
+      }).join('\n');
+      setupFilter();
+    } catch {
+      grid.innerHTML = '<div class="col-state">記事を取得できませんでした</div>';
+    }
+  })();
 
   const toggle = document.getElementById('hdr-toggle');
   const drawer = document.getElementById('drawer');

@@ -26,8 +26,9 @@ function loadEnv() {
   }
 }
 
-// ── article.html / index.html からインライン <style> を抽出 ──────────────
+// ── HTML ファイルからインライン <style> を抽出（ファイルが存在しない場合は空文字を返す）──
 function extractStyle(filePath) {
+  if (!existsSync(filePath)) return '';
   const html = readFileSync(filePath, 'utf-8');
   const m = html.match(/<style>([\s\S]*?)<\/style>/);
   return m ? `<style>${m[1]}</style>` : '';
@@ -36,7 +37,7 @@ function extractStyle(filePath) {
 // ── microCMS 全記事取得（ページネーション対応）──────────────────────────
 async function fetchAllArticles(apiKey, domain, endpoint) {
   const base = `https://${domain}.microcms.io/api/v1/${endpoint}`;
-  const fields = 'id,title,publishedAt,eyecatch,category,content,description';
+  const fields = 'id,title,publishedAt,thumbnail,category,content,description';
   const limit = 100;
   let offset = 0;
   let articles = [];
@@ -255,16 +256,16 @@ const commonJs = `
 
 // ── 記事個別ページ生成 ──────────────────────────────────────────────────────
 function generateArticleHtml(article, styleBlock) {
-  const { id, title, publishedAt, eyecatch, category, content: bodyHtml = '', description } = article;
+  const { id, title, publishedAt, thumbnail, category, content: bodyHtml = '', description } = article;
   const canonical = `https://acus-web.com/column/${id}/`;
-  const ogImage = eyecatch?.url ?? 'https://acus-web.com/img/hero.jpg';
+  const ogImage = thumbnail?.url ?? 'https://acus-web.com/img/hero.jpg';
   const plainBody = bodyHtml.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
   const metaDesc = description || (plainBody.slice(0, 120) + '｜鍼灸サロンAcus');
   const crumb = title.length > 30 ? title.slice(0, 30) + '…' : title;
   const cats  = normCats(category);
   const tag   = cats.map(c => `<span class="col-tag">${esc(c)}</span>`).join('');
   const date  = publishedAt ? `<span class="art-date">${fmtDateJp(publishedAt)}</span>` : '';
-  const thumb = eyecatch ? `<img class="art-thumb" src="${esc(eyecatch.url)}" alt="${esc(title)}">` : '';
+  const thumb = thumbnail ? `<img class="col-detail-thumb" src="${esc(thumbnail.url)}" alt="${esc(title)}">` : '';
 
   return `<!DOCTYPE html>
 <html lang="ja">
@@ -291,8 +292,8 @@ ${buildHeaderHtml('../../', 'column')}
   <div class="wrap">
     <div class="art-wrap">
       <div class="art-meta">${tag}${date}</div>
-      <h1 class="art-title">${esc(title)}</h1>
       ${thumb}
+      <h1 class="art-title">${esc(title)}</h1>
       <div class="art-body">${bodyHtml}</div>
     </div>
   </div>
@@ -330,91 +331,6 @@ ${buildFooterHtml('../../', '../')}
 </html>`;
 }
 
-// ── コラム一覧ページ生成 ────────────────────────────────────────────────────
-function generateIndexHtml(articles, styleBlock) {
-  // 全記事から個別カテゴリを重複排除して収集
-  const categories = [...new Set(articles.flatMap(a => normCats(a.category)))];
-
-  const filterBtns = [
-    '<button class="col-filter-btn active" data-cat="">すべて</button>',
-    ...categories.map(c => `<button class="col-filter-btn" data-cat="${esc(c)}">${esc(c)}</button>`)
-  ].join('\n      ');
-
-  const cards = articles.map(a => {
-    const cats = normCats(a.category);
-    const thumb = a.eyecatch
-      ? `<img class="col-card-thumb" src="${esc(a.eyecatch.url)}?w=600" alt="${esc(a.title)}" loading="lazy">`
-      : `<div class="col-card-thumb-ph"><span>Column</span></div>`;
-    const tag  = cats.map(c => `<span class="col-tag">${esc(c)}</span>`).join('');
-    const date = a.publishedAt ? `<span class="col-date">${fmtDateDot(a.publishedAt)}</span>` : '';
-    return `<a class="col-card" href="${esc(a.id)}/" data-cat="${esc(cats.join(','))}">
-  ${thumb}
-  <div class="col-card-meta">${tag}${date}</div>
-  <p class="col-title">${esc(a.title)}</p>
-</a>`;
-  }).join('\n');
-
-  const desc = '鍼灸サロンAcusのコラム。首こり・頭痛、美容鍼、鍼灸についての情報など、お役立ち情報をお届けします。広島県福山市の鍼灸サロン。';
-
-  return `<!DOCTYPE html>
-<html lang="ja">
-<head>
-${buildHead({
-    title: 'コラム｜鍼灸サロンAcus｜広島県福山市',
-    description: desc,
-    canonical: 'https://acus-web.com/column/',
-    ogType: 'website',
-    ogImage: 'https://acus-web.com/img/hero.jpg',
-    styleBlock
-  })}
-</head>
-<body>
-
-${buildHeaderHtml('../', 'column')}
-
-<div class="page-hero">
-  <div class="wrap">
-    <p style="font-size:10px;letter-spacing:.3em;color:rgba(240,235,224,.38);margin-bottom:12px;">COLUMN</p>
-    <h1>コラム</h1>
-    <p>鍼灸と健康についての情報をお届けします</p>
-  </div>
-</div>
-
-<section class="sec">
-  <div class="wrap">
-    <div class="col-filter" id="js-filter" role="group" aria-label="カテゴリ絞り込み">
-      ${filterBtns}
-    </div>
-    <div class="col-grid" id="js-grid">
-      ${cards}
-    </div>
-  </div>
-</section>
-
-${buildFooterHtml('../', 'index.html')}
-
-<button class="back-top" id="back-top" aria-label="トップへ戻る">
-  <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
-</button>
-
-<script>
-  document.getElementById('js-filter').addEventListener('click', e => {
-    const btn = e.target.closest('.col-filter-btn');
-    if (!btn) return;
-    document.querySelectorAll('.col-filter-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    const cat = btn.dataset.cat;
-    document.querySelectorAll('#js-grid .col-card').forEach(card => {
-      const cardCats = card.dataset.cat ? card.dataset.cat.split(',') : [];
-      card.style.display = (cat === '' || cardCats.includes(cat)) ? '' : 'none';
-    });
-  });
-${commonJs}
-</script>
-</body>
-</html>`;
-}
-
 // ── メイン ───────────────────────────────────────────────────────────────────
 async function main() {
   loadEnv();
@@ -426,8 +342,10 @@ async function main() {
     throw new Error('.env に MICROCMS_API_KEY、MICROCMS_SERVICE_DOMAIN、MICROCMS_COLUMN_ENDPOINT を設定してください。');
   }
 
-  const articleStyleBlock = extractStyle(join(ROOT, 'column', 'article.html'));
-  const indexStyleBlock   = extractStyle(join(ROOT, 'column', 'index.html'));
+  const articleStyleBlock = extractStyle(join(ROOT, 'column', 'article.html')) + `
+<style>
+  .col-detail-thumb { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block; margin-bottom: 32px; }
+</style>`;
 
   console.log('microCMS から記事を取得中...');
   const articles = await fetchAllArticles(apiKey, domain, endpoint);
@@ -443,12 +361,7 @@ async function main() {
     generated++;
   }
 
-  // 一覧ページ再生成
-  writeFileSync(join(ROOT, 'column', 'index.html'), generateIndexHtml(articles, indexStyleBlock), 'utf-8');
-  const allCats = [...new Set(articles.flatMap(a => normCats(a.category)))];
-  console.log(`  ✓ column/index.html（カテゴリ: ${allCats.join('、')}）`);
-
-  console.log(`\n完了: 記事 ${generated} ページ＋一覧ページを生成しました。`);
+  console.log(`\n完了: 記事 ${generated} ページを生成しました。（column/index.html は動的フェッチのため再生成をスキップ）`);
 }
 
 main().catch(e => { console.error(e.message); process.exit(1); });
