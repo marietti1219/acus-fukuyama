@@ -230,18 +230,19 @@
   <div class="wrap">
     <p class="sec-label r vis">初めての方へ</p>
     <h2 class="sec-h2 r vis">お悩み別の選び方</h2>
+    <!-- 眼精疲労対応 修正 -->
     <div class="symptom-guide r vis">
       <div class="sg-card">
-        <p class="sg-title">肩こり・頭痛・目の疲れ</p>
-        <p class="sg-body">スマホやPC、家事で負担のかかった深い筋肉へのアプローチ。心地よい奥への響きがくせになります。腰痛・坐骨神経痛にもおすすめ。→ <strong>からだの鍼</strong></p>
+        <p class="sg-title">目の疲れ・頭痛・なんとなくの不調</p>
+        <p class="sg-body">スマホやPC作業による目の奥の重さ、夕方の後頭部のこわばり、繰り返す頭痛。自律神経の乱れも含めて評価します。→ <strong>眼精疲労・頭痛・自律神経の鍼</strong></p>
+      </div>
+      <div class="sg-card">
+        <p class="sg-title">肩こり・腰痛・からだの痛み</p>
+        <p class="sg-body">長引く肩こり・腰痛・坐骨神経痛など、からだの痛みに深層からアプローチします。→ <strong>肩こり・腰痛・からだの痛みの鍼</strong></p>
       </div>
       <div class="sg-card">
         <p class="sg-title">疲れ顔・笑いにくい・食いしばり</p>
-        <p class="sg-body">お顔の筋肉に不必要な摩擦を加えず、必要な箇所にだけピンポイントでアプローチします。ボトックス効きすぎや、日ごろから無表情時間が長い方→ <strong>お顔の鍼</strong></p>
-      </div>
-      <div class="sg-card">
-        <p class="sg-title">疲れが抜けない・眠れない</p>
-        <p class="sg-body">頭部への鍼で『副交感神経優位』な状態を作り、お腹へのEMSで全身の血流を一時的に促します。旅行でいっぱい歩いた後のような満足感→ <strong>お顔の鍼 + EMS</strong></p>
+        <p class="sg-body">お顔の筋肉に不必要な摩擦を加えず、必要な箇所にだけピンポイントでアプローチします。→ <strong>お顔の鍼（美容鍼）</strong></p>
       </div>
     </div>
 
@@ -250,10 +251,9 @@
     <table class="menu-tbl r vis">
       <tbody>
         <!-- 眼精疲労対応 修正 -->
-        <tr><td class="td-cat"><span class="badge badge-new">初回</span></td><td class="td-name">デジタルアイケア鍼／眼精疲労・目の奥の痛み・スマホ首・運転疲労<small class="td-time">60分｜カウンセリング・施術</small></td><td class="td-price">9,200円</td></tr>
-        <tr><td class="td-cat"><span class="badge badge-new">初回</span></td><td class="td-name">お顔の鍼／頭痛・眼精疲労・ボトックス効きすぎ・食いしばり・ダウンタイム<small class="td-time">60分｜カウンセリング・施術</small></td><td class="td-price">9,200円</td></tr>
-        <tr><td class="td-cat"><span class="badge badge-new">初回</span></td><td class="td-name">からだの鍼／疲労・肩こり・腰痛・坐骨神経痛・胃腸不快症状・冷え・生理痛<small class="td-time">60分｜カウンセリング・施術</small></td><td class="td-price">9,200円</td></tr>
-        <tr><td class="td-cat"><span class="badge badge-new">初回</span></td><td class="td-name">美容鍼体験＋ハーブピーリング／肌コンディション・乾燥・ざらつき・ごわつき<small class="td-time">100分｜カウンセリング・施術</small></td><td class="td-price">9,200円</td></tr>
+        <tr><td class="td-cat"><span class="badge badge-new">初回</span></td><td class="td-name">眼精疲労・頭痛・自律神経の鍼<small class="td-time">カウンセリング・施術　80分</small></td><td class="td-price">5,800円</td></tr>
+        <tr><td class="td-cat"><span class="badge badge-new">初回</span></td><td class="td-name">肩こり・腰痛・からだの痛みの鍼<small class="td-time">カウンセリング・施術　80分</small></td><td class="td-price">5,800円</td></tr>
+        <tr><td class="td-cat"><span class="badge badge-new">初回</span></td><td class="td-name">お顔の鍼（美容鍼）<small class="td-time">カウンセリング・施術　100分</small></td><td class="td-price">5,800円</td></tr>
       </tbody>
     </table>
 
