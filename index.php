@@ -2,8 +2,8 @@
 <html lang="ja"><head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>鍼灸サロンAcus｜福山市の鍼灸・首こり・頭痛・慢性疲労</title>
-  <meta name="description" content="広島県福山市の鍼灸サロンAcus。首こり・頭痛・慢性疲労などの不調から美容鍼まで。完全個室・予約制・担当者制。">
+  <title>鍼灸サロンAcus｜福山市の眼精疲労・スマホ疲れ・頭痛専門の鍼灸院</title>
+  <meta name="description" content="スマホ・PC・タブレット・車の運転による眼精疲労・頭痛・首こりに特化した福山市の鍼灸院。完全個室・完全予約制。2013年開院、地域密着の伴走型鍼灸サロンAcus。">
   <link rel="icon" type="image/png" href="img/favicon.png">
   <link rel="apple-touch-icon" href="img/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -656,14 +656,15 @@
     <div class="wrap">
       <div class="hero-body" style="position:relative; bottom:auto; padding:0;">
         <p class="hero-eyebrow">Since 2013</p>
+        <!-- 眼精疲労対応 修正 -->
         <h1 class="hero-h1">
           <em>鍼灸サロンAcus</em>
-          「薬でごまかし続けている、その不調」に。
+          スマホ・PC・運転で酷使した目と体の、その疲れに。
         </h1>
         <p class="hero-tagline">
-          頭痛・首こり・慢性疲労など、長引く不調は<br>
-          筋肉・神経・血流など原因は様々です。<br>
-          2013年から、地元福山で、長引く不調でお悩みの皆様に<br>
+          眼精疲労・頭痛・首こりなど、デジタル機器や運転による慢性的な不調は<br>
+          目・筋肉・神経・血流が複合的に絡み合っています。<br>
+          2013年から、地元福山で、目と体の疲れでお悩みの皆様に<br>
           寄り添ってきた、伴走型の鍼灸院です。
         </p>
         <div class="hero-labels">
@@ -681,16 +682,34 @@
   </div>
 </section>
 
+<!-- 眼精疲労対応 修正 -->
+<!-- FOR YOU -->
+<section class="section" style="padding:56px 0;">
+  <div class="wrap">
+    <span class="eyebrow">For You</span>
+    <h2 class="sec-title">こんな方に来てほしい</h2>
+    <ul style="display:flex;flex-wrap:wrap;gap:12px;margin-top:28px;list-style:none;padding:0;">
+      <li style="background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:10px 20px;font-size:13.5px;color:var(--text);">在宅ワーク・テレワークで一日中PCを見ている</li>
+      <li style="background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:10px 20px;font-size:13.5px;color:var(--text);">スマホを手放せず、目がしょぼしょぼする</li>
+      <li style="background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:10px 20px;font-size:13.5px;color:var(--text);">長距離・長時間の運転後に頭が重くなる</li>
+      <li style="background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:10px 20px;font-size:13.5px;color:var(--text);">眼科で異常なしと言われたのに目が疲れる</li>
+      <li style="background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:10px 20px;font-size:13.5px;color:var(--text);">目薬を差してもすぐ目が乾く・重い</li>
+      <li style="background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:10px 20px;font-size:13.5px;color:var(--text);">夕方になると頭痛がひどくなる</li>
+    </ul>
+  </div>
+</section>
+
 <!-- 2. INSIGHT -->
 <div class="insight">
   <div class="insight-inner" style="grid-template-columns:1fr; max-width:640px;">
     <div>
       <p class="insight-eyebrow">Status &amp; Insight</p>
       <h2 class="insight-title">「なんとなくの不調」を<br>放置しない。</h2>
+      <!-- 眼精疲労対応 修正 -->
       <p class="insight-body">
-        頑張っているのに、体がついてこない。<br><br>
-        休んでも抜けない疲れ、繰り返す頭痛、張り続ける首と肩。<br><br>
-        「どこに行けばいいか分からない」不調に一緒に向き合い、伴走します。
+        画面を見続けているのに、目と体がついてこない。<br><br>
+        休んでも抜けない目の疲れ、繰り返す頭痛、張り続ける首と肩。<br><br>
+        スマホ・PC・運転による疲れに「どこに行けばいいか分からない」方に、一緒に向き合い、伴走します。
       </p>
     </div>
   </div>
@@ -704,6 +723,14 @@
     <p class="sec-sub">お悩みに合わせたコースをご用意しています。</p>
 
     <div class="programs-grid">
+      <!-- 眼精疲労対応 修正 -->
+      <div class="program-card">
+        <div class="program-card-head">
+          <span class="program-tag tag-perform">眼精疲労・デジタル疲労</span>
+          <div class="program-name">デジタルアイケア鍼</div>
+          <p class="program-desc">スマホ・PC・タブレット・運転による目の疲れ・眼精疲労に特化したコース。目の周囲・首・肩の経穴へのアプローチで、目の奥の重さ・ぼやけ・頭痛を根本からケアします。</p>
+        </div>
+      </div>
       <div class="program-card">
         <div class="program-card-head">
           <span class="program-tag tag-perform">不調・パフォーマンス</span>
@@ -760,6 +787,13 @@
           <p>元フィットネスインストラクターの知識と経験を活かし、不調や痛みから回復した後のフェーズにも対応しています。痛みが出ない体づくり、より良いパフォーマンスの発揮。「治った」で終わりにせず、その先の生活まで一緒に考えていきます。</p>
         </div>
       </div>
+      <!-- 眼精疲労対応 修正 -->
+      <div class="value-item">
+        <div class="value-body" style="grid-column:1/-1;">
+          <div class="value-title-row"><span class="value-num">04</span><strong>スマホ・PC・運転による眼精疲労に、専門的にアプローチします</strong></div>
+          <p>一日中画面を見る仕事・スマホの長時間使用・長距離ドライブ。現代特有のこれらの習慣が引き起こす眼精疲労は、目だけでなく首・肩・自律神経にも波及します。目の周囲の経穴（ツボ）への鍼と、首肩の深層筋へのアプローチを組み合わせることで、表面的なマッサージでは届かない疲れにアクセスします。</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -801,6 +835,17 @@
           </div>
         </div>
         <p class="voice-text">施術後の帰り道に感じる体の軽さ。夜ぐっすり眠れる幸せを実感しています。</p>
+      </div>
+      <!-- 眼精疲労対応 修正 -->
+      <div class="voice-card">
+        <div class="voice-header">
+          <span class="voice-tag">眼精疲労・デジタル疲労</span>
+          <div class="voice-meta">
+            <div class="voice-stars">★★★★★</div>
+            <div>30代 男性</div>
+          </div>
+        </div>
+        <p class="voice-text">毎日10時間以上PCで作業していて、目の奥の痛みと頭痛が慢性化していました。3回の施術で目の重さが明らかに軽くなり、仕事の集中力も戻ってきました。</p>
       </div>
     </div>
   </div>

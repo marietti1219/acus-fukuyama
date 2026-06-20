@@ -249,6 +249,8 @@
     <h2 class="sec-h2 r vis">新規コース</h2>
     <table class="menu-tbl r vis">
       <tbody>
+        <!-- 眼精疲労対応 修正 -->
+        <tr><td class="td-cat"><span class="badge badge-new">初回</span></td><td class="td-name">デジタルアイケア鍼／眼精疲労・目の奥の痛み・スマホ首・運転疲労<small class="td-time">60分｜カウンセリング・施術</small></td><td class="td-price">9,200円</td></tr>
         <tr><td class="td-cat"><span class="badge badge-new">初回</span></td><td class="td-name">お顔の鍼／頭痛・眼精疲労・ボトックス効きすぎ・食いしばり・ダウンタイム<small class="td-time">60分｜カウンセリング・施術</small></td><td class="td-price">9,200円</td></tr>
         <tr><td class="td-cat"><span class="badge badge-new">初回</span></td><td class="td-name">からだの鍼／疲労・肩こり・腰痛・坐骨神経痛・胃腸不快症状・冷え・生理痛<small class="td-time">60分｜カウンセリング・施術</small></td><td class="td-price">9,200円</td></tr>
         <tr><td class="td-cat"><span class="badge badge-new">初回</span></td><td class="td-name">美容鍼体験＋ハーブピーリング／肌コンディション・乾燥・ざらつき・ごわつき<small class="td-time">100分｜カウンセリング・施術</small></td><td class="td-price">9,200円</td></tr>
@@ -259,6 +261,8 @@
     <h2 class="sec-h2 r vis">通常メニュー</h2>
     <table class="menu-tbl r vis">
       <tbody>
+        <!-- 眼精疲労対応 修正 -->
+        <tr><td class="td-cat">眼精疲労</td><td class="td-name">デジタルアイケア鍼<small class="td-time">45分</small></td><td class="td-price">7,000円</td></tr>
         <tr><td class="td-cat">美容</td><td class="td-name">お顔の鍼<small class="td-time">45分</small></td><td class="td-price">7,000円</td></tr>
         <tr><td class="td-cat">治療</td><td class="td-name">からだの鍼<small class="td-time">45分</small></td><td class="td-price">7,000円</td></tr>
         <tr><td class="td-cat">美容</td><td class="td-name">ハーブピーリング<small class="td-time">45分</small></td><td class="td-price">5,500円</td></tr>

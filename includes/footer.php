@@ -3,7 +3,8 @@
     <div class="ftr-in">
       <div>
         <a href="index.php" class="ftr-logo"><img src="img/logo.png" alt="鍼灸サロンAcus" width="160" height="52"></a>
-        <p class="ftr-addr">美容と眠りの鍼灸サロン<br>〒721-0917<br>広島県福山市春日池6-23</p>
+        <!-- 眼精疲労対応 修正 -->
+        <p class="ftr-addr">眼精疲労・頭痛に特化した鍼灸サロン<br>〒721-0917<br>広島県福山市春日池6-23</p>
       </div>
       <div class="ftr-cols">
         <div class="ftr-col">
