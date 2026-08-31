@@ -11,7 +11,7 @@ REMOTE_BASE = "/home/xs271057/acus-fukuyama.com/public_html"
 LOCAL_BASE = os.path.dirname(os.path.abspath(__file__))
 
 # アップロード対象ファイル（.vscode/.git 等を除く）
-IGNORE = {".vscode", ".git", ".DS_Store", "node_modules", ".venv", "upload_sftp.py", "__pycache__", ".ssh"}
+IGNORE = {".vscode", ".git", ".DS_Store", "node_modules", ".venv", "upload_sftp.py", "__pycache__", ".ssh", ".env"}
 
 def collect_files(base):
     files = []
