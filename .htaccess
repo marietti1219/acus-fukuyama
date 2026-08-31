@@ -3,9 +3,9 @@ RewriteEngine On
 
 # wwwなし・httpsに統一
 RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://acus-web.com/$1 [R=301,L]
-RewriteCond %{HTTP_HOST} ^www\.acus-web\.com [NC]
-RewriteRule ^(.*)$ https://acus-web.com/$1 [R=301,L]
+RewriteRule ^(.*)$ https://acus-fukuyama.com/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^www\.acus-fukuyama\.com [NC]
+RewriteRule ^(.*)$ https://acus-fukuyama.com/$1 [R=301,L]
 
 RewriteRule ^index\.html$ /index.php [R=301,L]
 RewriteRule ^menu\.html$ /menu.php [R=301,L]
@@ -13,3 +13,6 @@ RewriteRule ^staff\.html$ /staff.php [R=301,L]
 RewriteRule ^access\.html$ /access.php [R=301,L]
 RewriteRule ^faq\.html$ /faq.php [R=301,L]
 RewriteRule ^sitemap\.xml$ /sitemap.php [R=301,L]
+
+# /column は index.html ではなく index.php を読み込む
+RewriteRule ^column/?$ /column/index.html [L]

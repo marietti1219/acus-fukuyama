@@ -11,22 +11,22 @@
     gtag('config', 'G-BJNHNDB2DZ');
   </script>
   <title>メニュー・料金｜鍼灸サロンAcus｜福山市の鍼灸・首こり・頭痛</title>
-  <meta name="description" content="鍼灸サロンAcusのメニューと料金一覧。首こり・頭痛・慢性疲労などの不調ケアから美容鍼まで。広島県福山市。初回¥9,200〜。">
+  <meta name="description" content="鍼灸サロンAcusのメニューと料金一覧。首こり・頭痛・慢性疲労などの不調ケアから美容鍼まで。広島県福山市。初回¥5,800〜。">
   <meta name="google-site-verification" content="dm0UX3Rk90EE_xkQB9pZtgbB06HR-o8TZzA9hxKGEm0">
-  <link rel="canonical" href="https://acus-web.com/menu.html">
+  <link rel="canonical" href="https://acus-fukuyama.com/menu.html">
   <link rel="icon" type="image/png" href="img/favicon.png">
   <link rel="apple-touch-icon" href="img/favicon.png">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="鍼灸サロンAcus">
-  <meta property="og:url" content="https://acus-web.com/menu.html">
+  <meta property="og:url" content="https://acus-fukuyama.com/menu.html">
   <meta property="og:title" content="メニュー・料金 | 鍼灸サロンAcus 広島県福山市">
-  <meta property="og:description" content="鍼灸サロンAcusのメニューと料金一覧。美容鍼・からだの鍼・ハーブピーリング・楽トレ・プレミアムコース。初回¥9,200〜。">
-  <meta property="og:image" content="https://acus-web.com/img/hero.jpg">
+  <meta property="og:description" content="鍼灸サロンAcusのメニューと料金一覧。美容鍼・からだの鍼・ハーブピーリング・楽トレ・サブスクリプション。初回¥5,800〜。">
+  <meta property="og:image" content="https://acus-fukuyama.com/img/hero.jpg">
   <meta property="og:locale" content="ja_JP">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="メニュー・料金 | 鍼灸サロンAcus">
-  <meta name="twitter:description" content="鍼灸サロンAcusのメニューと料金。初回¥9,200〜。広島県福山市。">
-  <meta name="twitter:image" content="https://acus-web.com/img/hero.jpg">
+  <meta name="twitter:description" content="鍼灸サロンAcusのメニューと料金。初回¥5,800〜。広島県福山市。">
+  <meta name="twitter:image" content="https://acus-fukuyama.com/img/hero.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&amp;family=Noto+Serif+JP:wght@200;300;400&amp;family=Noto+Sans+JP:wght@300;400;500&amp;display=swap" rel="stylesheet">
@@ -88,12 +88,12 @@
   "@graph": [
     {
       "@type": "LocalBusiness",
-      "@id": "https://acus-web.com/#business",
+      "@id": "https://acus-fukuyama.com/#business",
       "name": "鍼灸サロンAcus",
       "alternateName": "Acus",
       "description": "広島県福山市の鍼灸サロン。美容鍼・首こり・頭痛・睡眠ケアを完全個室・担当者制で提供、2013年開院。",
-      "url": "https://acus-web.com/",
-      "image": "https://acus-web.com/img/hero.jpg",
+      "url": "https://acus-fukuyama.com/",
+      "image": "https://acus-fukuyama.com/img/hero.jpg",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "春日氟6-23",
@@ -111,39 +111,39 @@
         "https://www.instagram.com/mari_acus/",
         "https://www.instagram.com/kanae.harikyu/"
       ],
-      "priceRange": "¥4,000〜¥28,900",
+      "priceRange": "¥5,800〜¥12,800",
       "currenciesAccepted": "JPY",
       "paymentAccepted": "Cash",
       "foundingDate": "2013"
     },
     {
       "@type": "WebSite",
-      "@id": "https://acus-web.com/#website",
-      "url": "https://acus-web.com/",
+      "@id": "https://acus-fukuyama.com/#website",
+      "url": "https://acus-fukuyama.com/",
       "name": "鍼灸サロンAcus",
       "inLanguage": "ja"
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "トップ", "item": "https://acus-web.com/" },
-        { "@type": "ListItem", "position": 2, "name": "メニュー・料金", "item": "https://acus-web.com/menu.html" }
+        { "@type": "ListItem", "position": 1, "name": "トップ", "item": "https://acus-fukuyama.com/" },
+        { "@type": "ListItem", "position": 2, "name": "メニュー・料金", "item": "https://acus-fukuyama.com/menu.html" }
       ]
     },
     {
       "@type": "Service",
       "serviceType": "鍼灸施術",
-      "provider": { "@id": "https://acus-web.com/#business" },
+      "provider": { "@id": "https://acus-fukuyama.com/#business" },
       "areaServed": { "@type": "City", "name": "福山市" },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "施術メニュー",
         "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "お顔の鍼（美容鍼）" }, "price": "7000", "priceCurrency": "JPY" },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "からだの鍼" }, "price": "7000", "priceCurrency": "JPY" },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "ハーブピーリング" }, "price": "5500", "priceCurrency": "JPY" },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "楽トレ" }, "price": "4500", "priceCurrency": "JPY" },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "初回コース" }, "price": "9200", "priceCurrency": "JPY" }
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "お顔・頭の鍼（眼精疲労・頭痛・美容鍼）" }, "price": "7700", "priceCurrency": "JPY" },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "からだの鍼（腰痛・肩こり・首コリ）" }, "price": "7700", "priceCurrency": "JPY" },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "ハーブピーリング（セルフケア）" }, "price": "7700", "priceCurrency": "JPY" },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "楽トレ" }, "price": "5500", "priceCurrency": "JPY" },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "初回コース" }, "price": "5800", "priceCurrency": "JPY" }
         ]
       }
     }
@@ -177,7 +177,7 @@
   "@type": "HealthAndBeautyBusiness",
   "name": "鍼灸サロンAcus",
   "alternateName": "アキューズ",
-  "url": "https://acus-web.com",
+  "url": "https://acus-fukuyama.com",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "春日池6-23",
@@ -206,7 +206,7 @@
     }
   ],
   "priceRange": "¥¥",
-  "image": "https://acus-web.com/img/hero.jpg",
+  "image": "https://acus-fukuyama.com/img/hero.jpg",
   "sameAs": [
     "https://lin.ee/wasvy2y"
   ]
@@ -228,58 +228,64 @@
 
 <section class="sec">
   <div class="wrap">
-    <p class="sec-label r vis">初めての方へ</p>
-    <h2 class="sec-h2 r vis">お悩み別の選び方</h2>
-    <!-- 眼精疲労対応 修正 -->
-    <div class="symptom-guide r vis">
-      <div class="sg-card">
-        <p class="sg-title">目の疲れ・頭痛・なんとなくの不調</p>
-        <p class="sg-body">スマホやPC作業による目の奥の重さ、夕方の後頭部のこわばり、繰り返す頭痛。自律神経の乱れも含めて評価します。→ <strong>眼精疲労・頭痛・自律神経の鍼</strong></p>
-      </div>
-      <div class="sg-card">
-        <p class="sg-title">肩こり・腰痛・からだの痛み</p>
-        <p class="sg-body">長引く肩こり・腰痛・坐骨神経痛など、からだの痛みに深層からアプローチします。→ <strong>肩こり・腰痛・からだの痛みの鍼</strong></p>
-      </div>
-      <div class="sg-card">
-        <p class="sg-title">疲れ顔・笑いにくい・食いしばり</p>
-        <p class="sg-body">お顔の筋肉に不必要な摩擦を加えず、必要な箇所にだけピンポイントでアプローチします。→ <strong>お顔の鍼（美容鍼）</strong></p>
-      </div>
-    </div>
-
     <p class="sec-label r vis">初回</p>
-    <h2 class="sec-h2 r vis">新規コース</h2>
+    <h2 class="sec-h2 r vis">初回コース</h2>
     <table class="menu-tbl r vis">
       <tbody>
-        <!-- 眼精疲労対応 修正 -->
-        <tr><td class="td-cat"><span class="badge badge-new">初回</span></td><td class="td-name">眼精疲労・頭痛・自律神経の鍼<small class="td-time">カウンセリング・施術　80分</small></td><td class="td-price">5,800円</td></tr>
-        <tr><td class="td-cat"><span class="badge badge-new">初回</span></td><td class="td-name">肩こり・腰痛・からだの痛みの鍼<small class="td-time">カウンセリング・施術　80分</small></td><td class="td-price">5,800円</td></tr>
-        <tr><td class="td-cat"><span class="badge badge-new">初回</span></td><td class="td-name">お顔の鍼（美容鍼）<small class="td-time">カウンセリング・施術　100分</small></td><td class="td-price">5,800円</td></tr>
+        <tr><td class="td-cat"><span class="badge badge-new">初回</span></td><td class="td-name">お顔・頭の鍼（眼精疲労・頭痛・美容鍼）<small class="td-time">カウンセリング・施術　80分</small></td><td class="td-price">5,800円</td></tr>
+        <tr><td class="td-cat"><span class="badge badge-new">初回</span></td><td class="td-name">からだの鍼（腰痛・肩こり・首コリ）<small class="td-time">カウンセリング・施術　80分</small></td><td class="td-price">5,800円</td></tr>
+        <tr><td class="td-cat"><span class="badge badge-new">初回</span></td><td class="td-name">ハーブピーリング（セルフケア）<small class="td-time">カウンセリング・施術　60分</small></td><td class="td-price">5,800円</td></tr>
       </tbody>
     </table>
 
     <p class="sec-label r vis" style="margin-top:64px;"></p>
-    <h2 class="sec-h2 r vis">通常メニュー</h2>
+    <h2 class="sec-h2 r vis">通常メニュー（2回目以降）</h2>
     <table class="menu-tbl r vis">
       <tbody>
-        <!-- 眼精疲労対応 修正 -->
-        <tr><td class="td-cat">眼精疲労</td><td class="td-name">デジタルアイケア鍼<small class="td-time">45分</small></td><td class="td-price">7,000円</td></tr>
-        <tr><td class="td-cat">美容</td><td class="td-name">お顔の鍼<small class="td-time">45分</small></td><td class="td-price">7,000円</td></tr>
-        <tr><td class="td-cat">治療</td><td class="td-name">からだの鍼<small class="td-time">45分</small></td><td class="td-price">7,000円</td></tr>
-        <tr><td class="td-cat">美容</td><td class="td-name">ハーブピーリング<small class="td-time">45分</small></td><td class="td-price">5,500円</td></tr>
-        <tr><td class="td-cat">ボディ</td><td class="td-name">楽トレ<small class="td-time">45分</small></td><td class="td-price">4,500円</td></tr>
+        <tr><td class="td-cat">顔・頭</td><td class="td-name">お顔・頭の鍼（眼精疲労・頭痛・美容鍼）<small class="td-time">45分</small></td><td class="td-price">7,700円</td></tr>
+        <tr><td class="td-cat">からだ</td><td class="td-name">からだの鍼（腰痛・肩こり・首コリ）<small class="td-time">45分</small></td><td class="td-price">7,700円</td></tr>
+        <tr><td class="td-cat">美容</td><td class="td-name">ハーブピーリング（セルフケア）<small class="td-time">45分</small></td><td class="td-price">7,700円</td></tr>
+        <tr><td class="td-cat">ボディ</td><td class="td-name">楽トレ<small class="td-time">45分</small></td><td class="td-price">5,500円</td></tr>
       </tbody>
     </table>
 
     <p class="sec-label r" style="margin-top:64px;"></p>
-    <h2 class="sec-h2 r">コースメニュー</h2>
+    <h2 class="sec-h2 r">セットメニュー</h2>
     <table class="menu-tbl r">
       <tbody>
         <tr><td class="td-cat">全身</td><td class="td-name">全身の鍼【からだとお顔】<small class="td-time">80分</small></td><td class="td-price">11,500円</td></tr>
-        <tr><td class="td-cat">美容</td><td class="td-name">お顔の鍼 ＋ ハーブピーリング<small class="td-time">90分</small></td><td class="td-price">9,500円</td></tr>
+        <tr><td class="td-cat">美容</td><td class="td-name">お顔の鍼 ＋ ハーブピーリング<small class="td-time">90分</small></td><td class="td-price">12,800円</td></tr>
         <tr><td class="td-cat">美容</td><td class="td-name">お顔の鍼 ＋ 楽トレ<small class="td-time">90分</small></td><td class="td-price">8,800円</td></tr>
-        <tr><td class="td-cat"><span class="badge badge-pm">Premium</span></td><td class="td-name">【美容】プレミアムエイジングケア<small class="td-time">120分｜お顔の鍼・カーボキシーセラピー・小顔矯正・楽トレ</small></td><td class="td-price">28,900円</td></tr>
       </tbody>
     </table>
+
+    <p class="sec-label r" style="margin-top:64px;"></p>
+    <h2 class="sec-h2 r">サブスクリプション</h2>
+    <table class="menu-tbl r">
+      <tbody>
+        <tr><td class="td-cat">顔・頭</td><td class="td-name">お顔・頭の鍼コース<small class="td-time">月額6,000円</small></td><td class="td-price">2,500円 / 回</td></tr>
+        <tr><td class="td-cat">からだ</td><td class="td-name">からだの鍼コース<small class="td-time">月額6,000円</small></td><td class="td-price">2,500円 / 回</td></tr>
+        <tr><td class="td-cat">両方</td><td class="td-name">両方コース【からだとお顔】<small class="td-time">月額8,000円</small></td><td class="td-price">各2,000円 / 回</td></tr>
+        <tr><td class="td-cat">ボディ</td><td class="td-name">楽トレコース<small class="td-time">月額6,000円</small></td><td class="td-price">1,000円 / 回</td></tr>
+      </tbody>
+    </table>
+
+    <p class="sec-label r vis" style="margin-top:64px;">初めての方へ</p>
+    <h2 class="sec-h2 r vis">お悩み別の選び方</h2>
+    <div class="symptom-guide r vis">
+      <div class="sg-card">
+        <p class="sg-title">目の疲れ・頭痛・なんとなくの不調</p>
+        <p class="sg-body">スマホやPC作業による目の奥の重さ、夕方の後頭部のこわばり、繰り返す頭痛。自律神経の乱れも含めて評価します。→ <strong>全身の鍼【からだとお顔】</strong></p>
+      </div>
+      <div class="sg-card">
+        <p class="sg-title">肩こり・腰痛・からだの痛み</p>
+        <p class="sg-body">長引く肩こり・腰痛・坐骨神経痛など、からだの痛みに深層からアプローチします。→ <strong>からだの鍼</strong></p>
+      </div>
+      <div class="sg-card">
+        <p class="sg-title">疲れ顔・笑いにくい・食いしばり</p>
+        <p class="sg-body">お顔の筋肉に不必要な摩擦を加えず、必要な箇所にだけピンポイントでアプローチします。→ <strong>お顔・頭の鍼</strong></p>
+      </div>
+    </div>
 
     <div class="cta-row r">
       <a href="https://edisone.jp/salonacus/" class="btn-fill" target="_blank" rel="noopener">オンライン予約</a>
@@ -291,8 +297,12 @@
 
     <div class="note-box r">
       <p>※ 表示価格は税込です。<br>
-      ※ 初回コースは各症状のカウンセリング・施術込みの料金です。<br>
-      ※ 前日キャンセル ¥1,100、当日・無断キャンセル ¥2,200 のキャンセル料が発生します。</p>
+      ※ 初回コースは各メニューのカウンセリング・施術込みの料金です。</p>
+      <p style="margin-top:24px;"><strong>キャンセルポリシー</strong><br>
+      ・前日まで：無料<br>
+      ・当日：7日以内の振替予約で無料（振替がない場合はキャンセル料 ¥2,200）<br>
+      ・無断キャンセル：予約施術料の50%<br>
+      ・ご来店は予約時間の5分前から可能です。15分を過ぎると当日キャンセル扱いとなります。</p>
     </div>
   </div>
 </section>
