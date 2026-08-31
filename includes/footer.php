@@ -13,7 +13,7 @@
             <li><a href="index.php">トップ</a></li>
             <li><a href="menu.php">メニュー・料金</a></li>
             <li><a href="staff.php">スタッフ</a></li>
-            <li><a href="/column/index.html">コラム</a></li>
+            <li><a href="/column/">コラム</a></li>
             <li><a href="access.php">アクセス</a></li>
             <li><a href="faq.php">よくある質問</a></li>
           </ul>

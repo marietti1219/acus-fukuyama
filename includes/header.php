@@ -6,7 +6,7 @@
       <a href="index.php"<?= $page_active==='top'    ? ' class="active"' : '' ?>>トップ</a>
       <a href="menu.php"<?= $page_active==='menu'   ? ' class="active"' : '' ?>>メニュー・料金</a>
       <a href="staff.php"<?= $page_active==='staff'  ? ' class="active"' : '' ?>>スタッフ</a>
-      <a href="/column/index.html"<?= $page_active==='column' ? ' class="active"' : '' ?>>コラム</a>
+      <a href="/column/"<?= $page_active==='column' ? ' class="active"' : '' ?>>コラム</a>
       <a href="access.php"<?= $page_active==='access' ? ' class="active"' : '' ?>>アクセス</a>
       <a href="faq.php"<?= $page_active==='faq'    ? ' class="active"' : '' ?>>よくある質問</a>
     </nav>
@@ -25,7 +25,7 @@
     <a href="index.php" onclick="closeDrawer()">トップ</a>
     <a href="menu.php" onclick="closeDrawer()">メニュー・料金</a>
     <a href="staff.php" onclick="closeDrawer()">スタッフ</a>
-    <a href="/column/index.html" onclick="closeDrawer()">コラム</a>
+    <a href="/column/" onclick="closeDrawer()">コラム</a>
     <a href="access.php" onclick="closeDrawer()">アクセス</a>
     <a href="faq.php" onclick="closeDrawer()">よくある質問</a>
   </nav>
