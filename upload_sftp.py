@@ -39,7 +39,7 @@ def load_key(path):
     for key_cls in (paramiko.Ed25519Key, paramiko.RSAKey, paramiko.ECDSAKey):
         try:
             return key_cls.from_private_key_file(path)
-        except paramiko.SSHException:
+        except (paramiko.SSHException, FileNotFoundError):
             continue
     raise SystemExit(f"秘密鍵を読み込めませんでした: {path}")
 
