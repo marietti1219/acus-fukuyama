@@ -1,0 +1,52 @@
+name: Deploy to XServer
+
+on:
+  workflow_dispatch:
+  repository_dispatch:
+    types: [microcms-publish]
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install paramiko
+        run: pip install paramiko
+
+      - name: Create .env for build
+        run: |
+          cat > .env <<EOF
+          MICROCMS_API_KEY=${{ secrets.MICROCMS_API_KEY }}
+          MICROCMS_SERVICE_DOMAIN=${{ secrets.MICROCMS_SERVICE_DOMAIN }}
+          MICROCMS_COLUMN_ENDPOINT=${{ secrets.MICROCMS_COLUMN_ENDPOINT }}
+          EOF
+
+      - name: Build columns
+        run: node scripts/build-columns.mjs
+
+      - name: Setup SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SFTP_PRIVATE_KEY }}" > ~/.ssh/xs271057.key
+          chmod 600 ~/.ssh/xs271057.key
+          ssh-keyscan -p 10022 sv17208.xserver.jp >> ~/.ssh/known_hosts 2>/dev/null || true
+
+      - name: Deploy via SFTP
+        run: python upload_sftp.py --all
+        env:
+          XSERVER_SSH_KEY: /home/runner/.ssh/xs271057.key
