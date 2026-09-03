@@ -30,8 +30,7 @@
   <meta name="twitter:image" content="https://acus-web.com/img/hero.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Noto+Serif+JP:wght@200;300;400&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400;500&family=Zen+Maru+Gothic:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/common.css">
   <noscript><style>.r{opacity:1!important;transform:none!important;}</style></noscript>
   <style>
@@ -48,7 +47,7 @@
   .s-ig:hover { color:var(--dark); border-color:var(--dark); }
   .philosophy-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:32px; }
   .ph-item { padding:32px 24px; text-align:center; }
-  .ph-icon { font-family:'Cormorant Garamond',serif; font-size:36px; font-weight:300; color:var(--gold); display:block; margin-bottom:16px; }
+  .ph-icon { font-family:'Noto Serif JP',serif; font-size:36px; font-weight:300; color:var(--gold); display:block; margin-bottom:16px; }
   .ph-title { font-family:'Noto Serif JP',serif; font-size:15px; font-weight:300; letter-spacing:.1em; color:var(--cream); margin-bottom:12px; }
   .ph-body { font-size:12px; line-height:2.1; color:rgba(240,235,224,.65); }
   .staff-cta { background:var(--cream); padding:64px 48px; text-align:center; }

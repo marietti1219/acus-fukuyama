@@ -8,7 +8,7 @@
   <link rel="apple-touch-icon" href="img/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500&family=Zen+Kaku+Gothic+Antique:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/common.css">
   <style>
     /* ===== Reset ===== */
@@ -31,7 +31,7 @@
     }
     html { scroll-behavior:smooth; }
     body {
-      font-family:'Zen Maru Gothic', sans-serif; font-weight:300;
+      font-family:'Noto Sans JP', sans-serif; font-weight:300;
       font-size:18px; line-height:1.5;
       -webkit-font-smoothing:antialiased;
     }

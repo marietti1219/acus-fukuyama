@@ -82,7 +82,7 @@ function buildHead({ title, description, canonical, ogType, ogImage, styleBlock 
   <link rel="apple-touch-icon" href="${ogType === 'article' ? '../../' : '../'}img/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500&family=Zen+Kaku+Gothic+Antique:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="${ogType === 'article' ? '../../' : '../'}css/common.css">
   ${styleBlock}
   <!-- Google tag (gtag.js) -->
@@ -111,7 +111,7 @@ function buildHead({ title, description, canonical, ogType, ogImage, styleBlock 
   "@type": "HealthAndBeautyBusiness",
   "name": "鍼灸サロンAcus",
   "alternateName": "アキューズ",
-  "url": "https://acus-web.com",
+  "url": "https://acus-fukuyama.com",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "春日池6-23",
@@ -140,7 +140,7 @@ function buildHead({ title, description, canonical, ogType, ogImage, styleBlock 
     }
   ],
   "priceRange": "¥¥",
-  "image": "https://acus-web.com/img/hero.jpg",
+  "image": "https://acus-fukuyama.com/img/hero.jpg",
   "sameAs": [
     "https://lin.ee/wasvy2y"
   ]
@@ -257,8 +257,8 @@ const commonJs = `
 // ── 記事個別ページ生成 ──────────────────────────────────────────────────────
 function generateArticleHtml(article, styleBlock) {
   const { id, title, publishedAt, thumbnail, category, content: bodyHtml = '', description } = article;
-  const canonical = `https://acus-web.com/column/${id}/`;
-  const ogImage = thumbnail?.url ?? 'https://acus-web.com/img/hero.jpg';
+  const canonical = `https://acus-fukuyama.com/column/${id}/`;
+  const ogImage = thumbnail?.url ?? 'https://acus-fukuyama.com/img/hero.jpg';
   const plainBody = bodyHtml.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
   const metaDesc = description || (plainBody.slice(0, 120) + '｜鍼灸サロンAcus');
   const crumb = title.length > 30 ? title.slice(0, 30) + '…' : title;

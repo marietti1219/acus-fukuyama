@@ -28,7 +28,7 @@ a { color: inherit; text-decoration: none; }
 body {
   background: var(--bg);
   color: var(--text);
-  font-family: 'Zen Maru Gothic', var(--sans);
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 300;
   font-size: 18px;
   line-height: 1.5;
@@ -37,7 +37,7 @@ body {
 }
 
 p {
-  font-family: 'Zen Kaku Gothic Antique', var(--sans);
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 18px;
   line-height: 1.5;
   letter-spacing: 0.05em;
@@ -45,6 +45,17 @@ p {
 }
 
 p, li, dd, dt, span, a { color: var(--text); }
+
+/* ━━━ TYPOGRAPHY: 見出しは Serif ━━━ */
+h1, h2, h3 { font-family: 'Noto Serif JP', serif; }
+
+/* ナビ・ヘッダー内の見出し/リンク、ボタンは Sans を維持（上書き） */
+header h1, header h2, header h3, header a,
+nav h1, nav h2, nav h3, nav a,
+#drawer a,
+button, [class*="btn"] {
+  font-family: 'Noto Sans JP', sans-serif;
+}
 
 /* ━━━ HEADER ━━━ */
 #hdr {

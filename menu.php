@@ -28,9 +28,8 @@
   <meta name="twitter:description" content="鍼灸サロンAcusのメニューと料金。初回¥5,800〜。広島県福山市。">
   <meta name="twitter:image" content="https://acus-fukuyama.com/img/hero.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&amp;family=Noto+Serif+JP:wght@200;300;400&amp;family=Noto+Sans+JP:wght@300;400;500&amp;display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400;500&family=Zen+Maru+Gothic:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/common.css">
   <noscript><style>.r{opacity:1!important;transform:none!important;}</style></noscript>
   <style>
@@ -41,7 +40,7 @@
   .td-cat { width:100px; font-size:10px; letter-spacing:.18em; color:var(--sub); }
   .td-name { font-family:'Noto Serif JP',serif; font-weight:300; font-size:14px; color:var(--dark); }
   .td-time { font-size:11px; color:var(--sub); letter-spacing:.06em; font-family:'Noto Sans JP',sans-serif; font-weight:300; display:block; margin-top:4px; }
-  .td-price { width:120px; text-align:right; font-family:'Cormorant Garamond',serif; font-size:19px; font-weight:400; color:var(--accent); white-space:nowrap; letter-spacing:.04em; }
+  .td-price { width:120px; text-align:right; font-family:'Noto Serif JP',serif; font-size:19px; font-weight:400; color:var(--accent); white-space:nowrap; letter-spacing:.04em; }
   .badge { display:inline-block; font-size:9px; letter-spacing:.16em; border:1px solid; padding:2px 7px; }
   .badge-new { color:var(--accent); border-color:var(--accent); }
   .badge-pm  { color:var(--sub);    border-color:var(--sub); }
