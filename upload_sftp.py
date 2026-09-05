@@ -2,8 +2,12 @@ import argparse
 import getpass
 import os
 import subprocess
+import sys
 
 import paramiko
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(errors="replace")
 
 # ── エックスサーバー接続情報（SSH 公開鍵認証）──────────────────────────────
 # エックスサーバーはパスワード認証不可。事前に公開鍵をサーバーパネルへ登録し、
