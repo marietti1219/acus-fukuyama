@@ -149,28 +149,7 @@
   ]
 }
 </script>
-<style id="claude-agent-animation-styles">
-      @keyframes claude-pulse {
-        0% {
-          box-shadow: 
-            inset 0 0 10px rgba(217, 119, 87, 0.5),
-            inset 0 0 20px rgba(217, 119, 87, 0.3),
-            inset 0 0 30px rgba(217, 119, 87, 0.1);
-        }
-        50% {
-          box-shadow: 
-            inset 0 0 15px rgba(217, 119, 87, 0.7),
-            inset 0 0 25px rgba(217, 119, 87, 0.5),
-            inset 0 0 35px rgba(217, 119, 87, 0.2);
-        }
-        100% {
-          box-shadow: 
-            inset 0 0 10px rgba(217, 119, 87, 0.5),
-            inset 0 0 20px rgba(217, 119, 87, 0.3),
-            inset 0 0 30px rgba(217, 119, 87, 0.1);
-        }
-      }
-    </style><script type="application/ld+json">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "HealthAndBeautyBusiness",

@@ -14,7 +14,7 @@
     /* ===== Reset ===== */
     *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
     :root {
-      --bg:       #faf9f7;
+      --bg:       #FDFCFA;
       --surface:  #ffffff;
       --text:     #2c2c2c;
       --muted:    #444444;
@@ -28,9 +28,13 @@
       --serif:    'Noto Serif JP', serif;
       --sans:     'Noto Sans JP', sans-serif;
       --max:      900px;
+      /* 旧・黒背景セクション用（ベージュ/グリーン配色） */
+      --sand:     #F5F0E8;
+      --forest:   #2D5016;
     }
     html { scroll-behavior:smooth; }
     body {
+      background:var(--bg);
       font-family:'Noto Sans JP', sans-serif; font-weight:300;
       font-size:18px; line-height:1.5;
       -webkit-font-smoothing:antialiased;
@@ -40,7 +44,7 @@
 
     /* ===== Layout ===== */
     .wrap { max-width:var(--max); margin:0 auto; padding:0 24px; }
-    .section { padding:80px 0; border-top:1px solid var(--border); }
+    .section { padding:100px 0; border-top:1px solid var(--border); }
     .section:first-of-type { border-top:none; }
     .eyebrow {
       font-size:11px; letter-spacing:.22em; text-transform:uppercase;
@@ -141,8 +145,8 @@
 
     /* ===== Insight strip ===== */
     .insight {
-      background:var(--dark); color:#fff;
-      padding:56px 24px;
+      background:var(--sand); color:var(--forest);
+      padding:76px 24px;
     }
     .insight-inner {
       max-width:var(--max); margin:0 auto;
@@ -150,27 +154,27 @@
     }
     .insight-eyebrow {
       font-size:10px; letter-spacing:.22em; text-transform:uppercase;
-      color:rgba(255,255,255,.35); margin-bottom:16px;
+      color:rgba(45,80,22,.45); margin-bottom:16px;
     }
     .insight-title {
       font-family:var(--serif); font-weight:400;
       font-size:clamp(1.2rem,3.5vw,1.6rem);
-      line-height:1.65; color:#fff; margin-bottom:20px;
+      line-height:1.65; color:var(--forest); margin-bottom:20px;
     }
-    .insight-body { font-size:22px; font-weight:500; color:rgba(255,255,255,.55); line-height:1.8; }
+    .insight-body { font-size:22px; font-weight:500; color:rgba(45,80,22,.65); line-height:1.8; }
     .insight-stat {
-      border-left:1px solid rgba(255,255,255,.12); padding-left:40px;
+      border-left:1px solid rgba(45,80,22,.18); padding-left:40px;
       display:flex; flex-direction:column; gap:24px;
     }
     .stat-item { display:flex; flex-direction:column; gap:4px; }
     .stat-num {
       font-family:var(--serif); font-size:clamp(2rem,5vw,2.8rem);
-      font-weight:300; color:var(--accent-l); line-height:1;
+      font-weight:300; color:var(--accent); line-height:1;
     }
-    .stat-label { font-size:12px; color:rgba(255,255,255,.45); letter-spacing:.06em; }
+    .stat-label { font-size:12px; color:rgba(45,80,22,.55); letter-spacing:.06em; }
     @media(max-width:640px){
       .insight-inner{ grid-template-columns:1fr; gap:32px; }
-      .insight-stat{ border-left:none; padding-left:0; border-top:1px solid rgba(255,255,255,.12); padding-top:24px; flex-direction:row; flex-wrap:wrap; gap:16px; }
+      .insight-stat{ border-left:none; padding-left:0; border-top:1px solid rgba(45,80,22,.18); padding-top:24px; flex-direction:row; flex-wrap:wrap; gap:16px; }
     }
 
     /* ===== Programs ===== */
@@ -312,7 +316,7 @@
 
     /* ===== CTA banner ===== */
     .cta-band {
-      background:#f5f1eb; padding:60px 24px; text-align:center;
+      background:#f5f1eb; padding:80px 24px; text-align:center;
     }
     .cta-band h2 {
       font-family:var(--serif); font-weight:400;
@@ -351,26 +355,26 @@
 
     /* ===== Footer ===== */
     footer {
-      background:#2c2c2c; color:rgba(255,255,255,.55);
-      padding:52px 24px 32px;
+      background:var(--sand); color:rgba(45,80,22,.68);
+      padding:72px 24px 52px;
     }
     .footer-inner {
       max-width:var(--max); margin:0 auto;
       display:grid; grid-template-columns:1fr 1fr 1fr; gap:32px;
     }
-    .footer-logo img { height:26px; filter:brightness(0) invert(1) opacity(.65); margin-bottom:12px; }
+    .footer-logo img { height:26px; filter:brightness(0); margin-bottom:12px; }
     .footer-logo p { font-size:11.5px; line-height:1.8; }
     .footer-col h4 {
       font-size:10px; letter-spacing:.18em; text-transform:uppercase;
-      color:rgba(255,255,255,.3); margin-bottom:12px;
+      color:rgba(45,80,22,.4); margin-bottom:12px;
     }
     .footer-col ul { list-style:none; display:flex; flex-direction:column; gap:7px; }
-    .footer-col ul li a { font-size:12px; color:rgba(255,255,255,.5); }
-    .footer-col ul li a:hover { color:#fff; }
+    .footer-col ul li a { font-size:12px; color:rgba(45,80,22,.65); }
+    .footer-col ul li a:hover { color:var(--forest); }
     .footer-bottom {
       max-width:var(--max); margin:28px auto 0;
-      padding-top:18px; border-top:1px solid rgba(255,255,255,.1);
-      font-size:11px; color:rgba(255,255,255,.28);
+      padding-top:18px; border-top:1px solid rgba(45,80,22,.14);
+      font-size:11px; color:rgba(45,80,22,.35);
       display:flex; justify-content:space-between; flex-wrap:wrap; gap:6px;
     }
     @media(max-width:580px){
@@ -392,28 +396,7 @@
     .sticky-rsv{ background:var(--cta); color:#fff; }
     .sticky-line{ background:var(--line); color:#fff; }
   </style>
-<style id="claude-agent-animation-styles">
-      @keyframes claude-pulse {
-        0% {
-          box-shadow: 
-            inset 0 0 10px rgba(217, 119, 87, 0.5),
-            inset 0 0 20px rgba(217, 119, 87, 0.3),
-            inset 0 0 30px rgba(217, 119, 87, 0.1);
-        }
-        50% {
-          box-shadow: 
-            inset 0 0 15px rgba(217, 119, 87, 0.7),
-            inset 0 0 25px rgba(217, 119, 87, 0.5),
-            inset 0 0 35px rgba(217, 119, 87, 0.2);
-        }
-        100% {
-          box-shadow: 
-            inset 0 0 10px rgba(217, 119, 87, 0.5),
-            inset 0 0 20px rgba(217, 119, 87, 0.3),
-            inset 0 0 30px rgba(217, 119, 87, 0.1);
-        }
-      }
-    </style><style>
+<style>
   /* ベースリセット：スタッフエリアのボタン共通 */
   a[href*="instagram.com/mari_acus"],
   a[href="https://acus-web.com/mariko/suzuki_mariko_with_images.html"],

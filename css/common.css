@@ -10,8 +10,8 @@ a { color: inherit; text-decoration: none; }
 
 /* ━━━ DESIGN TOKENS ━━━ */
 :root {
-  --bg:     #EEE6DF;
-  --cream:  #F0EBE0;
+  --bg:     #FDFCFA;
+  --cream:  #F5F0E8;
   --dark:   #1A1A18;
   --mid:    #3D3A36;
   --sub:    #6B6560;
@@ -23,6 +23,8 @@ a { color: inherit; text-decoration: none; }
   --muted:  #444444;
   --sans:   'Noto Sans JP', sans-serif;
   --serif:  'Noto Serif JP', serif;
+  /* 旧・黒背景セクション用（グリーン配色） */
+  --forest: #2D5016;
 }
 
 body {
@@ -63,8 +65,8 @@ button, [class*="btn"] {
   top: 0; left: 0; right: 0;
   z-index: 200;
   height: var(--hdr-h);
-  background: #1A1A18;
-  border-bottom: 1px solid rgba(255,255,255,0.09);
+  background: var(--cream);
+  border-bottom: 1px solid rgba(45,80,22,0.14);
   display: flex;
   align-items: center;
   transition: box-shadow .25s;
@@ -91,6 +93,8 @@ button, [class*="btn"] {
   height: 46px;
   width: auto;
   display: block;
+  /* logo.png はダーク背景向けの淡色ロゴのため、ベージュ背景では暗いシルエット化して視認性を確保（暫定対応） */
+  filter: brightness(0);
 }
 
 .hdr-nav {
@@ -107,7 +111,7 @@ button, [class*="btn"] {
   font-size: 13px;
   font-weight: 400;
   letter-spacing: .12em;
-  color: #C8C4BC;
+  color: rgba(45,80,22,.68);
   text-decoration: none;
   border-bottom: 2px solid transparent;
   transition: color .2s, border-color .2s;
@@ -115,7 +119,7 @@ button, [class*="btn"] {
 }
 
 .hdr-nav a:hover,
-.hdr-nav a.active { color: #F0EBE0; border-bottom-color: var(--gold); }
+.hdr-nav a.active { color: var(--forest); border-bottom-color: var(--gold); }
 
 .hdr-cta {
   display: flex;
@@ -151,14 +155,14 @@ button, [class*="btn"] {
 }
 .hdr-toggle span {
   display: block; width: 24px; height: 1.5px;
-  background: #F0EBE0; border-radius: 1px; transition: .3s;
+  background: var(--forest); border-radius: 1px; transition: .3s;
 }
 
 /* ━━━ DRAWER ━━━ */
 #drawer {
   display: none; position: fixed;
   top: var(--hdr-h); left: 0; right: 0; bottom: 0;
-  background: #1A1A18; z-index: 190;
+  background: var(--cream); z-index: 190;
   overflow-y: auto; flex-direction: column;
 }
 #drawer.open { display: flex; }
@@ -166,8 +170,8 @@ button, [class*="btn"] {
 .drw-nav a {
   display: block; padding: 22px 36px;
   font-size: 16px; font-weight: 400; letter-spacing: .16em;
-  color: #F0EBE0; text-decoration: none;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+  color: var(--forest); text-decoration: none;
+  border-bottom: 1px solid rgba(45,80,22,0.12);
 }
 .drw-nav a:hover { color: var(--gold); }
 .drw-cta { padding: 32px 36px; display: flex; flex-direction: column; gap: 14px; }
@@ -180,14 +184,14 @@ button, [class*="btn"] {
 .drw-line { color: #fff; background: #06C755; }
 
 /* ━━━ PAGE HERO (内部ページ共通) ━━━ */
-.page-hero { margin-top: var(--hdr-h); background: var(--dark); padding: 64px 0 56px; }
+.page-hero { margin-top: var(--hdr-h); background: var(--cream); padding: 64px 0 56px; }
 .page-hero h1 {
   font-family: 'Noto Serif JP', serif;
   font-weight: 300;
   font-size: clamp(24px,2.8vw,36px);
-  letter-spacing: .12em; color: #F0EBE0; margin-bottom: 10px;
+  letter-spacing: .12em; color: var(--forest); margin-bottom: 10px;
 }
-.page-hero p { font-size: 12px; letter-spacing: .2em; color: rgba(240,235,224,.45); }
+.page-hero p { font-size: 12px; letter-spacing: .2em; color: rgba(45,80,22,.55); }
 
 /* ━━━ COMMON LAYOUT ━━━ */
 .wrap {
@@ -198,7 +202,7 @@ button, [class*="btn"] {
 
 .sec { padding: 88px 0; }
 .sec.cream { background: var(--cream); }
-.sec.dark  { background: var(--dark); }
+.sec.dark  { background: var(--cream); }
 
 .sec-label {
   display: flex; align-items: center; gap: 14px;
@@ -218,7 +222,7 @@ button, [class*="btn"] {
   letter-spacing: .1em; line-height: 1.7;
   color: var(--dark); margin-bottom: 36px;
 }
-.sec-h2.lt { color: var(--cream); }
+.sec-h2.lt { color: var(--forest); }
 
 /* ━━━ BUTTONS ━━━ */
 .btn-fill {
@@ -250,14 +254,14 @@ button, [class*="btn"] {
 
 /* ━━━ FOOTER ━━━ */
 footer {
-  background: var(--dark);
+  background: var(--cream);
   padding: 64px 0 40px;
 }
 .ftr-in {
   display: flex; justify-content: space-between;
   align-items: flex-start; gap: 48px;
   padding-bottom: 48px;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(45,80,22,0.15);
 }
 .ftr-logo {
   text-decoration: none;
@@ -265,27 +269,28 @@ footer {
 }
 .ftr-logo img {
   height: 62px; width: auto; display: block;
-  filter: brightness(0) invert(1);
+  /* logo.png はダーク背景向けの淡色ロゴのため、ベージュ背景では暗いシルエット化して視認性を確保（暫定対応） */
+  filter: brightness(0);
 }
 .ftr-addr {
   font-size: 13px; line-height: 2;
-  letter-spacing: .08em; color: rgba(240,235,224,.58);
+  letter-spacing: .08em; color: rgba(45,80,22,.68);
 }
 .ftr-cols { display: flex; gap: 40px; }
 .ftr-col h4 {
   font-size: 11px; font-weight: 400; letter-spacing: .28em;
-  text-transform: uppercase; color: rgba(240,235,224,.42);
+  text-transform: uppercase; color: rgba(45,80,22,.5);
   margin-bottom: 18px;
 }
 .ftr-col ul { list-style: none; }
 .ftr-col li { margin-bottom: 12px; }
 .ftr-col a {
   font-size: 14px; letter-spacing: .08em;
-  color: rgba(240,235,224,.75); text-decoration: none;
+  color: rgba(45,80,22,.8); text-decoration: none;
   transition: color .2s;
   white-space: nowrap;
 }
-.ftr-col a:hover { color: #fff; }
+.ftr-col a:hover { color: var(--forest); }
 
 /* ページ固有の Instagram ボタン CSS を footer 内でリセット */
 .ftr-col a[href*="instagram.com"] {
@@ -294,7 +299,7 @@ footer {
   height: auto !important;
   padding: 0 !important;
   background: none !important;
-  color: rgba(240,235,224,.75) !important;
+  color: rgba(45,80,22,.8) !important;
   font-size: 14px !important;
   font-weight: 300 !important;
   letter-spacing: .08em !important;
@@ -305,7 +310,7 @@ footer {
   gap: 0 !important;
 }
 .ftr-col a[href*="instagram.com"]:hover {
-  color: #fff !important;
+  color: var(--forest) !important;
   opacity: 1 !important;
   transform: none !important;
   box-shadow: none !important;
@@ -314,7 +319,7 @@ footer {
   margin-top: 28px; display: flex;
   justify-content: space-between; align-items: center;
   font-size: 12px; letter-spacing: .1em;
-  color: rgba(240,235,224,.28);
+  color: rgba(45,80,22,.4);
 }
 
 /* ━━━ REVEAL ━━━ */
