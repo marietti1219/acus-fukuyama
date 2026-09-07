@@ -15,12 +15,12 @@ $data = $json ? json_decode($json, true) : ['contents' => []];
 $articles = $data['contents'] ?? [];
 
 $static_pages = [
-  ['loc' => 'https://acus-web.com', 'lastmod' => '2026-06-12', 'changefreq' => 'monthly', 'priority' => '1.0'],
-  ['loc' => 'https://acus-web.com/menu.php', 'lastmod' => '2026-06-12', 'changefreq' => 'monthly', 'priority' => '0.9'],
-  ['loc' => 'https://acus-web.com/staff.php', 'lastmod' => '2026-06-12', 'changefreq' => 'yearly', 'priority' => '0.7'],
-  ['loc' => 'https://acus-web.com/access.php', 'lastmod' => '2026-06-12', 'changefreq' => 'yearly', 'priority' => '0.8'],
-  ['loc' => 'https://acus-web.com/faq.php', 'lastmod' => '2026-06-12', 'changefreq' => 'monthly', 'priority' => '0.7'],
-  ['loc' => 'https://acus-web.com/column/', 'lastmod' => '2026-06-12', 'changefreq' => 'weekly', 'priority' => '0.8'],
+     ['loc' => 'https://acus-fukuyama.com', 'lastmod' => '2026-06-12', 'changefreq' => 'monthly', 'priority' => '1.0'],
+    ['loc' => 'https://acus-fukuyama.com/menu.php', 'lastmod' => '2026-06-12', 'changefreq' => 'monthly', 'priority' => '0.9'],
+    ['loc' => 'https://acus-fukuyama.com/staff.php', 'lastmod' => '2026-06-12', 'changefreq' => 'yearly', 'priority' => '0.7'],
+    ['loc' => 'https://acus-fukuyama.com/access.php', 'lastmod' => '2026-06-12', 'changefreq' => 'yearly', 'priority' => '0.8'],
+    ['loc' => 'https://acus-fukuyama.com/faq.php', 'lastmod' => '2026-06-12', 'changefreq' => 'monthly', 'priority' => '0.7'],
+    ['loc' => 'https://acus-fukuyama.com/column/', 'lastmod' => '2026-06-12', 'changefreq' => 'weekly', 'priority' => '0.8'],
 ];
 
 echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
@@ -39,7 +39,7 @@ foreach ($articles as $article) {
   $id = htmlspecialchars($article['id']);
   $lastmod = substr($article['publishedAt'], 0, 10);
   echo "  <url>\n";
-  echo "    <loc>https://acus-web.com/column/{$id}/</loc>\n";
+ echo "        <loc>https://acus-fukuyama.com/column/{$id}/</loc>\n";
   echo "    <lastmod>{$lastmod}</lastmod>\n";
   echo "    <changefreq>yearly</changefreq>\n";
   echo "    <priority>0.7</priority>\n";
