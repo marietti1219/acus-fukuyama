@@ -1,18 +1,22 @@
 <?php
 header('Content-Type: application/xml; charset=utf-8');
 
-$api_key = 'wT9d8hwXj4s7ZTPdVI6bwcE7QDEkZ0ygpAw8';
+// サーバーパネルの環境変数に MICROCMS_API_KEY を設定しておくこと。
+$api_key = getenv('MICROCMS_API_KEY');
 $endpoint = 'https://acusfukuyama.microcms.io/api/v1/colum?limit=100&orders=-publishedAt&fields=id,publishedAt';
 
-$context = stream_context_create([
-  'http' => [
-    'header' => 'X-MICROCMS-API-KEY: ' . $api_key
-  ]
-]);
+$articles = [];
+if ($api_key) {
+  $context = stream_context_create([
+    'http' => [
+      'header' => 'X-MICROCMS-API-KEY: ' . $api_key
+    ]
+  ]);
 
-$json = @file_get_contents($endpoint, false, $context);
-$data = $json ? json_decode($json, true) : ['contents' => []];
-$articles = $data['contents'] ?? [];
+  $json = @file_get_contents($endpoint, false, $context);
+  $data = $json ? json_decode($json, true) : ['contents' => []];
+  $articles = $data['contents'] ?? [];
+}
 
 $static_pages = [
      ['loc' => 'https://acus-fukuyama.com', 'lastmod' => '2026-06-12', 'changefreq' => 'monthly', 'priority' => '1.0'],
