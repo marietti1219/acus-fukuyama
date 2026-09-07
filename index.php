@@ -570,14 +570,14 @@
   gtag('js', new Date());
   gtag('config', 'G-BJNHNDB2DZ');
 </script>
-<link rel="canonical" href="https://acus-web.com/">
+<link rel="canonical" href="https://acus-fukuyama.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="鍼灸サロンAcus">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:title" content="鍼灸サロンAcus｜広島県福山市・美容鍼・パーソナル鍼灸">
 <meta property="og:description" content="広島県福山市で18年、36,000症例。解剖生理学に基づき、停滞した身体機能を「再起動」する大人のためのパーソナル鍼灸サロン。完全個室・担当者制・予約制。">
-<meta property="og:url" content="https://acus-web.com/">
-<meta property="og:image" content="https://acus-web.com/img/hero.jpg">
+<meta property="og:url" content="https://acus-fukuyama.com/">
+<meta property="og:image" content="https://acus-fukuyama.com/img/hero.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -590,7 +590,7 @@
   "@type": "HealthAndBeautyBusiness",
   "name": "鍼灸サロンAcus",
   "alternateName": "アキューズ",
-  "url": "https://acus-web.com",
+  "url": "https://acus-fukuyama.com",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "春日池6-23",
@@ -619,7 +619,7 @@
     }
   ],
   "priceRange": "¥¥",
-  "image": "https://acus-web.com/img/hero.jpg",
+  "image": "https://acus-fukuyama.com/img/hero.jpg",
   "sameAs": [
     "https://lin.ee/wasvy2y"
   ]

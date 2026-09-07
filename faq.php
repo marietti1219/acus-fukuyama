@@ -14,15 +14,15 @@
   <title>よくある質問｜鍼灸サロンAcus｜福山市の鍼灸サロン</title>
   <meta name="description" content="鍼灸サロンAcusのよくある質問。予約方法・鍼の痛み・感染リスク・美容鍼・お灸について詳しく解説。広島県福山市。初めての方も安心。">
   <meta name="google-site-verification" content="dm0UX3Rk90EE_xkQB9pZtgbB06HR-o8TZzA9hxKGEm0">
-  <link rel="canonical" href="https://acus-web.com/faq.html">
+  <link rel="canonical" href="https://acus-fukuyama.com/faq.php">
   <link rel="icon" type="image/png" href="img/favicon.png">
   <link rel="apple-touch-icon" href="img/favicon.png">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="鍼灸サロンAcus">
-  <meta property="og:url" content="https://acus-web.com/faq.html">
+  <meta property="og:url" content="https://acus-fukuyama.com/faq.php">
   <meta property="og:title" content="よくある質問 | 鍼灸サロンAcus 広島県福山市">
   <meta property="og:description" content="予約・鍼の痛み・感染リスク・美容鍼・お灸についてよくある質問と回答。初めての方も安心して来院できます。">
-  <meta property="og:image" content="https://acus-web.com/img/hero.jpg">
+  <meta property="og:image" content="https://acus-fukuyama.com/img/hero.jpg">
   <meta property="og:locale" content="ja_JP">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="よくある質問 | 鍼灸サロンAcus">

@@ -14,15 +14,15 @@
   <title>スタッフ紹介｜鍼灸サロンAcus｜福山市の鍼灸サロン</title>
   <meta name="description" content="鍼灸サロンAcusのスタッフ紹介。代表・鈴木まりこ（頭痛・首こり・美容鍼）と佐藤かなえ（美容鍼・産前産後・睡眠ケア）。担当者制で毎回同じスタッフが対応。">
   <meta name="google-site-verification" content="dm0UX3Rk90EE_xkQB9pZtgbB06HR-o8TZzA9hxKGEm0">
-  <link rel="canonical" href="https://acus-web.com/staff.html">
+  <link rel="canonical" href="https://acus-fukuyama.com/staff.php">
   <link rel="icon" type="image/png" href="img/favicon.png">
   <link rel="apple-touch-icon" href="img/favicon.png">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="鍼灸サロンAcus">
-  <meta property="og:url" content="https://acus-web.com/staff.html">
+  <meta property="og:url" content="https://acus-fukuyama.com/staff.php">
   <meta property="og:title" content="スタッフ紹介 | 鍼灸サロンAcus 広島県福山市">
   <meta property="og:description" content="代表・鈴木まりこと佐藤かなえ。担当者制で毎回同じスタッフが対応します。">
-  <meta property="og:image" content="https://acus-web.com/img/hero.jpg">
+  <meta property="og:image" content="https://acus-fukuyama.com/img/hero.jpg">
   <meta property="og:locale" content="ja_JP">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="スタッフ紹介 | 鍼灸サロンAcus">

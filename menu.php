@@ -13,12 +13,12 @@
   <title>メニュー・料金｜鍼灸サロンAcus｜福山市の鍼灸・首こり・頭痛</title>
   <meta name="description" content="鍼灸サロンAcusのメニューと料金一覧。首こり・頭痛・慢性疲労などの不調ケアから美容鍼まで。広島県福山市。初回¥5,800〜。">
   <meta name="google-site-verification" content="dm0UX3Rk90EE_xkQB9pZtgbB06HR-o8TZzA9hxKGEm0">
-  <link rel="canonical" href="https://acus-fukuyama.com/menu.html">
+  <link rel="canonical" href="https://acus-fukuyama.com/menu.php">
   <link rel="icon" type="image/png" href="img/favicon.png">
   <link rel="apple-touch-icon" href="img/favicon.png">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="鍼灸サロンAcus">
-  <meta property="og:url" content="https://acus-fukuyama.com/menu.html">
+  <meta property="og:url" content="https://acus-fukuyama.com/menu.php">
   <meta property="og:title" content="メニュー・料金 | 鍼灸サロンAcus 広島県福山市">
   <meta property="og:description" content="鍼灸サロンAcusのメニューと料金一覧。美容鍼・からだの鍼・ハーブピーリング・楽トレ・サブスクリプション。初回¥5,800〜。">
   <meta property="og:image" content="https://acus-fukuyama.com/img/hero.jpg">
