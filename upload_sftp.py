@@ -9,19 +9,37 @@ import paramiko
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(errors="replace")
 
+
+def load_dotenv(path):
+    """.env の KEY=VALUE を os.environ へ読み込む（既存の環境変数は上書きしない）。"""
+    if not os.path.isfile(path):
+        return
+    with open(path, "r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+            key, _, value = line.partition("=")
+            key = key.strip()
+            value = value.strip().strip('"').strip("'")
+            os.environ.setdefault(key, value)
+
+
+load_dotenv(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env"))
+
 # ── エックスサーバー接続情報（SSH 公開鍵認証）──────────────────────────────
 # エックスサーバーはパスワード認証不可。事前に公開鍵をサーバーパネルへ登録し、
 # 対応する秘密鍵を下記パスに置くこと。
-#   環境変数での上書き:
+#   環境変数（または .env）での上書き:
 #     XSERVER_SSH_KEY            … 秘密鍵ファイルのパス
 #     XSERVER_SSH_KEY_PASSPHRASE … 秘密鍵のパスフレーズ（未設定かつ必要時はプロンプト）
 HOST = "sv17208.xserver.jp"
 PORT = 10022
 USERNAME = "xs271057"
-KEY_PATH = os.environ.get(
+KEY_PATH = os.path.expanduser(os.environ.get(
     "XSERVER_SSH_KEY",
-    os.path.join(os.path.expanduser("~"), ".ssh", "xserver_acus"),
-)
+    os.path.join("~", ".ssh", "xserver_acus"),
+))
 REMOTE_BASE = "/home/xs271057/acus-fukuyama.com/public_html"
 LOCAL_BASE = os.path.dirname(os.path.abspath(__file__))
 
@@ -33,7 +51,8 @@ ALL_IGNORE_DIRS = {".git", ".github", ".vscode", "node_modules", ".venv",
                    "__pycache__", ".ssh", "scripts"}
 ALL_IGNORE_NAMES = {"upload_sftp.py", ".DS_Store", "desktop.ini", "Thumbs.db",
                     ".env", ".env.example", ".gitignore",
-                    "package.json", "package-lock.json", "README.md", "article.html"}
+                    "package.json", "package-lock.json", "README.md", "article.html",
+                    "value-beauty-acupuncture-original.jpg", "treatment-room-original.jpg"}
 ALL_IGNORE_EXT = (".py", ".pyc", ".log", ".zip", ".key", ".ps1", ".md")
 
 
