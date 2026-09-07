@@ -1,8 +1,9 @@
 <?php
 header('Content-Type: application/xml; charset=utf-8');
 
-// サーバーパネルの環境変数に MICROCMS_API_KEY を設定しておくこと。
-$api_key = getenv('MICROCMS_API_KEY');
+require __DIR__ . '/config.php';
+
+$api_key = MICROCMS_API_KEY;
 $endpoint = 'https://acusfukuyama.microcms.io/api/v1/colum?limit=100&orders=-publishedAt&fields=id,publishedAt';
 
 $articles = [];

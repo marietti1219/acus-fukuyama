@@ -16,3 +16,14 @@ RewriteRule ^sitemap\.xml$ /sitemap.php [R=301,L]
 
 # /column は index.html ではなく index.php を読み込む
 RewriteRule ^column/?$ /column/index.html [L]
+
+# config.php への直接HTTPアクセスを禁止（APIキー保護）
+<Files "config.php">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+  </IfModule>
+</Files>
