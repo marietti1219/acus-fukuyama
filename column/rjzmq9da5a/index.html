@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>痛み止めに頼らない日々を取り戻したい｜鍼灸サロンAcus｜福山市</title>
+  <meta name="description" content="「今日は飲まずに過ごせるかな。」朝はそう思っていても、仕事や家事をしているうちに肩や腰がつらくなってくる。結局、引き出しから痛み止めを取り出す。飲めば動けるようになる。でも翌日にはまた同じことの繰り返し。「できれば飲む回数を減らしたい。」そ｜鍼灸サロンAcus">
+  <link rel="icon" type="image/png" href="../../img/favicon.png">
+  <link rel="apple-touch-icon" href="../../img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/common.css">
+  <style>
+    /* ── breadcrumb ── */
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 6px;
+      font-size: 11px;
+      letter-spacing: .1em;
+      margin-bottom: 0;
+    }
+    .breadcrumb a { color: rgba(240,235,224,.55); text-decoration: none; transition: color .2s; }
+    .breadcrumb a:hover { color: #F0EBE0; }
+    .breadcrumb .sep { color: rgba(240,235,224,.3); font-size: 10px; }
+    .breadcrumb .cur {
+      color: rgba(240,235,224,.42);
+      max-width: 260px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    /* ── article layout ── */
+    .art-wrap {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    .art-meta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .col-tag {
+      font-size: 10px;
+      font-weight: 400;
+      letter-spacing: .1em;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      padding: 3px 10px;
+      border-radius: 1px;
+      white-space: nowrap;
+    }
+    .art-date {
+      font-size: 12px;
+      letter-spacing: .1em;
+      color: var(--sub);
+    }
+    .art-title {
+      font-family: 'Noto Serif JP', serif;
+      font-weight: 300;
+      font-size: clamp(20px, 2.8vw, 32px);
+      letter-spacing: .08em;
+      line-height: 1.65;
+      color: var(--dark);
+      margin-bottom: 40px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    /* ── rich text body ── */
+    .art-body {
+      font-size: 15px;
+      line-height: 2;
+      letter-spacing: .04em;
+      color: var(--mid);
+      margin-bottom: 72px;
+    }
+    .art-body h2 {
+      font-family: 'Noto Serif JP', serif;
+      font-weight: 300;
+      font-size: clamp(17px, 2vw, 22px);
+      letter-spacing: .08em;
+      line-height: 1.6;
+      color: var(--dark);
+      margin: 52px 0 20px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--line);
+    }
+    .art-body h3 {
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: .06em;
+      color: var(--dark);
+      margin: 36px 0 14px;
+    }
+    .art-body p { margin-bottom: 22px; }
+    .art-body ul, .art-body ol { padding-left: 22px; margin-bottom: 22px; }
+    .art-body li { margin-bottom: 8px; }
+    .art-body a { color: var(--accent); text-decoration: underline; }
+    .art-body strong { font-weight: 500; color: var(--dark); }
+    .art-body em { font-style: italic; }
+    .art-body img { max-width: 100%; height: auto; display: block; margin: 32px auto; border-radius: 1px; }
+    .art-body blockquote {
+      border-left: 2px solid var(--gold);
+      padding: 14px 20px;
+      margin: 28px 0;
+      color: var(--sub);
+    }
+    .art-body hr { border: none; border-top: 1px solid var(--line); margin: 40px 0; }
+    .art-body table { width: 100%; border-collapse: collapse; margin-bottom: 22px; font-size: 14px; }
+    .art-body th, .art-body td { border: 1px solid var(--line); padding: 10px 14px; text-align: left; }
+    .art-body th { background: var(--cream); font-weight: 500; }
+
+    /* ── CTA ── */
+    .art-cta {
+      background: var(--cream);
+      padding: 72px 0 64px;
+    }
+    .art-cta-inner { max-width: 560px; margin: 0 auto; text-align: center; }
+    .art-cta-label {
+      font-size: 10px;
+      letter-spacing: .4em;
+      color: var(--sub);
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .art-cta-h {
+      font-family: 'Noto Serif JP', serif;
+      font-weight: 300;
+      font-size: clamp(18px, 2vw, 24px);
+      letter-spacing: .1em;
+      color: var(--dark);
+      margin-bottom: 10px;
+    }
+    .art-cta-sub {
+      font-size: 13px;
+      letter-spacing: .1em;
+      color: var(--sub);
+      margin-bottom: 36px;
+    }
+    .art-cta-btns {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    /* ── back link ── */
+    .art-back {
+      padding: 40px 0 16px;
+      text-align: center;
+    }
+    .art-back a {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 12px;
+      letter-spacing: .16em;
+      color: var(--sub);
+      text-decoration: none;
+      transition: color .2s;
+    }
+    .art-back a:hover { color: var(--dark); }
+    .art-back a::before {
+      content: '';
+      display: inline-block;
+      width: 22px;
+      height: 1px;
+      background: currentColor;
+      flex-shrink: 0;
+    }
+
+    /* ── loading / error ── */
+    .art-state {
+      text-align: center;
+      padding: 100px 0;
+      color: var(--sub);
+      font-size: 13px;
+      letter-spacing: .1em;
+    }
+    .art-spinner {
+      display: block;
+      width: 30px;
+      height: 30px;
+      border: 2px solid rgba(107,101,96,.2);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin .7s linear infinite;
+      margin: 0 auto 20px;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+</style>
+<style>
+  .col-detail-thumb { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block; margin-bottom: 32px; }
+</style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJNHNDB2DZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BJNHNDB2DZ');
+  </script>
+  <link rel="canonical" href="https://acus-fukuyama.com/column/rjzmq9da5a/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="鍼灸サロンAcus">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:title" content="痛み止めに頼らない日々を取り戻したい｜鍼灸サロンAcus｜福山市">
+  <meta property="og:description" content="「今日は飲まずに過ごせるかな。」朝はそう思っていても、仕事や家事をしているうちに肩や腰がつらくなってくる。結局、引き出しから痛み止めを取り出す。飲めば動けるようになる。でも翌日にはまた同じことの繰り返し。「できれば飲む回数を減らしたい。」そ｜鍼灸サロンAcus">
+  <meta property="og:url" content="https://acus-fukuyama.com/column/rjzmq9da5a/">
+  <meta property="og:image" content="https://images.microcms-assets.io/assets/6bfd1ff9f4ee42c5adaf063484960c10/6d82e494a209423a9b8ce5f5e18fe76b/ChatGPT%20Image%202026%E5%B9%B47%E6%9C%8814%E6%97%A5%2016_04_43.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="痛み止めに頼らない日々を取り戻したい｜鍼灸サロンAcus｜福山市">
+  <meta name="twitter:description" content="「今日は飲まずに過ごせるかな。」朝はそう思っていても、仕事や家事をしているうちに肩や腰がつらくなってくる。結局、引き出しから痛み止めを取り出す。飲めば動けるようになる。でも翌日にはまた同じことの繰り返し。「できれば飲む回数を減らしたい。」そ｜鍼灸サロンAcus">
+  <meta name="twitter:image" content="https://images.microcms-assets.io/assets/6bfd1ff9f4ee42c5adaf063484960c10/6d82e494a209423a9b8ce5f5e18fe76b/ChatGPT%20Image%202026%E5%B9%B47%E6%9C%8814%E6%97%A5%2016_04_43.png">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthAndBeautyBusiness",
+  "name": "鍼灸サロンAcus",
+  "alternateName": "アキューズ",
+  "url": "https://acus-fukuyama.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "春日池6-23",
+    "addressLocality": "福山市",
+    "addressRegion": "広島県",
+    "postalCode": "721-0917",
+    "addressCountry": "JP"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 34.4851,
+    "longitude": 133.3625
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Wednesday","Thursday","Friday"],
+      "opens": "10:00",
+      "closes": "19:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Saturday","Sunday","PublicHolidays"],
+      "opens": "10:00",
+      "closes": "17:00"
+    }
+  ],
+  "priceRange": "¥¥",
+  "image": "https://acus-fukuyama.com/img/hero.jpg",
+  "sameAs": [
+    "https://lin.ee/wasvy2y"
+  ]
+}
+  </script>
+</head>
+<body>
+
+<header id="hdr">
+  <div class="hdr-in">
+    <a href="../../index.php" class="hdr-logo"><img src="../../img/logo.png" alt="鍼灸サロンAcus" width="160" height="46"></a>
+    <nav class="hdr-nav">
+      <a href="../../index.php">トップ</a>
+      <a href="../../menu.php">メニュー・料金</a>
+      <a href="../../staff.php">スタッフ</a>
+      <a href="../" class="active">コラム</a>
+      <a href="../../access.php">アクセス</a>
+      <a href="../../faq.php">よくある質問</a>
+    </nav>
+    <div class="hdr-cta">
+      <a href="https://lin.ee/wasvy2y" class="btn-line-h" target="_blank" rel="noopener">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.12 2 11.2c0 4.02 2.67 7.46 6.45 8.93.47.17.4.46.3.96l-.19 1.07c-.06.33-.3 1.28 1.12.7 1.43-.59 7.68-4.52 10.47-7.75A9.01 9.01 0 0 0 22 11.2C22 6.12 17.52 2 12 2z"/></svg>
+        LINE
+      </a>
+      <a href="https://edisone.jp/salonacus/" class="btn-rsv-h" target="_blank" rel="noopener">予約する</a>
+    </div>
+    <button class="hdr-toggle" id="hdr-toggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div id="drawer">
+  <nav class="drw-nav">
+    <a href="../../index.php" onclick="closeDrawer()">トップ</a>
+    <a href="../../menu.php" onclick="closeDrawer()">メニュー・料金</a>
+    <a href="../../staff.php" onclick="closeDrawer()">スタッフ</a>
+    <a href="../" onclick="closeDrawer()">コラム</a>
+    <a href="../../access.php" onclick="closeDrawer()">アクセス</a>
+    <a href="../../faq.php" onclick="closeDrawer()">よくある質問</a>
+  </nav>
+  <div class="drw-cta">
+    <a href="https://edisone.jp/salonacus/" class="drw-rsv" target="_blank" rel="noopener">オンライン予約</a>
+    <a href="https://lin.ee/wasvy2y" class="drw-line" target="_blank" rel="noopener">LINE お問い合わせ</a>
+  </div>
+</div>
+
+<div class="page-hero" style="padding-bottom:40px;">
+  <div class="wrap">
+    <nav class="breadcrumb" aria-label="パンくずリスト">
+      <a href="../../index.php">トップ</a>
+      <span class="sep">›</span>
+      <a href="../">コラム</a>
+      <span class="sep">›</span>
+      <span class="cur">痛み止めに頼らない日々を取り戻したい</span>
+    </nav>
+  </div>
+</div>
+
+<section class="sec" style="padding-top:56px;">
+  <div class="wrap">
+    <div class="art-wrap">
+      <div class="art-meta"><span class="col-tag">初めての方へ</span><span class="col-tag">頭痛</span><span class="col-tag">腰痛</span><span class="col-tag">肩こり</span><span class="art-date">2026年9月7日</span></div>
+      <img class="col-detail-thumb" src="https://images.microcms-assets.io/assets/6bfd1ff9f4ee42c5adaf063484960c10/6d82e494a209423a9b8ce5f5e18fe76b/ChatGPT%20Image%202026%E5%B9%B47%E6%9C%8814%E6%97%A5%2016_04_43.png" alt="痛み止めに頼らない日々を取り戻したい">
+      <h1 class="art-title">痛み止めに頼らない日々を取り戻したい</h1>
+      <div class="art-body"><p>「今日は飲まずに過ごせるかな。」</p><p>朝はそう思っていても、仕事や家事をしているうちに肩や腰がつらくなってくる。</p><p>結局、引き出しから痛み止めを取り出す。</p><p></p><p>飲めば動けるようになる。でも翌日にはまた同じことの繰り返し。</p><p>「できれば飲む回数を減らしたい。」</p><p>そう思いながらも、痛みがあると日常生活が回らないため、薬を手放せずにいる方もいらっしゃいます。</p><p></p><p></p><p></p><p></p><h2 id="h45fcfd41d4">「痛みの原因」は別のこと</h2><p></p><p>痛み止めは、痛みをやわらげるために大切なお薬です。どうしても動かないといけないとき、生活の質が明らかに下がった時、私も力を借りる事があります。</p><p>その一方で、肩こりや腰痛は、筋肉に負担がかかる姿勢や、同じ動作の繰り返し、筋肉の緊張などが関係していることがあります。</p><p>薬で痛みが落ち着いても、その背景にある状態が変わらなければ、時間がたつと再び痛みを感じることがあります。</p><p></p><p>「薬が効かなくなった」のではなく、負担がかかり続けている原因がまだあるのかもしれません。</p><p></p><p></p><p></p><h2 id="h9a0485ed60">こんな見方をしています</h2><p>「どこが痛いか」はもちろんですが、「なぜそこに負担が集まったのか」を大切にしています。</p><p>肩や腰だけでなく、体の動かし方や筋肉の状態も確認しながら、その方にとって負担が大きくなっている場所を探していきます。</p><p>施術を続ける中で、「以前より痛み止めを飲む回数が減った気がする」とお話しされる方もいらっしゃいますが、感じ方には個人差があります。</p><p>すべての方に同じ変化がみられるわけではありません。</p><p>また、長期間にわたって痛み止めを服用されている方や、服用回数が増えている方は、医療機関へ相談されることも大切です。</p><p>鍼灸は、医療の代わりではなく、医療を支える選択肢の一つだと考えています。</p><p></p><p></p><p></p><h3 id="hd8ee01e1b8">おすすめメニュー</h3><table><tbody><tr><th colspan="1" rowspan="1"><p>コース</p></th><th colspan="1" rowspan="1"><p>内容</p></th><th colspan="1" rowspan="1"><p>こんな方に</p></th></tr><tr><td colspan="1" rowspan="1"><p>からだの鍼（7,700円）</p></td><td colspan="1" rowspan="1"><p>肩・腰など気になる部位を中心に施術</p></td><td colspan="1" rowspan="1"><p>肩こり・腰痛でお悩みの方</p></td></tr><tr><td colspan="1" rowspan="1"><p>からだ・お顔の鍼（11,500円）</p></td><td colspan="1" rowspan="1"><p>全身の状態を確認しながら施術</p></td><td colspan="1" rowspan="1"><p>首や肩の負担も気になる方</p></td></tr><tr><td colspan="1" rowspan="1"><p>楽トレ</p></td><td colspan="1" rowspan="1"><p>EMSでインナーマッスルを鍛える</p></td><td colspan="1" rowspan="1"><p>姿勢や体の支えも見直したい方</p></td></tr></tbody></table><p></p><p></p><p></p><h2 id="h9be0c3393d">おわりに</h2><p>毎日を頑張っているからこそ、痛み止めが必要になる日もあります。</p><p>だからこそ、「薬を飲むこと」ではなく、「なぜ痛みを繰り返しているのか」に目を向けてみることも、一つの選択肢かもしれません。</p><p>Acusでは、お一人おひとりのお話を伺いながら、体の状態を一緒に確認していきます。</p><p>気になることがあれば、お気軽にご相談ください。</p><p></p><p></p><p></p><p></p><p>ご予約はこちら（24時間受付）：<a href="https://edisone.jp/salonacus/">https://edisone.jp/salonacus/</a></p><p><strong>福山市の鍼灸サロン Acus（アキューズ）</strong><br><a href="https://acus-fukuyama.com/">https://acus-fukuyama.com/</a></p></div>
+    </div>
+  </div>
+</section>
+
+<div class="art-cta">
+  <div class="wrap">
+    <div class="art-cta-inner">
+      <p class="art-cta-label">Reservation</p>
+      <p class="art-cta-h">ご予約・ご相談はこちら</p>
+      <p class="art-cta-sub">完全個室・完全予約制｜広島県福山市</p>
+      <div class="art-cta-btns">
+        <a href="https://edisone.jp/salonacus/" class="btn-fill" target="_blank" rel="noopener">オンライン予約</a>
+        <a href="https://lin.ee/wasvy2y" class="btn-line-g" target="_blank" rel="noopener">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.12 2 11.2c0 4.02 2.67 7.46 6.45 8.93.47.17.4.46.3.96l-.19 1.07c-.06.33-.3 1.28 1.12.7 1.43-.59 7.68-4.52 10.47-7.75A9.01 9.01 0 0 0 22 11.2C22 6.12 17.52 2 12 2z"/></svg>
+          LINE 予約・相談
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="art-back">
+  <a href="../">コラム一覧へ戻る</a>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="ftr-in">
+      <div>
+        <a href="../../index.php" class="ftr-logo"><img src="../../img/logo.png" alt="鍼灸サロンAcus" width="160" height="52"></a>
+        <p class="ftr-addr">美容と眠りの鍼灸サロン<br>〒721-0917<br>広島県福山市春日池6-23</p>
+      </div>
+      <div class="ftr-cols">
+        <div class="ftr-col">
+          <h4>Site</h4>
+          <ul>
+            <li><a href="../../index.php">トップ</a></li>
+            <li><a href="../../menu.php">メニュー・料金</a></li>
+            <li><a href="../../staff.php">スタッフ</a></li>
+            <li><a href="../">コラム</a></li>
+            <li><a href="../../access.php">アクセス</a></li>
+            <li><a href="../../faq.php">よくある質問</a></li>
+          </ul>
+        </div>
+        <div class="ftr-col">
+          <h4>Reserve</h4>
+          <ul>
+            <li><a href="https://edisone.jp/salonacus/" target="_blank" rel="noopener">オンライン予約</a></li>
+            <li><a href="https://lin.ee/wasvy2y" target="_blank" rel="noopener">LINE 公式</a></li>
+          </ul>
+        </div>
+        <div class="ftr-col">
+          <h4>SNS</h4>
+          <ul>
+            <li><a href="https://www.instagram.com/mari_acus/" target="_blank" rel="noopener">Instagram（鈴木）</a></li>
+            <li><a href="https://www.instagram.com/kanae.harikyu/" target="_blank" rel="noopener">Instagram（佐藤）</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="ftr-btm">
+      <span>&copy; 2013 鍼灸サロンAcus. All rights reserved.</span>
+      <span>Fukuyama, Hiroshima</span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-top" id="back-top" aria-label="トップへ戻る">
+  <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<script>
+  const toggle = document.getElementById('hdr-toggle');
+  const drawer = document.getElementById('drawer');
+  function closeDrawer() {
+    drawer.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }
+  toggle.addEventListener('click', () => {
+    const open = drawer.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+  const hdr = document.getElementById('hdr');
+  const bt = document.getElementById('back-top');
+  window.addEventListener('scroll', () => {
+    hdr.classList.toggle('scrolled', window.scrollY > 40);
+    bt.classList.toggle('vis', window.scrollY > 300);
+  }, { passive: true });
+  bt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  const obs = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('vis'); obs.unobserve(e.target); }
+  }), { threshold: .12 });
+  document.querySelectorAll('.r').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
