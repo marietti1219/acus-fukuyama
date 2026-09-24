@@ -758,8 +758,8 @@
           <img class="value-img" src="img/value-beauty-acupuncture.jpg" alt="美容鍼 電気鍼施術">
         </picture>
         <div class="value-body">
-          <div class="value-title-row"><span class="value-num">01</span><strong>美容医療と連携できる、誠実な美容鍼</strong></div>
-          <p>美容鍼の効果を誇張せず、できることとできないことを正直にお伝えします。ボトックス後のダウンタイムケアや、美容医療との併用など、医療と鍼灸の両方を理解した上で対応しています。「美容鍼って実際どうなの？」という疑問にも、根拠をもってお答えします。</p>
+          <div class="value-title-row"><span class="value-num">01</span><strong>美容医療と併用もできる美容鍼</strong></div>
+          <p>足や腰の筋肉と同じように、お顔の筋肉も使わずにいると細く硬くなります。普段無表情でいる時間が長い人ほど、Acusのお顔・頭の鍼をすることで「目が開きやすい！」「こめかみが軽い」と感じます。表情筋へのアプローチは、美容医療でエイジングケアをしている方にもおすすめです。</p>
         </div>
       </div>
       <div class="value-item">
