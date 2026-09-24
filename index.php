@@ -724,6 +724,8 @@
 
 <section style="padding:40px 0 32px; background:var(--bg);">
   <div class="wrap">
+    <p style="font-size:11px; letter-spacing:.22em; text-transform:uppercase; color:var(--accent); margin-bottom:10px;">Menu</p>
+    <h2 style="font-family:var(--serif); font-size:clamp(1.2rem,3vw,1.5rem); font-weight:400; color:var(--text); margin-bottom:20px;">施術メニュー</h2>
     <div class="menu-card-grid">
       <a href="menu.php#face" class="menu-card-link">
         <img src="img/menu-face.png" alt="お顔・頭の鍼">
@@ -740,85 +742,6 @@
     </div>
     <div style="margin-top:16px; text-align:right;">
       <a href="menu.php" style="font-size:12px; color:var(--accent); border-bottom:1px solid var(--accent-l); padding-bottom:2px;">メニュー・料金を見る →</a>
-    </div>
-  </div>
-</section>
-
-<!-- 眼精疲労対応 修正 -->
-<!-- FOR YOU -->
-<section class="section" style="padding:56px 0;">
-  <div class="wrap">
-    <span class="eyebrow">For You</span>
-    <h2 class="sec-title">こんな方に来てほしい</h2>
-    <ul style="display:flex;flex-wrap:wrap;gap:12px;margin-top:28px;list-style:none;padding:0;">
-      <li style="background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:10px 20px;font-size:13.5px;color:var(--text);">在宅ワーク・テレワークで一日中PCを見ている</li>
-      <li style="background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:10px 20px;font-size:13.5px;color:var(--text);">スマホを手放せず、目がしょぼしょぼする</li>
-      <li style="background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:10px 20px;font-size:13.5px;color:var(--text);">長距離・長時間の運転後に頭が重くなる</li>
-      <li style="background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:10px 20px;font-size:13.5px;color:var(--text);">眼科で異常なしと言われたのに目が疲れる</li>
-      <li style="background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:10px 20px;font-size:13.5px;color:var(--text);">目薬を差してもすぐ目が乾く・重い</li>
-      <li style="background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:10px 20px;font-size:13.5px;color:var(--text);">夕方になると頭痛がひどくなる</li>
-    </ul>
-  </div>
-</section>
-
-<!-- 2. INSIGHT -->
-<div class="insight">
-  <div class="insight-inner" style="grid-template-columns:1fr; max-width:640px;">
-    <div>
-      <p class="insight-eyebrow">Status &amp; Insight</p>
-      <h2 class="insight-title">「なんとなくの不調」を<br>放置しない。</h2>
-      <!-- 眼精疲労対応 修正 -->
-      <p class="insight-body">
-        頑張っているのに、体がついてこない。<br><br>
-        目の奥の重さ、夕方の後頭部のこわばり、休んでも抜けない疲れ、繰り返す頭痛、張り続ける首と肩。<br><br>
-        「どこに行けばいいか分からない」不調に一緒に向き合い、伴走します。
-      </p>
-    </div>
-  </div>
-</div>
-
-<!-- 3. ORIGINAL PROGRAMS -->
-<section class="section">
-  <div class="wrap">
-    <span class="eyebrow">Menu</span>
-    <h2 class="sec-title">メニュー</h2>
-    <p class="sec-sub">お悩みに合わせたコースをご用意しています。</p>
-
-    <div class="programs-grid">
-      <!-- 眼精疲労対応 修正 -->
-      <div class="program-card">
-        <div class="program-card-head">
-          <span class="program-tag tag-perform">眼精疲労・デジタル疲労</span>
-          <div class="program-name">デジタルアイケア鍼</div>
-          <p class="program-desc">スマホ・PC・タブレット・運転による目の疲れ・眼精疲労に特化したコース。目の周囲・首・肩の経穴へのアプローチで、目の奥の重さ・ぼやけ・頭痛を根本からケアします。</p>
-        </div>
-      </div>
-      <div class="program-card">
-        <div class="program-card-head">
-          <span class="program-tag tag-perform">不調・パフォーマンス</span>
-          <div class="program-name">からだの鍼</div>
-          <!-- 眼精疲労対応 修正 -->
-          <p class="program-desc">目の奥の重さ、繰り返す頭痛、張り続ける首こり。長引く不調は、筋肉・神経・血流など原因は様々です。表面のケアでは届かない深層から、鍼でアプローチします。</p>
-        </div>
-      </div>
-      <div class="program-card">
-        <div class="program-card-head">
-          <span class="program-tag tag-beauty">全身リフレッシュ</span>
-          <div class="program-name">全身【お顔とからだの鍼】</div>
-          <p class="program-desc">「疲れが抜けない」を「いつもより3時間眠ったあとのような軽さ」へ。施術中90%以上の方が眠ってしまう脱力感が人気です。</p>
-        </div>
-      </div>
-      <div class="program-card">
-        <div class="program-card-head">
-          <span class="program-tag tag-recover">見た目リカバリー</span>
-          <div class="program-name">お顔の鍼＋ハーブピーリング</div>
-          <p class="program-desc">化粧ノリが悪い・化粧水が浸透しない気がする・ターンオーバーを正常に近づけたい・疲れ顔がぬけない、そんなときにおススメ。</p>
-        </div>
-      </div>
-    </div>
-
-    <div style="margin-top:20px; text-align:right;">
-      <a href="menu.html" style="font-size:12px; color:var(--accent); border-bottom:1px solid var(--accent-l); padding-bottom:2px;">メニュー・料金を見る →</a>
     </div>
   </div>
 </section>
