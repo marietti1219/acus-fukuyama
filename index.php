@@ -395,6 +395,36 @@
     }
     .sticky-rsv{ background:var(--cta); color:#fff; }
     .sticky-line{ background:var(--line); color:#fff; }
+
+    /* ===== Hero menu grid ===== */
+    .hero-menu-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 24px;
+      max-width: 520px;
+    }
+    .hero-menu-card {
+      display: block;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+    .hero-menu-card:hover {
+      opacity: 0.88;
+      transform: translateY(-2px);
+    }
+    .hero-menu-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    @media (max-width: 660px) {
+      .hero-menu-grid {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+      }
+    }
   </style>
 <style>
   /* ベースリセット：スタッフエリアのボタン共通 */
@@ -654,6 +684,20 @@
           <span class="hero-label">完全個室</span>
           <span class="hero-label">担当者制</span>
           <span class="hero-label">完全予約制</span>
+        </div>
+        <div class="hero-menu-grid">
+          <a href="menu.php#face" class="hero-menu-card">
+            <img src="img/menu-face.png" alt="お顔・頭の鍼">
+          </a>
+          <a href="menu.php#body" class="hero-menu-card">
+            <img src="img/menu-body.png" alt="からだの鍼">
+          </a>
+          <a href="menu.php#ems" class="hero-menu-card">
+            <img src="img/menu-ems.png" alt="楽トレ（EMS）">
+          </a>
+          <a href="menu.php#peeling" class="hero-menu-card">
+            <img src="img/menu-peeling.png" alt="ハーブピーリング">
+          </a>
         </div>
         <div class="hero-cta">
           <a class="btn-hero-rsv" href="https://edisone.jp/salonacus/">24時間オンライン予約</a>
