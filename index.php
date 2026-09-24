@@ -766,8 +766,8 @@
         <img class="value-img" src="img/salon-exterior-night.jpg" alt="完全個室 プライベート空間">
         <div class="value-body">
           <!-- 眼精疲労対応 修正 -->
-          <div class="value-title-row"><span class="value-num">02</span><strong>頭痛・眼精疲労と、長く向き合ってきました。</strong></div>
-          <p>院長自身、長年の頭痛に悩んだ経験があります。鎮痛剤に頼り続ける生活から、服用回数が減り、生活の質が上がるまでの過程を実感として知っています。だからこそ、頭痛・眼精疲労と日常の関係や、生活習慣の見直しを一緒に考えることができます。また、状態によっては信頼のおける頭痛専門医へのご紹介も行っています。</p>
+          <div class="value-title-row"><span class="value-num">02</span><strong>スマホ・PC・運転による眼精疲労に、専門的にアプローチします</strong></div>
+          <p>一日中画面を見る仕事・スマホの長時間使用・長距離ドライブ。現代特有のこれらの習慣が引き起こす眼精疲労は、目だけではなく首・肩・自律神経にも影響することがあります。顎やこめかみ・後頭部の筋肉にも、鍼でアプローチできます。表面のマッサージでおこる皮膚の摩擦や肌の引き延ばしを起こさず、コリにアクセスします。</p>
         </div>
       </div>
       <div class="value-item">
@@ -778,13 +778,6 @@
         <div class="value-body">
           <div class="value-title-row"><span class="value-num">03</span><strong>「痛みをゼロにする」その先まで伴走します</strong></div>
           <p>元フィットネスインストラクターの知識と経験を活かし、不調や痛みから回復した後のフェーズにも対応しています。痛みが出ない体づくり、より良いパフォーマンスの発揮。「治った」で終わりにせず、その先の生活まで一緒に考えていきます。</p>
-        </div>
-      </div>
-      <!-- 眼精疲労対応 修正 -->
-      <div class="value-item">
-        <div class="value-body" style="grid-column:1/-1;">
-          <div class="value-title-row"><span class="value-num">04</span><strong>スマホ・PC・運転による眼精疲労に、専門的にアプローチします</strong></div>
-          <p>一日中画面を見る仕事・スマホの長時間使用・長距離ドライブ。現代特有のこれらの習慣が引き起こす眼精疲労は、目だけでなく首・肩・自律神経にも波及します。目の周囲の経穴（ツボ）への鍼と、首肩の深層筋へのアプローチを組み合わせることで、表面的なマッサージでは届かない疲れにアクセスします。</p>
         </div>
       </div>
     </div>
