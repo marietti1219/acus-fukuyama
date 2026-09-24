@@ -47,13 +47,8 @@
   .cta-row { margin-top:48px; display:flex; gap:14px; flex-wrap:wrap; }
   .note-box { margin-top:56px; padding:32px 36px; background:var(--cream); border-left:3px solid var(--gold); }
   .note-box p { font-family:'Noto Serif JP',serif; font-size:18px; line-height:2.2; color:var(--text); }
-  .symptom-guide { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-bottom:64px; }
-  .sg-card { padding:28px 24px; background:var(--cream); border-top:3px solid var(--gold); }
-  .sg-title { font-family:'Noto Serif JP',serif; font-size:15px; font-weight:300; letter-spacing:.08em; color:var(--dark); margin-bottom:10px; }
-  .sg-body { font-size:18px; line-height:2; color:var(--text); }
   @media(max-width:600px){
     .td-cat{display:none;}
-    .symptom-guide{grid-template-columns:1fr;}
 
     /* ボタンをスマホで押しやすく */
     .cta-row {
@@ -78,6 +73,37 @@
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+  }
+
+  .menu-card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 24px 0;
+  }
+  .menu-card-btn {
+    display: block;
+    border: none;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: opacity 0.2s, transform 0.2s;
+  }
+  .menu-card-btn:hover {
+    opacity: 0.88;
+    transform: translateY(-2px);
+  }
+  .menu-card-btn img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  @media (max-width: 660px) {
+    .menu-card-grid {
+      grid-template-columns: 1fr;
     }
   }
   </style>
@@ -250,20 +276,88 @@
 
     <p class="sec-label r vis" style="margin-top:64px;">初めての方へ</p>
     <h2 class="sec-h2 r vis">お悩み別の選び方</h2>
-    <div class="symptom-guide r vis">
-      <div class="sg-card">
-        <p class="sg-title">目の疲れ・頭痛・なんとなくの不調</p>
-        <p class="sg-body">スマホやPC作業による目の奥の重さ、夕方の後頭部のこわばり、繰り返す頭痛。自律神経の乱れも含めて評価します。→ <strong>全身の鍼【からだとお顔】</strong></p>
-      </div>
-      <div class="sg-card">
-        <p class="sg-title">肩こり・腰痛・からだの痛み</p>
-        <p class="sg-body">長引く肩こり・腰痛・坐骨神経痛など、からだの痛みに深層からアプローチします。→ <strong>からだの鍼</strong></p>
-      </div>
-      <div class="sg-card">
-        <p class="sg-title">疲れ顔・笑いにくい・食いしばり</p>
-        <p class="sg-body">お顔の筋肉に不必要な摩擦を加えず、必要な箇所にだけピンポイントでアプローチします。→ <strong>お顔・頭の鍼</strong></p>
-      </div>
+    <!-- メニューカード -->
+    <div class="menu-card-grid">
+      <button class="menu-card-btn" onclick="openModal('face')">
+        <img src="img/menu-face.png" alt="お顔・頭の鍼">
+      </button>
+      <button class="menu-card-btn" onclick="openModal('body')">
+        <img src="img/menu-body.png" alt="からだの鍼">
+      </button>
+      <button class="menu-card-btn" onclick="openModal('peeling')">
+        <img src="img/menu-peeling.png" alt="ハーブピーリング">
+      </button>
+      <button class="menu-card-btn" onclick="openModal('ems')">
+        <img src="img/menu-ems.png" alt="楽トレ（EMS）">
+      </button>
     </div>
+
+    <!-- モーダル -->
+    <div id="modal-overlay" onclick="closeModal()" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:1000;"></div>
+
+    <div id="modal" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); z-index:1001; background:#fff; border-radius:12px; padding:32px 28px; max-width:460px; width:90%; box-shadow:0 8px 40px rgba(0,0,0,0.18);">
+      <button onclick="closeModal()" style="position:absolute; top:14px; right:18px; background:none; border:none; font-size:20px; cursor:pointer; color:#888;">✕</button>
+      <p id="modal-eyebrow" style="font-size:11px; letter-spacing:.18em; color:var(--accent); margin-bottom:8px;"></p>
+      <h3 id="modal-title" style="font-family:var(--serif); font-size:1.2rem; font-weight:400; margin-bottom:14px; color:var(--text);"></h3>
+      <p id="modal-desc" style="font-size:13.5px; line-height:1.9; color:var(--text); margin-bottom:20px;"></p>
+      <div style="background:#f9f6f2; border-radius:8px; padding:14px 16px; margin-bottom:20px;">
+        <p style="font-size:11px; color:var(--muted); margin-bottom:6px;">料金</p>
+        <p id="modal-price-first" style="font-size:13px; color:var(--text); margin-bottom:4px;"></p>
+        <p id="modal-price-regular" style="font-size:13px; color:var(--text);"></p>
+      </div>
+      <a id="modal-rsv-btn" href="https://edisone.jp/salonacus/" style="display:block; text-align:center; background:var(--cta); color:#fff; padding:13px; border-radius:40px; font-size:13px; letter-spacing:.06em;">24時間オンライン予約</a>
+    </div>
+
+    <script>
+      const modalData = {
+        face: {
+          eyebrow: 'お顔・頭の鍼',
+          title: 'お顔・頭の鍼',
+          desc: '足や腰の筋肉と同じように、お顔の筋肉も使わずにいると細く硬くなります。普段無表情でいる時間が長い人ほど、Acusのお顔・頭の鍼をすることで「目が開きやすい！」「こめかみが軽い」と感じます。',
+          priceFirst: '初回　¥5,800（カウンセリング・施術 80分）',
+          priceRegular: '通常　¥7,700（45分）'
+        },
+        body: {
+          eyebrow: 'からだの鍼',
+          title: 'からだの鍼',
+          desc: '奥にひろがる心地よい刺激で、こわばった筋肉がふわっとゆるみます。鍼の優しい刺激で神経に働きかけて、重だるさや不快感を和らげます。',
+          priceFirst: '初回　¥5,800（カウンセリング・施術 80分）',
+          priceRegular: '通常　¥7,700（45分）'
+        },
+        peeling: {
+          eyebrow: 'ハーブピーリング',
+          title: 'ハーブピーリング（角質ケア）',
+          desc: '古い角質をやさしく定期的にケアして、肌表面をなめらかに。つるんとした手触りと明るい印象の肌作りを手伝います。',
+          priceFirst: '初回　¥5,800（カウンセリング・施術 60分）',
+          priceRegular: '通常　¥7,700（45分）'
+        },
+        ems: {
+          eyebrow: '楽トレ（EMS）',
+          title: '楽トレ（EMS）',
+          desc: '電気刺激で、筋肉をギュッ、ギュッと寝たまま収縮します。普段使いにくい筋肉にも刺激を届け、筋肉を使う感覚を思い出させます。',
+          priceFirst: '初回　¥3,980（45分）',
+          priceRegular: '通常　¥5,500（45分）'
+        }
+      };
+
+      function openModal(key) {
+        const d = modalData[key];
+        document.getElementById('modal-eyebrow').textContent = d.eyebrow;
+        document.getElementById('modal-title').textContent = d.title;
+        document.getElementById('modal-desc').textContent = d.desc;
+        document.getElementById('modal-price-first').textContent = d.priceFirst;
+        document.getElementById('modal-price-regular').textContent = d.priceRegular;
+        document.getElementById('modal-overlay').style.display = 'block';
+        document.getElementById('modal').style.display = 'block';
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeModal() {
+        document.getElementById('modal-overlay').style.display = 'none';
+        document.getElementById('modal').style.display = 'none';
+        document.body.style.overflow = '';
+      }
+    </script>
 
     <div class="cta-row r">
       <a href="https://edisone.jp/salonacus/" class="btn-fill" target="_blank" rel="noopener">オンライン予約</a>
@@ -288,8 +382,4 @@
 
 <?php include 'includes/footer.php'; ?>
 
-      <svg width="16" height="16" viewBox="0 0 256 256" fill="currentColor" style="margin-right: 12px; vertical-align: middle;">
-        <path d="M128,20A108,108,0,1,0,236,128,108.12,108.12,0,0,0,128,20Zm0,192a84,84,0,1,1,84-84A84.09,84.09,0,0,1,128,212Zm40-112v56a12,12,0,0,1-12,12H100a12,12,0,0,1-12-12V100a12,12,0,0,1,12-12h56A12,12,0,0,1,168,100Z"></path>
-      </svg>
-      <span style="vertical-align: middle;">Stop Claude</span>
-    </button></div></body></html>
+</body></html>
