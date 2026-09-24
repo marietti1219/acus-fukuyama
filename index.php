@@ -425,6 +425,33 @@
         max-width: 100%;
       }
     }
+
+    /* ===== Menu card grid ===== */
+    .menu-card-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .menu-card-link {
+      display: block;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+    .menu-card-link:hover {
+      opacity: 0.88;
+      transform: translateY(-2px);
+    }
+    .menu-card-link img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    @media (max-width: 660px) {
+      .menu-card-grid {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 <style>
   /* ベースリセット：スタッフエリアのボタン共通 */
@@ -685,26 +712,34 @@
           <span class="hero-label">担当者制</span>
           <span class="hero-label">完全予約制</span>
         </div>
-        <div class="hero-menu-grid">
-          <a href="menu.php#face" class="hero-menu-card">
-            <img src="img/menu-face.png" alt="お顔・頭の鍼">
-          </a>
-          <a href="menu.php#body" class="hero-menu-card">
-            <img src="img/menu-body.png" alt="からだの鍼">
-          </a>
-          <a href="menu.php#ems" class="hero-menu-card">
-            <img src="img/menu-ems.png" alt="楽トレ（EMS）">
-          </a>
-          <a href="menu.php#peeling" class="hero-menu-card">
-            <img src="img/menu-peeling.png" alt="ハーブピーリング">
-          </a>
-        </div>
         <div class="hero-cta">
           <a class="btn-hero-rsv" href="https://edisone.jp/salonacus/">24時間オンライン予約</a>
           <a class="btn-hero-line" href="https://lin.ee/wasvy2y">LINEで相談する</a>
         </div>
         <p class="hero-note">鍼がはじめての方・怖い方も、刺激量を調整して対応します。</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:40px 0 32px; background:var(--bg);">
+  <div class="wrap">
+    <div class="menu-card-grid">
+      <a href="menu.php#face" class="menu-card-link">
+        <img src="img/menu-face.png" alt="お顔・頭の鍼">
+      </a>
+      <a href="menu.php#body" class="menu-card-link">
+        <img src="img/menu-body.png" alt="からだの鍼">
+      </a>
+      <a href="menu.php#ems" class="menu-card-link">
+        <img src="img/menu-ems.png" alt="楽トレ（EMS）">
+      </a>
+      <a href="menu.php#peeling" class="menu-card-link">
+        <img src="img/menu-peeling.png" alt="ハーブピーリング">
+      </a>
+    </div>
+    <div style="margin-top:16px; text-align:right;">
+      <a href="menu.php" style="font-size:12px; color:var(--accent); border-bottom:1px solid var(--accent-l); padding-bottom:2px;">メニュー・料金を見る →</a>
     </div>
   </div>
 </section>
