@@ -355,8 +355,20 @@
     .voices-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 12px;
+      gap: 20px;
       margin-top: 28px;
+    }
+    .voice-pair {
+      display: flex;
+      flex-direction: column;
+    }
+    .voice-pair .voice-card {
+      border-radius: 0 0 8px 8px;
+      border-top: none;
+      flex: 1;
+    }
+    .voice-pair .voice-img-card {
+      border-radius: 8px 8px 0 0;
     }
     .voice-img-card {
       border-radius: 8px;
@@ -838,47 +850,44 @@
     <span class="eyebrow">Social Proof</span>
     <h2 class="sec-title">お客様の声</h2>
     <div class="voices-grid">
-      <div class="voice-img-card">
-        <img src="img/voice-brand.png" alt="お客様の声：頑張らなくていい場所">
+      <div class="voice-pair">
+        <div class="voice-img-card">
+          <img src="img/voice-brand.png" alt="お客様の声：頑張らなくていい場所">
+        </div>
+        <div class="voice-card" style="margin-top:0; border-top:none;">
+          <span class="voice-tag">メンテナンス</span>
+          <p class="voice-text">Acusは頑張らなくていい場所。でもメンテしてもらったら、また頑張ろうって思える場所。</p>
+        </div>
       </div>
-      <div class="voice-img-card">
-        <img src="img/voice-skill.png" alt="お客様の声：技術力と価格">
+      <div class="voice-pair">
+        <div class="voice-img-card">
+          <img src="img/voice-skill.png" alt="お客様の声：福山で一番の技術">
+        </div>
+        <div class="voice-card" style="margin-top:0; border-top:none;">
+          <span class="voice-tag">鍼灸院</span>
+          <p class="voice-text">先生の"腕の良さ"で通っています。この価格でこの施術。他にないと思います。結果にも満足しています。</p>
+        </div>
       </div>
-      <div class="voice-img-card">
-        <img src="img/voice-fukuyama.png" alt="お客様の声：前向きな自分になれる">
+      <div class="voice-pair">
+        <div class="voice-img-card">
+          <img src="img/voice-fukuyama.png" alt="お客様の声：前向きな自分になれる">
+        </div>
+        <div class="voice-card" style="margin-top:0; border-top:none;">
+          <span class="voice-tag">鍼灸</span>
+          <p class="voice-text">体に対する知識や技術は高いと思う。まりこさんの言葉やエネルギーに元気をもらいました。来るたびに新しい目標に出会える。</p>
+        </div>
       </div>
-      <div class="voice-img-card">
-        <img src="img/voice-space.png" alt="お客様の声：素敵空間">
+      <div class="voice-pair">
+        <div class="voice-img-card">
+          <img src="img/voice-space.png" alt="お客様の声：素敵空間">
+        </div>
+        <div class="voice-card" style="margin-top:0; border-top:none;">
+          <span class="voice-tag">施術空間</span>
+          <p class="voice-text">来るとしばらく体が楽に過ごせる。その日の夜は力が抜けてスーと眠れます。プライベートな空間でリラックスできる。マイナスなことが何もない。素敵空間です。</p>
+        </div>
       </div>
     </div>
     <p class="voice-note">※個人の感想です。効果には個人差があります。</p>
-
-    <div class="voices-list" style="margin-top:24px;">
-      <div class="voice-card">
-        <div class="voice-header">
-          <span class="voice-tag">ブランド・居場所</span>
-        </div>
-        <p class="voice-text">Acusは、頑張らなくていい場所。でもメンテしてもらったら、また頑張ろうって思える場所。</p>
-      </div>
-      <div class="voice-card">
-        <div class="voice-header">
-          <span class="voice-tag">技術力・効果</span>
-        </div>
-        <p class="voice-text">"腕の良さ"が気に入って。この価格でこの施術、他にないと思います。腕が良いので当然効果にも満足しています。</p>
-      </div>
-      <div class="voice-card">
-        <div class="voice-header">
-          <span class="voice-tag">福山・技術・元気</span>
-        </div>
-        <p class="voice-text">体に対する知識や技術が高い。先生の言葉やエネルギー元気をもらいました。来るたびに新しい目標に出会えるのがうれしい。</p>
-      </div>
-      <div class="voice-card">
-        <div class="voice-header">
-          <span class="voice-tag">施術効果・空間</span>
-        </div>
-        <p class="voice-text">来るとしばらく体が楽に過ごせる。その日の夜は力が抜けてスーと眠れます。プライベートな空間でリラックスできる。素敵空間です。</p>
-      </div>
-    </div>
   </div>
 </section>
 
