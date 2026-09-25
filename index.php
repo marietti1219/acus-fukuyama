@@ -270,6 +270,33 @@
     .team-body .team-bio {
       font-size:13px; color:var(--text); line-height:1.88;
     }
+    .team-career {
+      margin-top: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .career-row {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 8px;
+      font-size: 12.5px;
+      line-height: 1.7;
+    }
+    .career-row dt {
+      color: var(--accent);
+      font-weight: 400;
+      white-space: nowrap;
+    }
+    .career-row dd {
+      color: var(--text);
+    }
+    @media (max-width: 600px) {
+      .career-row {
+        grid-template-columns: 1fr;
+        gap: 2px;
+      }
+    }
     .team-body .team-ig {
       display:inline-block; margin-top:14px; font-size:12px;
       color:var(--accent); border-bottom:1px solid var(--accent-l); padding-bottom:2px;
@@ -769,8 +796,34 @@
         <div class="team-role">Acus 代表・院長　／　はり師・きゅう師</div>
         <p class="team-msg">「お顔もメンタルも体の一部」という信念のもと、福山の地で生活の質と、パフォーマンス向上をサポートします。</p>
         <p class="team-bio">
-          2008年 はり師・きゅう師資格取得。2013年より福山市春日池にてAcusを展開。地域に根ざした信頼と、常に最新の知見を取り入れる姿勢を大切にしています。得意分野は頭痛と美容鍼。
+          得意分野は頭痛と美容鍼。フィットネスと鍼灸、両方の知識から体にアプローチします。
         </p>
+        <dl class="team-career">
+          <div class="career-row">
+            <dt>2001〜2003年</dt>
+            <dd>大阪リゾート＆スポーツ専門学校</dd>
+          </div>
+          <div class="career-row">
+            <dt>2001〜2023年</dt>
+            <dd>フィットネスインストラクターとして従事（スタジオ・プール・GYM／開業後も並行して継続）</dd>
+          </div>
+          <div class="career-row">
+            <dt>2005〜2008年</dt>
+            <dd>朝日医療大学校</dd>
+          </div>
+          <div class="career-row">
+            <dt>2008年</dt>
+            <dd>はり師・きゅう師資格取得</dd>
+          </div>
+          <div class="career-row">
+            <dt>2008〜2013年</dt>
+            <dd>鍼灸接骨院 勤務</dd>
+          </div>
+          <div class="career-row">
+            <dt>2013年</dt>
+            <dd>鍼灸サロンAcus 開業</dd>
+          </div>
+        </dl>
         <div class="staff-icons">
           <a href="https://www.instagram.com/mari_acus/" target="_blank" rel="noopener" class="staff-icon-btn" aria-label="Instagram">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -803,7 +856,23 @@
         <p class="team-bio">
           美容鍼・産前産後ケア・睡眠ケアを得意とする鍼灸師。毎回の体調に合わせて施術内容を変えながら、お客様の快適な日常をサポートしています。
         </p>
-        <a href="https://www.instagram.com/kanae.harikyu/" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:7px;padding:9px 20px;background:linear-gradient(135deg,#f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);color:#fff;font-size:13px;font-family:inherit;letter-spacing:0.08em;text-decoration:none;border:none;border-radius:2px;white-space:nowrap;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;vertical-align:middle;"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2" fill="none"></rect><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2" fill="none"></circle><circle cx="17.5" cy="6.5" r="1" fill="currentColor"></circle></svg><span>Instagram @kanae.harikyu</span></a>
+        <div class="staff-icons">
+          <a href="https://www.instagram.com/kanae.harikyu/" target="_blank" rel="noopener" class="staff-icon-btn" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2" fill="none"/>
+              <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2" fill="none"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+            </svg>
+          </a>
+          <a href="https://haliiku-kanae.com/" target="_blank" rel="noopener" class="staff-icon-btn staff-icon-official" aria-label="オフィシャルサイト">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+              <line x1="2" y1="12" x2="22" y2="12" stroke="currentColor" stroke-width="2"/>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            <span>Official</span>
+          </a>
+        </div>
       </div>
     </div>
     <div style="margin-top:24px; text-align:right;">
