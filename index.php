@@ -748,16 +748,16 @@
           <img class="value-img" src="img/value-beauty-acupuncture.jpg" alt="美容鍼 電気鍼施術">
         </picture>
         <div class="value-body">
-          <div class="value-title-row"><span class="value-num">01</span><strong>美容医療と併用もできる美容鍼</strong></div>
-          <p>足や腰の筋肉と同じように、お顔の筋肉も使わずにいると細く硬くなります。普段無表情でいる時間が長い人ほど、Acusのお顔・頭の鍼をすることで「目が開きやすい！」「こめかみが軽い」と感じます。表情筋へのアプローチは、美容医療でエイジングケアをしている方にもおすすめです。</p>
+          <div class="value-title-row"><span class="value-num">01</span><strong>本気のエイジングケアと美容鍼</strong></div>
+          <p>ボトックスやヒアルロン酸など、美容医療でしっかりケアをしている方ほど、美容鍼との相性が良いです。せっかく整えたお肌やお顔も、表情筋のこわばりで見た目の印象は大きく変わります。筋肉は、使わないでいると細く硬くなります。Acusの美容鍼はお悩みに合わせて表情筋や咀嚼筋を使いやすく・動かしやすくするのが特徴です。美容医療と鍼灸は役割が異なるため、どちらかではなく、両方を取り入れている方が多いです。</p>
         </div>
       </div>
       <div class="value-item">
         <img class="value-img" src="img/salon-exterior-night.jpg" alt="完全個室 プライベート空間">
         <div class="value-body">
           <!-- 眼精疲労対応 修正 -->
-          <div class="value-title-row"><span class="value-num">02</span><strong>スマホ・PC・運転による眼精疲労に、専門的にアプローチします</strong></div>
-          <p>一日中画面を見る仕事・スマホの長時間使用・長距離ドライブ。現代特有のこれらの習慣が引き起こす眼精疲労は、目だけではなく首・肩・自律神経にも影響することがあります。顎やこめかみ・後頭部の筋肉にも、鍼でアプローチできます。表面のマッサージでおこる皮膚の摩擦や肌の引き延ばしを起こさず、コリにアクセスします。</p>
+          <div class="value-title-row"><span class="value-num">02</span><strong>目の疲れを、首・肩・姿勢まで診るから</strong></div>
+          <p>スマホ・PC・長時間の運転による眼精疲労は、目の疲れだけでなく、首・肩・後頭部・こめかみの筋肉の緊張としてあらわれることがあります。姿勢の崩れが目の疲れを悪化させているケースも少なくありません。目の周囲だけでなく、こめかみ・顎・後頭部・首まで含めてアプローチするのがAcusの眼精疲労施術の特徴です。マッサージでは届かない深い筋層に、鍼でアプローチします。</p>
         </div>
       </div>
       <div class="value-item">
