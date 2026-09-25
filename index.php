@@ -559,6 +559,7 @@
       gap: 12px;
     }
     .menu-card-link {
+      position: relative;
       display: block;
       border: none;
       padding: 0;
@@ -566,16 +567,35 @@
       cursor: pointer;
       border-radius: 8px;
       overflow: hidden;
-      transition: opacity 0.2s, transform 0.2s;
-    }
-    .menu-card-link:hover {
-      opacity: 0.88;
-      transform: translateY(-2px);
     }
     .menu-card-link img {
       width: 100%;
       height: auto;
       display: block;
+    }
+    .menu-card-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s;
+    }
+    .menu-card-overlay span {
+      color: #fff;
+      font-size: 14px;
+      font-family: var(--sans);
+      letter-spacing: .1em;
+      font-weight: 400;
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+    .menu-card-link:hover .menu-card-overlay {
+      background: rgba(0,0,0,0.35);
+    }
+    .menu-card-link:hover .menu-card-overlay span {
+      opacity: 1;
     }
     @media (max-width: 660px) {
       .menu-card-grid {
@@ -679,15 +699,19 @@
     <div class="menu-card-grid">
       <button class="menu-card-link" onclick="openModal('face')">
         <img src="img/menu-face.png" alt="お顔・頭の鍼">
+        <div class="menu-card-overlay"><span>詳細を見る</span></div>
       </button>
       <button class="menu-card-link" onclick="openModal('body')">
         <img src="img/menu-body.png" alt="からだの鍼">
+        <div class="menu-card-overlay"><span>詳細を見る</span></div>
       </button>
       <button class="menu-card-link" onclick="openModal('ems')">
         <img src="img/menu-ems.png" alt="楽トレ（EMS）">
+        <div class="menu-card-overlay"><span>詳細を見る</span></div>
       </button>
       <button class="menu-card-link" onclick="openModal('peeling')">
         <img src="img/menu-peeling.png" alt="ハーブピーリング">
+        <div class="menu-card-overlay"><span>詳細を見る</span></div>
       </button>
     </div>
 
