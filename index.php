@@ -105,15 +105,17 @@
       position:absolute; bottom:0; left:0; right:0; padding-bottom:48px;
     }
     .hero-eyebrow {
-      font-size:11px; letter-spacing:.2em; color:rgba(255,255,255,.65);
-      margin-bottom:10px;
+      font-size: 14px;
+      letter-spacing: .2em;
+      color: rgba(255,255,255,.75);
+      margin-bottom: 12px;
     }
     .hero-h1 {
       font-family: var(--serif);
       font-weight: 400;
-      font-size: clamp(2rem, 6vw, 3rem);
-      line-height: 1.3;
-      margin-bottom: 10px;
+      font-size: clamp(2.2rem, 8vw, 4.2rem);
+      line-height: 1.2;
+      margin-bottom: 12px;
       color: #fff;
     }
     .hero-h1 em {
@@ -123,11 +125,11 @@
     }
     .hero-catch {
       font-family: var(--sans);
-      font-size: clamp(0.95rem, 2.5vw, 1.15rem);
+      font-size: clamp(0.95rem, 3vw, 1.4rem);
       font-weight: 300;
       color: rgba(255,255,255,0.85);
       letter-spacing: .08em;
-      margin-bottom: 18px;
+      margin-bottom: 22px;
     }
     .hero-tagline {
       font-size:13px; color:rgba(255,255,255,.75);
@@ -135,9 +137,12 @@
     }
     .hero-labels { display:flex; flex-wrap:wrap; gap:7px; margin-bottom:22px; }
     .hero-label {
-      font-size:10.5px; letter-spacing:.05em;
-      border:1px solid rgba(255,255,255,.35);
-      padding:3px 10px; border-radius:30px; color:rgba(255,255,255,.8);
+      font-size: 13px;
+      letter-spacing: .06em;
+      border: 1px solid rgba(255,255,255,.45);
+      padding: 5px 14px;
+      border-radius: 30px;
+      color: rgba(255,255,255,.9);
     }
     .hero-cta { display:flex; flex-wrap:wrap; gap:10px; align-items:center; }
     .btn-hero-rsv {
