@@ -352,6 +352,32 @@
     .voice-meta { font-size:11px; color:var(--muted); text-align:right; }
     .voice-stars { color:#c4a860; font-size:12px; margin-bottom:2px; }
     .voice-text { font-size:13.5px; color:var(--text); line-height:1.85; }
+    .voices-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 28px;
+    }
+    .voice-img-card {
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .voice-img-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .voice-note {
+      font-size: 11px;
+      color: var(--muted);
+      margin-top: 8px;
+      text-align: right;
+    }
+    @media (max-width: 660px) {
+      .voices-grid {
+        grid-template-columns: 1fr;
+      }
+    }
 
     /* ===== Footer ===== */
     footer {
@@ -811,47 +837,46 @@
   <div class="wrap">
     <span class="eyebrow">Social Proof</span>
     <h2 class="sec-title">お客様の声</h2>
-    <div class="voices-list">
+    <div class="voices-grid">
+      <div class="voice-img-card">
+        <img src="img/voice-brand.png" alt="お客様の声：頑張らなくていい場所">
+      </div>
+      <div class="voice-img-card">
+        <img src="img/voice-skill.png" alt="お客様の声：技術力と価格">
+      </div>
+      <div class="voice-img-card">
+        <img src="img/voice-fukuyama.png" alt="お客様の声：前向きな自分になれる">
+      </div>
+      <div class="voice-img-card">
+        <img src="img/voice-space.png" alt="お客様の声：素敵空間">
+      </div>
+    </div>
+    <p class="voice-note">※個人の感想です。効果には個人差があります。</p>
+
+    <div class="voices-list" style="margin-top:24px;">
       <div class="voice-card">
         <div class="voice-header">
-          <span class="voice-tag">エイジングケア・美容鍼</span>
-          <div class="voice-meta">
-            <div class="voice-stars">★★★★★</div>
-            <div>30代 女性</div>
-          </div>
+          <span class="voice-tag">ブランド・居場所</span>
         </div>
-        <p class="voice-text">肌のトーンが上がり、友人から「若返った？」と言われるようになりました。</p>
+        <p class="voice-text">Acusは、頑張らなくていい場所。でもメンテしてもらったら、また頑張ろうって思える場所。</p>
       </div>
       <div class="voice-card">
         <div class="voice-header">
-          <span class="voice-tag">パフォーマンスアップ・首こり</span>
-          <div class="voice-meta">
-            <div class="voice-stars">★★★★★</div>
-            <div>40代 女性</div>
-          </div>
+          <span class="voice-tag">技術力・効果</span>
         </div>
-        <p class="voice-text">10年来の頭痛から解放され、薬に頼らない生活が手に入りました。</p>
+        <p class="voice-text">"腕の良さ"が気に入って。この価格でこの施術、他にないと思います。腕が良いので当然効果にも満足しています。</p>
       </div>
       <div class="voice-card">
         <div class="voice-header">
-          <span class="voice-tag">リカバリー・慢性疲労</span>
-          <div class="voice-meta">
-            <div class="voice-stars">★★★★★</div>
-            <div>50代 女性</div>
-          </div>
+          <span class="voice-tag">福山・技術・元気</span>
         </div>
-        <p class="voice-text">施術後の帰り道に感じる体の軽さ。夜ぐっすり眠れる幸せを実感しています。</p>
+        <p class="voice-text">体に対する知識や技術が高い。先生の言葉やエネルギー元気をもらいました。来るたびに新しい目標に出会えるのがうれしい。</p>
       </div>
-      <!-- 眼精疲労対応 修正 -->
       <div class="voice-card">
         <div class="voice-header">
-          <span class="voice-tag">眼精疲労・デジタル疲労</span>
-          <div class="voice-meta">
-            <div class="voice-stars">★★★★★</div>
-            <div>30代 男性</div>
-          </div>
+          <span class="voice-tag">施術効果・空間</span>
         </div>
-        <p class="voice-text">毎日10時間以上PCで作業していて、目の奥の痛みと頭痛が慢性化していました。3回の施術で目の重さが明らかに軽くなり、仕事の集中力も戻ってきました。</p>
+        <p class="voice-text">来るとしばらく体が楽に過ごせる。その日の夜は力が抜けてスーと眠れます。プライベートな空間でリラックスできる。素敵空間です。</p>
       </div>
     </div>
   </div>
