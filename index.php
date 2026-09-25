@@ -999,27 +999,5 @@
     document.getElementById('modal').style.display = 'none';
     document.body.style.overflow = '';
   }
-
-  const toggle = document.getElementById('hdr-toggle');
-  const drawer = document.getElementById('drawer');
-  function closeDrawer() {
-    drawer.classList.remove('open');
-    toggle.setAttribute('aria-expanded','false');
-  }
-  toggle.addEventListener('click', () => {
-    const open = drawer.classList.toggle('open');
-    toggle.setAttribute('aria-expanded', open);
-  });
-  const hdr = document.getElementById('hdr');
-  const bt = document.getElementById('back-top');
-  window.addEventListener('scroll', () => {
-    hdr.classList.toggle('scrolled', window.scrollY > 40);
-    bt.classList.toggle('vis', window.scrollY > 300);
-  }, {passive:true});
-  bt.addEventListener('click', () => window.scrollTo({top:0,behavior:'smooth'}));
-  const obs = new IntersectionObserver(es => es.forEach(e => {
-    if (e.isIntersecting) { e.target.classList.add('vis'); obs.unobserve(e.target); }
-  }), {threshold:.12});
-  document.querySelectorAll('.r').forEach(el => obs.observe(el));
 </script>
 </body></html>
