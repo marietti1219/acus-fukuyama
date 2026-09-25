@@ -288,6 +288,38 @@
       .team-second{ grid-template-columns:1fr; }
       .team-second img{ width:100%; height:180px; }
     }
+    .staff-icons {
+      display: flex;
+      gap: 10px;
+      margin-top: 16px;
+      align-items: center;
+    }
+    .staff-icon-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text);
+      transition: background 0.2s, color 0.2s, transform 0.15s;
+      text-decoration: none;
+    }
+    .staff-icon-btn:hover {
+      background: var(--text);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+    .staff-icon-official {
+      width: auto;
+      padding: 0 14px;
+      border-radius: 40px;
+      gap: 6px;
+      font-size: 12px;
+      letter-spacing: .04em;
+    }
 
     /* ===== Access ===== */
     .access-grid {
@@ -495,173 +527,7 @@
       }
     }
   </style>
-<style>
-  /* ベースリセット：スタッフエリアのボタン共通 */
-  a[href*="instagram.com/mari_acus"],
-  a[href="https://acus-web.com/mariko/suzuki_mariko_with_images.html"],
-  a[href*="reserva.be"] {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    width: 280px !important;
-    padding: 0 24px !important;
-    border-radius: 4px !important;
-    font-family: "Noto Sans JP", sans-serif !important;
-    font-weight: 400 !important;
-    letter-spacing: 0.04em !important;
-    text-decoration: none !important;
-    transition: opacity 0.2s ease, transform 0.15s ease !important;
-    box-sizing: border-box !important;
-    cursor: pointer !important;
-  }
-  a[href*="instagram.com/mari_acus"]:hover,
-  a[href="https://acus-web.com/mariko/suzuki_mariko_with_images.html"]:hover,
-  a[href*="reserva.be"]:hover {
-    opacity: 0.82 !important;
-    transform: translateY(-1px) !important;
-  }
-
-  /* Instagram ボタン：グラデーション */
-  a[href*="instagram.com/mari_acus"] {
-    height: 48px !important;
-    background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) !important;
-    color: #fff !important;
-    font-size: 13px !important;
-    gap: 8px !important;
-  }
-
-  /* オフィシャルサイトボタン：ダークエレガント */
-  a[href="https://acus-web.com/mariko/suzuki_mariko_with_images.html"] {
-    height: 48px !important;
-    background: #2e2a26 !important;
-    color: #f5f0eb !important;
-    font-size: 13px !important;
-    border: 1px solid rgba(255,255,255,0.08) !important;
-  }
-
-  /* 同業者専用ボタン：落ち着いたグレージュ + ボーダー */
-  a[href*="reserva.be"] {
-    height: 60px !important;
-    flex-direction: column !important;
-    gap: 3px !important;
-    background: #3a3530 !important;
-    color: #f5f0eb !important;
-    border: 1px solid rgba(200,180,150,0.25) !important;
-  }
-
-  .rbtn-main {
-    display: block !important;
-    font-size: 12.5px !important;
-    font-weight: 500 !important;
-    letter-spacing: 0.05em !important;
-    color: #f5f0eb !important;
-    line-height: 1 !important;
-  }
-  .rbtn-sub {
-    display: block !important;
-    font-size: 10px !important;
-    color: rgba(245,240,235,0.55) !important;
-    letter-spacing: 0.06em !important;
-    line-height: 1 !important;
-    font-weight: 300 !important;
-  }
-</style><style data-acus-btns="1">
-  /* ===== スタッフボタン 共通ベース ===== */
-  a[href*="instagram.com/mari_acus"],
-  a[href="https://acus-web.com/mariko/suzuki_mariko_with_images.html"],
-  a[href*="reserva.be"] {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    width: 300px !important;
-    box-sizing: border-box !important;
-    border-radius: 6px !important;
-    font-family: "Noto Sans JP", sans-serif !important;
-    letter-spacing: 0.06em !important;
-    text-decoration: none !important;
-    transition: opacity 0.25s ease, transform 0.2s ease, box-shadow 0.2s ease !important;
-    position: relative !important;
-    overflow: hidden !important;
-  }
-  a[href*="instagram.com/mari_acus"]:hover,
-  a[href="https://acus-web.com/mariko/suzuki_mariko_with_images.html"]:hover,
-  a[href*="reserva.be"]:hover {
-    opacity: 0.88 !important;
-    transform: translateY(-2px) !important;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.18) !important;
-  }
-  a[href*="instagram.com/mari_acus"]:active,
-  a[href="https://acus-web.com/mariko/suzuki_mariko_with_images.html"]:active,
-  a[href*="reserva.be"]:active {
-    transform: translateY(0px) !important;
-    opacity: 0.75 !important;
-  }
-
-  /* ===== Instagram ボタン ===== */
-  a[href*="instagram.com/mari_acus"] {
-    height: 50px !important;
-    padding: 0 24px !important;
-    background: linear-gradient(100deg, #f09433 0%, #e6683c 22%, #dc2743 48%, #cc2366 76%, #bc1888 100%) !important;
-    color: #fff !important;
-    font-size: 13px !important;
-    font-weight: 400 !important;
-    gap: 10px !important;
-    box-shadow: 0 2px 12px rgba(220,39,67,0.28) !important;
-  }
-
-  /* ===== オフィシャルサイトボタン ===== */
-  a[href="https://acus-web.com/mariko/suzuki_mariko_with_images.html"] {
-    height: 50px !important;
-    padding: 0 24px !important;
-    background: #2e2a26 !important;
-    color: #f0ebe4 !important;
-    font-size: 13px !important;
-    font-weight: 300 !important;
-    border: 1px solid rgba(255,255,255,0.1) !important;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2) !important;
-    gap: 8px !important;
-  }
-
-  /* ===== 同業者専用ボタン ===== */
-  a[href*="reserva.be"] {
-    height: 64px !important;
-    padding: 10px 24px !important;
-    flex-direction: column !important;
-    gap: 5px !important;
-    background: #3d3028 !important;
-    border: 1px solid rgba(210,185,145,0.3) !important;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.22), inset 0 1px 0 rgba(255,255,255,0.06) !important;
-  }
-
-  /* 同業者専用ボタン：アクセントライン（上部） */
-  a[href*="reserva.be"]::before {
-    content: '' !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    height: 2px !important;
-    background: linear-gradient(90deg, #c8a96e, #e8d0a0, #c8a96e) !important;
-    border-radius: 6px 6px 0 0 !important;
-  }
-
-  .rbtn-main {
-    display: block !important;
-    font-size: 12.5px !important;
-    font-weight: 500 !important;
-    letter-spacing: 0.06em !important;
-    color: #f0ebe4 !important;
-    line-height: 1 !important;
-  }
-  .rbtn-sub {
-    display: block !important;
-    font-size: 10px !important;
-    color: rgba(210,185,145,0.75) !important;
-    letter-spacing: 0.08em !important;
-    line-height: 1 !important;
-    font-weight: 300 !important;
-  }
-</style><!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJNHNDB2DZ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -905,10 +771,28 @@
         <p class="team-bio">
           2008年 はり師・きゅう師資格取得。2013年より福山市春日池にてAcusを展開。地域に根ざした信頼と、常に最新の知見を取り入れる姿勢を大切にしています。得意分野は頭痛と美容鍼。
         </p>
-        <a href="https://www.instagram.com/mari_acus/" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:7px;padding:9px 20px;background:linear-gradient(135deg,#f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);color:#fff;font-size:13px;font-family:inherit;letter-spacing:0.08em;text-decoration:none;border:none;border-radius:2px;white-space:nowrap;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;vertical-align:middle;"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2" fill="none"></rect><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2" fill="none"></circle><circle cx="17.5" cy="6.5" r="1" fill="currentColor"></circle></svg><span>Instagram @mari_acus</span></a><div style="margin-top:16px;"><a href="https://acus-web.com/mariko/suzuki_mariko_with_images.html" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:8px;padding:9px 20px;background-color:#2e2a26;color:#f5f0eb;font-size:13px;font-family:inherit;letter-spacing:0.1em;text-decoration:none;border:1.5px solid #2e2a26;border-radius:2px;white-space:nowrap;" onmouseover="this.style.backgroundColor='transparent';this.style.color='#2e2a26';" onmouseout="this.style.backgroundColor='#2e2a26';this.style.color='#f5f0eb';">鈴木まりこ オフィシャルサイト →</a></div>
-<div style="margin-top:16px;">
-  <a href="https://reserva.be/salonacus/reserve?mode=service_staff&amp;search_evt_no=aeeJwzNTUxNzcHAARnAUQ" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:8px;padding:9px 20px;background-color:#2e2a26;color:#f5f0eb;font-size:13px;font-family:inherit;letter-spacing:0.1em;text-decoration:none;border:1.5px solid #2e2a26;border-radius:2px;white-space:nowrap;" onmouseover="this.style.backgroundColor='transparent';this.style.color='#2e2a26';" onmouseout="this.style.backgroundColor='#2e2a26';this.style.color='#f5f0eb';"><span class="rbtn-main">【同業者専用】空き状況を確認して予約</span><span class="rbtn-sub">外部サイト（RESERVA）へ遷移します</span></a>
-</div>
+        <div class="staff-icons">
+          <a href="https://www.instagram.com/mari_acus/" target="_blank" rel="noopener" class="staff-icon-btn" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2" fill="none"/>
+              <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2" fill="none"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/marisuzugogo/" target="_blank" rel="noopener" class="staff-icon-btn" aria-label="Facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+          </a>
+          <a href="https://acus-web.com/mariko/suzuki_mariko_with_images.html" target="_blank" rel="noopener" class="staff-icon-btn staff-icon-official" aria-label="オフィシャルサイト">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+              <line x1="2" y1="12" x2="22" y2="12" stroke="currentColor" stroke-width="2"/>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            <span>Official</span>
+          </a>
+        </div>
       </div>
     </div>
     <div class="team-second">
