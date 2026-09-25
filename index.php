@@ -497,11 +497,24 @@
 
     /* ===== Sticky mobile CTA ===== */
     .sticky-cta {
-      display:none; position:fixed; bottom:0; left:0; right:0; z-index:200;
-      background:rgba(250,249,247,.97); border-top:1px solid var(--border);
-      padding:10px 16px 14px; gap:8px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 200;
+      background: rgba(250,249,247,.97);
+      border-top: 1px solid var(--border);
+      padding: 10px 16px 14px;
+      gap: 8px;
+      display: none;
     }
-    @media(max-width:640px){ .sticky-cta{ display:flex; } }
+    .sticky-cta.visible {
+      display: flex;
+    }
+    @media (max-width: 640px) {
+      .sticky-cta { display: none; }
+      .sticky-cta.visible { display: flex; }
+    }
     .sticky-cta a {
       flex:1; text-align:center; font-size:13px; font-weight:500;
       padding:13px 0; border-radius:8px;
@@ -988,5 +1001,14 @@
     document.getElementById('modal').style.display = 'none';
     document.body.style.overflow = '';
   }
+
+  const stickyCta = document.querySelector('.sticky-cta');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      stickyCta.classList.add('visible');
+    } else {
+      stickyCta.classList.remove('visible');
+    }
+  }, {passive: true});
 </script>
 </body></html>
