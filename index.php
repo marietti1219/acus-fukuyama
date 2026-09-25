@@ -109,14 +109,25 @@
       margin-bottom:10px;
     }
     .hero-h1 {
-      font-family:var(--serif); font-weight:400;
-      font-size:clamp(1.5rem,5vw,2.3rem);
-      line-height:1.5; margin-bottom:8px;
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: clamp(2rem, 6vw, 3rem);
+      line-height: 1.3;
+      margin-bottom: 10px;
+      color: #fff;
     }
     .hero-h1 em {
       font-style:normal; font-weight:300;
       font-size:clamp(1rem,3vw,1.35rem);
       display:block; margin-bottom:4px; color:rgba(255,255,255,.8);
+    }
+    .hero-catch {
+      font-family: var(--sans);
+      font-size: clamp(0.95rem, 2.5vw, 1.15rem);
+      font-weight: 300;
+      color: rgba(255,255,255,0.85);
+      letter-spacing: .08em;
+      margin-bottom: 18px;
     }
     .hero-tagline {
       font-size:13px; color:rgba(255,255,255,.75);
@@ -630,28 +641,14 @@
   <div class="hero-body-outer">
     <div class="wrap">
       <div class="hero-body" style="position:relative; bottom:auto; padding:0;">
-        <p class="hero-eyebrow">Since 2013</p>
-        <!-- 眼精疲労対応 修正 -->
-        <h1 class="hero-h1">
-          <em>鍼灸サロンAcus</em>
-          スマホ・PC・運転で酷使した目と体の、その疲れに。
-        </h1>
-        <p class="hero-tagline">
-          頭痛・首こり・目の疲れ・慢性疲労など、長引く不調は<br>
-          筋肉・神経・血流など原因は様々です。<br>
-          2013年から、地元福山で、長引く不調でお悩みの皆様に<br>
-          寄り添ってきた、伴走型の鍼灸院です。
-        </p>
+        <p class="hero-eyebrow">広島県福山市</p>
+        <h1 class="hero-h1">鍼灸サロン Acus</h1>
+        <p class="hero-catch">眼精疲労・首肩コリ・美容鍼</p>
         <div class="hero-labels">
           <span class="hero-label">完全個室</span>
           <span class="hero-label">担当者制</span>
           <span class="hero-label">完全予約制</span>
         </div>
-        <div class="hero-cta">
-          <a class="btn-hero-rsv" href="https://edisone.jp/salonacus/">24時間オンライン予約</a>
-          <a class="btn-hero-line" href="https://lin.ee/wasvy2y">LINEで相談する</a>
-        </div>
-        <p class="hero-note">鍼がはじめての方・怖い方も、刺激量を調整して対応します。</p>
       </div>
     </div>
   </div>
